@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction</title>
+
+  <p>In many mathematics courses, students learn how to apply known, established mathematical facts to problems that need solutions: "Farmer Bill wants to build a rectangular pen for his sheep with 25 yards of fence material, and he would like to maximize their grazing potential.  Find the dimensions of the pen he should build." This type of education is important, but it is also incomplete.  It does not help a student learn to create mathematics.</p>
+  <p>In contrast, mathematical reasoning, built upon the foundation of formal logic, is the art of deducing consequences from basic assumptions.  Over time, these consequences (called <b>theorems</b> among other names) invoke fewer of the basic assumptions (called <b>axioms</b>) and instead rely on secondary axioms, defintions, and other theorems. As a body, mathematicians have agreed upon a specialized dialect designed to clearly and precisely describe mathematical ideas to one another.  In a very small nutshell, this is why mathematicians write proofs.</p>
+  <p>This short primer is designed to introduce this dialect, built upon formal logic, so that fledgling mathematicians may begin to discover, prove, and communicate new mathematics.  Moreover, it is a work in progress by Professor Gibbons; if you have comments, criticisms, or suggestions for improvement, don't hesitate to let her know.</p>
+
+</chapter>

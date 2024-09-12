@@ -5,14 +5,15 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>Logic for Linear Algebraists</title>
+    <subtitle>150 minutes of logic for proof writing</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./ch-introduction.ptx" />
+    <xi:include href="./ch-chapter-1-connectives.ptx" />
 
 
     <!-- Include backmatter -->

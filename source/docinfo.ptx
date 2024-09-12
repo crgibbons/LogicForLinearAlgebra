@@ -19,7 +19,7 @@
   <!-- macros for defining latex math shortcuts. It is good practice -->
   <!-- to define these semantically, so that the macro relates to what-->
   <!-- it defines. -->
-  <macros> \newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} </macros>
+  <macros> \newcommand{\NN}{\mathbb N} \newcommand{\ZZ}{\mathbb Z} \newcommand{\QQ}{\mathbb Q} \newcommand{\RR}{\mathbb R} </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
   <!-- for those in the next element. -->

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-1-connectives" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Connectives</title>
+    
+    <p> Just as numbers are the building blocks of arithmetic, statements are the building blocks of formal proofs.  However, the value of a statement is is not numerical; the value of statement is called its <term>truth value</term>, which comes in two flavors: True and False.  And, just as we can define operations like addition or division on numbers, we can define operations on statements, called <term>logical connectives</term>.</p>
+    
+    <definition>
+      <statement>
+        <p>A <term>statement</term> is a sentence that is unambiguously true or false.</p>
+      </statement>
+    </definition>
+
+    <example>
+      <title>Statements and non-statements</title>
+      <p>"Hamilton College is located in Clinton, NY" is a statement; its truth value is "true."  Furthermore, "Our class meets sixteen days a week" is a statement; its truth value is "false."</p>
+      <p>On the other hand, "Green is the best color" is not a statement, because its truth value isn't well-defined; that is, the truth of the statement is ambiguous.</p>
+    </example>
+
+    <p> Regarding notation: we will typically reserve the variables <m>p</m>, <m>q</m>, <m>r</m> (and so on) as <term>propositional variables</term> (meaning that they are statements).</p>
+    <section xml:id="sec-ch1-not-and-or">
+      <title>First Connectives: Not, And, and Or</title>
+      <p>In this section we define three logical connectives.</p>
+
+      <definition>
+        <notation>
+          <usage><m>\lnot</m></usage>
+          <description>logical negation</description>
+        </notation>
+
+        <statement>
+          <p>The <term>negation</term> of a statement <m>p</m>, denoted <m>\lnot p</m>, is the statement: "It is not the case that <m>p</m>."</p>
+          <p>In casual conversation, we refer to the negation of a proposition <m>p</m> as "not <m>p</m>".</p>
+
+          <p> If we know the truth value of <m>p</m>, then <m>\lnot p</m> has exactly the opposite truth value.  We denote this relationship with a <term>truth table</term>. In fact, we can take the truth table to be the defintion of the negation connective.</p>
+
+          <table>
+            <title>Truth Table for Negation</title>
+              <tabular halign="center">
+                <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>\lnot p</m></cell></row>
+                <row><cell>T</cell><cell>F</cell></row>
+                <row><cell>F</cell><cell>T</cell></row>
+              </tabular>
+            </table>
+        </statement>
+      </definition>
+
+      <example>
+        <title>Negating statements</title>
+        <p> The negation of the statement, "Hamilton College is located in Clinton, NY" is the statement, "It is not the case that Hamilton College is located in Clinton, NY," or, "Hamilton College is not located in Clinton, NY."</p>
+      </example>
+
+      <p>Some logical connectives take two statements. The first of these is the logical "and" which we call conjunction.</p>
+
+      <definition> 
+        <notation>
+          <usage><m>\land</m></usage>
+          <description>logical cojunction</description>
+        </notation>
+
+        <statement>
+          <p>The <term>conjunction</term> of two statements <m>p</m> and <m>q</m>, denoted <m>p \land q</m>, is the statement, "<m>p</m> and <m>q</m>."</p>
+          <p>In casual conversation, we refer to the conjunction as "<m>p</m> and <m>q</m>".</p>
+          <p> Conjunction is defined by the truth table below. </p>
+
+          <table>
+            <title>Truth Table for Conjunction</title>
+            <tabular halign="center">
+              <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\land q</m></cell></row>
+              <row><cell>T</cell><cell>T</cell><cell>T</cell></row>
+              <row><cell>T</cell><cell>F</cell><cell>F</cell></row>
+              <row><cell>F</cell><cell>T</cell><cell>F</cell></row>
+              <row><cell>F</cell><cell>F</cell><cell>F</cell></row>
+            </tabular>
+          </table>
+        </statement>
+      </definition>
+
+      <example>
+        <p>Consider the unambiguously false statement, "A banana is a natural number."  Then the statement, "A banana is a natural number and <m>p</m>" is false no matter what statement <m>p</m> follows the "and."  In order for a conjunction of two statements to be true, both original statements must be true.</p>
+      </example>
+
+      <p>The next connective is the logical "or" which we call disjunction.</p>
+
+      <definition> 
+        <notation>
+          <usage><m>\lor</m></usage>
+          <description>logical disjunction</description>
+        </notation>
+
+        <statement>
+          <p>The <term>disjunction</term> of two statements <m>p</m> and <m>q</m>, denoted <m>p \lor q</m>, is the statement, "<m>p</m> or <m>q</m>."</p>
+          <p>In casual conversation, we refer to the disjunction as "<m>p</m> or <m>q</m>".</p>
+          <p> Disjunction is defined by the truth table below. </p>
+
+          <table>
+            <title>Truth Table for Disjunction</title>
+            <tabular halign="center">
+              <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\lor q</m></cell></row>
+              <row><cell>T</cell><cell>T</cell><cell>T</cell></row>
+              <row><cell>T</cell><cell>F</cell><cell>T</cell></row>
+              <row><cell>F</cell><cell>T</cell><cell>T</cell></row>
+              <row><cell>F</cell><cell>F</cell><cell>F</cell></row>
+            </tabular>
+          </table>
+        </statement>
+      </definition>
+
+      <example>
+        <p>Consider the unambiguously false statement, "A banana is a natural number."  Then the statement, "A banana is a natural number and <m>p</m>" is only false if the statement <m>p</m> is false.</p>
+      </example>
+    </section>
+
+    <section>
+      <title>Compound Statements</title>
+
+      <p>Negation is a function of one binary variable (that is, we "plug in" one statement).  Conjunctions and disjunctions are functions of two binary variables (that is, we "plug in" two statements).  We can compose logical connectives just as we can compose functions to create <term>compound statements</term>.</p>
+      <p>Consider the statement <m>\lnot(p\land q)</m>: "It is not the case that (<m>p</m> and <m>q</m>)."</p>
+        <table>
+          <title>Truth Table for <m>\lnot(p\land q)</m></title>
+          <tabular halign="center">
+            <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\land q</m></cell><cell><m>\lnot(p \land q)</m></cell></row>
+            <row><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell></row>
+            <row><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell></row>
+            <row><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell></row>
+            <row><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell></row>
+          </tabular>
+        </table>
+
+        <p> For the statement <m>\lnot(p\land q)</m> to be true, we see that we need one of <m>p</m> or <m>q</m> to be false (not necessarily both).  That is, the truth value should match the truth value of the compound statement <m>(\lnot p) \lor (\lnot q)</m>.  To verify this, we look at the truth table for the statement <m>(\lnot p) \lor (\lnot q)</m>: "(Not <m>p</m>) or (not <m>q</m>)."</p>
+        <table>  
+          <title>Truth Table for <m>(\lnot p)\lor (\lnot q)</m></title>
+          <tabular halign="center">
+            <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\lnot p</m></cell><cell><m>\lnot q</m></cell><cell>(\lnot p)\lor (\lnot q)</cell></row>
+            <row><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+            <row><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell></row>
+            <row><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell></row>
+            <row><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+          </tabular>
+        </table>
+      <p>We can see from the final column of these truth tables that the statements <m>\lnot(p \land q)</m> and <m>(\lnot p)\lor (\lnot q)</m> correspond to the same function of <m>p</m> and <m>q</m>.</p>
+
+      <definition xml:id="def-">
+        <notation>
+          <usage><m>\equiv</m></usage>
+          <description>logical equivalence</description>
+        </notation>
+
+        <statement>
+          <p>
+            In general, a <term>compound statement</term> is a complex statement built from simple statements <m>p</m>, <m>q</m>, and so on. 
+            We typically reserve the capital letters <m>P</m>, <m>Q</m>, <m>R</m>
+            (and so on) to denote compound statements.  Two compound statements <m>P</m> and <m>Q</m> (made up of the same constituent statements) 
+            are <term>logically equivalent</term> provided their truth tables have the same final column.  We denote this equivalence <m>P \equiv Q</m>.
+          </p>
+        </statement>
+      </definition>
+
+      <p>Logical equivalence allows us to manipulate compound statements without changing their truth tables.</p>
+    </section>
+  </chapter>
+
+<!-- 
+
+\begin{theorem}[De Morgan's Laws] For any statements $p$ and $q$,
+\begin{enumerate}[label=(\alph*)]
+\item  $\lnot (p \land q) \equiv (\lnot p) \lor (\lnot q)$, and\\
+\item $\lnot(p \lor q) \equiv (\lnot p) \land (\lnot q)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Law of the Double Negative]
+For any statement $p$, \[\lnot(\lnot p) \equiv p.\]
+\end{theorem}
+
+There's one more standard logical connective, and it's a tricky one.
+
+\begin{defn} The compound statement ``if $p$, then $q$'' or ``$p$ implies $q$,'' denoted $p \implies q$, is called an \defi{implication} or a \defi{conditional} statement, where $p$ is the \defi{hypothesis} or \defi{premise} and $q$ is the \defi{conclusion}.
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c | c}
+$p$ & $q$ & $p \implies q$ \\
+\hline
+T & T & T \\
+T & F  & F \\
+F & T & T\\
+F & F & T
+\end{tabular}
+\caption{The truth table for the conditional statement $p$ implies $q$.}
+\end{figure}
+\end{defn}
+
+You may be looking at the last two rows of that truth table and wondering what's going on.  For lay people, the statement $p \implies q$ is meaningless (i.e., it has no truth value) when $p$ is false.  But then $p \implies q$ wouldn't be a statement; statements must have \textit{some} truth value.
+
+\begin{example} Consider the statment, ``If it's raining chicken feet, then I am a turtle.''  The premise and conclusion are both false, yet we declare this statement to be true.
+\end{example}
+
+An implication in which the hypothesis is false is called \defi{vacuously true}.
+
+In formal mathematical logic, no causation is implied by an if then statement.  That is, the statement ``If it's raining, then it's wet outside'' \textit{doesn't} mean that ``It's wet outside \textit{because} it's raining.''  For all we know, it could be wet outside because someone sprayed everything down with a fire hose.  And so, the statement ``If $2+2=5$, then Mars is a planet'' is a true statement (the conclusion, ``Mars is a planent,'' is true regardless of arithmetic).
+
+\begin{example}[Interpreting implications.] Given statements $p$ and $q$, \[\lnot(p \implies q) \equiv p \land(\lnot q).\]
+
+We can see that this is the case by comparing the truth tables:
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c | c | c }
+$p$ & $q$ & $p \implies q$ & $\lnot (p \implies q)$ \\
+\hline
+T & T & T & F \\
+T & F  & F & T\\
+F & T & T & F\\
+F & F & T & F
+\end{tabular} \qquad
+\begin{tabular}{c | c | c | c}
+$p$ & $q$ & $\lnot q$ & $p \land (\lnot q)$ \\
+\hline
+T & T & F & F \\
+T & F  & T & T\\
+F & T & F& F\\
+F & F & T & F
+\end{tabular}
+\caption{The truth tables for the compound statements ``not $p$ implies $q$'' and ``$p$ and not $q$.''}
+\end{figure}
+
+Since the final columns in the tables are the same, these compound statements are equivalent.  This is another way of saying that an implication is false \textit{only} when the hypothesis is true and the conclusion is false!
+
+Furthermore, we have:
+\begin{align*} [p \implies q] & \equiv [\lnot(\lnot(p \implies q))]& \quad \text{ Law of the Double Negative}\\
+ & \equiv \lnot[p \land (\lnot q)] & \quad \text{ previous example}\\
+ & \equiv (\lnot p) \lor [\lnot(\lnot q)] & \quad \text{De Morgan's Law (a)} \\
+ &\equiv (\lnot p) \lor q & \quad \text{Law of the Double Negative}
+\end{align*}
+\end{example}
+
+\begin{theorem}[Law of Implication] For all propositions $p$ and $q$, 
+\begin{enumerate}[label=(\alph*)] \item $[p \implies q] \equiv [(\lnot p) \lor q]$\\
+\item $[\lnot(p \implies q)] \equiv [p \land (\lnot q)]$
+\end{enumerate}
+\end{theorem}
+
+\begin{defn}
+Related to any implication $p \implies q$, there are three other implications:
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c | c | c  | c | c}
+& & original & \defi{converse} & \defi{inverse} & \defi{contrapositive} \\
+$p$ & $q$ & $p \implies q$ & $q \implies p$ & $(\lnot p) \implies (\lnot q)$ & $(\lnot q) \implies (\lnot p)$\\
+\hline
+T & T & T & T & T & T \\
+T & F  & F & T & T & F\\
+F & T & T & F & F & T\\
+F & F & T & T & T & T
+\end{tabular} 
+\end{figure}
+Observe that the converse and inverse are logically equivalent (based on their truth table columns) and the original and the contrapositive are logically equivalent (based on their truth table columns).
+\end{defn}
+
+\begin{example} Let $p$ be the statement, ``it's raining'' and $q$ be the statement, ``it's wet outside.''  Then,
+
+\begin{center}
+\begin{tabular}{|c | l|}
+\hline
+$p \implies q$ & ``If it's raining, then it's wet out.''\\
+$(\lnot q) \implies (\lnot p)$ & ``If it's not wet out, then it's not raining.''\\
+\hline
+$q \implies p$ & ``If it's wet out, then it's raining.''\\
+$(\lnot p) \implies (\lnot q)$ & ``If it's not raining, then it's not wet out.''\\
+\hline
+\end{tabular}
+\end{center}
+\end{example}
+
+In addition to the conditional, there's a compound statement that we know well from our mathematical upbringing. 
+
+\begin{defn} The \defi{biconditional} of statements $p$ and $q$ is the compound statement ``$p$ if and only if $q$,'' denoted $p \iff q$.
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c | c }
+$p$ & $q$ & $p \iff q$ \\
+\hline
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & T 
+\end{tabular}
+\caption{The truth table for the biconditional statement $p \iff q$.}
+\end{figure}
+Some verbiage we use to describe the biconditional is, ``$p$ is necessary and sufficient for $q$.'' In particular, ``$p$ is necessary for $q$'' describes the implication $q \implies p$, and ``$p$ is sufficient for $q$'' describes the implication $p \implies q$.
+\end{defn}
+
+\begin{example}\label{biconditionalequiv}It's no surprise that \[[p \iff q] \equiv [(p \implies q) \land (q \implies p)].\] Indeed, we can see this from the truth tables:
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c | c || c | c | c }
+$p$ & $q$ & $p \iff q$ & $p \implies q$ & $q \implies p$ & $(p \implies q) \land (q \implies p)$\\
+\hline
+T & T & T & T & T & T\\
+T & F & F & F & T & F \\
+F & T & F & T & F & F\\
+F & F & T & T & T & T
+\end{tabular}
+\end{figure}
+\end{example}
+
+\begin{example}[All mathematical definitions are biconditional statements] A matrix is symmetric \textit{if and only if} it equals its own transpose.
+\end{example}
+
+\begin{example}[The contrapositve of the biconditional] From the equivalences we've established, we see
+\begin{align*}(\lnot p) \iff (\lnot q) 
+&\equiv [(\lnot p) \implies (\lnot q)] \land [(\lnot q) \implies (\lnot p)]&\text{ Example~\ref{biconditionalequiv}}\\
+&\equiv
+(q \implies p) \land (p \implies q)& \text{Contrapositve of ``$\implies$''}\\
+&\equiv p \iff q &\text{Example~\ref{biconditionalequiv}}.
+\end{align*}
+\end{example}
+
+\begin{defn} A \defi{tautology} is a compound statement that is true for all truth values of its constituent statements.  A \defi{contradiction} is a compound statement that is fall for all truth values of its constituent statements.
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c || c || c  }
+$p$ & $\lnot p$ & $p \lor (\lnot p)$ & $p \land (\lnot p)$ \\
+\hline
+T & F & T & F \\
+F & T & T & F 
+\end{tabular}
+\caption{The compound statement $p \lor (\lnot p)$ is a tautology, and the compound statement $p \land (\lnot p)$ is a contradiction.}
+\end{figure}
+
+We refer to the tautology $p \lor (\lnot p)$ as the Law of the Excluded Middle.
+\end{defn}
+
+\begin{remark}[The Logical Rule of Inference] More generally, we say that a compound implication $P \implies Q$ is a tautology whenever the truth values of the constituent propositions make $P$ true (because, in this case, $Q$ is also true).
+\end{remark} -->
