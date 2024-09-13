@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "A.3",
   "title": "Style",
-  "body": " Style  The authors...   use the appropriate LaTeX template for the course;  adhere to mathematical style conventions, such as:  using math mode for math symbols,  writing sentences that do not start in math mode,  not writing \"two-column\" proofs reminiscent of a high school geometry class,  using aligned equations when a string of equations is too long for a page,  using inline equations for minor mathematical manipulations;  using appropriate LaTeX environments (proof, prop*, example*, etc);    discern when to write an example instead of a proposition and proof;  adhere to the conventions of grammar;  write clearly and concisely in a way that does not obscure the logic or mathematics.   "
+  "body": " Style  The authors...   use the appropriate LaTeX template for the course;  adhere to mathematical style conventions, such as:   using math mode for math symbols,  writing sentences that do not start in math mode,  not writing \"two-column\" proofs reminiscent of a high school geometry class,  using aligned equations when a string of equations is too long for a page,  using inline equations for minor mathematical manipulations;  using appropriate LaTeX environments (proof, prop*, example*, etc);    discern when to write an example instead of a proposition and proof;  adhere to the conventions of grammar;  write clearly and concisely in a way that does not obscure the logic or mathematics.   "
 },
 {
   "id": "examples",
