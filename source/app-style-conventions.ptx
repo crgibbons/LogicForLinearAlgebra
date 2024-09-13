@@ -1,12 +1,16 @@
 <appendix xml:id="style-conventions-formal-mathematical-writing">
     <title>Style Conventions for Formal Mathematical Writing</title>
+    <introduction>
     <p>If you've taken proofs classes from different professors, you know that we share some basic beliefs about writing, but we also have our own quirks and preferences. (If you haven't yet taken proofs classes from different professors... get ready! We share some basic beliefs, but we also have our own quirks and preferences). What you'll see below are the guidelines that I consider the standards for submitting to the Gibbons Journal of Mathematics (by which I mean, sending in a writing assignment to be assessed in a proofs class that you're taking with me).</p>
 
-    <p>To me, mathematical writing breaks into three (entangled) pieces: Logic, Mathematics, and Style.</p>
+    <p>Mathematical writing breaks into three (entangled) pieces: Logic, Mathematics, and Style.</p>
+    </introduction>
 
       <section xml:id="logic">
         <title>Logic</title>
-        <p>The authors...</p>
+        <p> Authors should adhere to the rules of logic in such a way that their readers understand what logical techniques they are employing.</p>
+        
+        <p>In other words, the authors...</p>
         <ol>
             <li>state claims (propositions, theorems, lemmas, etc.) as logical statements;</li>
             <li>state claims appropriate to the assigned problem;</li>
@@ -40,15 +44,16 @@
         <p>The authors...</p>
         <ol>
             <li>use the appropriate LaTeX template for the course;</li>
-            <li>adhere to mathematical style conventions, such as:</li>
-            <ol>
-                <li>using math mode for math symbols,</li>
-                <li>writing sentences that do not start in math mode,</li>
-                <li>not writing "two-column" proofs reminiscent of a high school geometry class,</li>
-                <li>using aligned equations when a string of equations is too long for a page,</li>
-                <li>using inline equations for minor mathematical manipulations;</li>
-                <li>using appropriate LaTeX environments (proof, prop*, example*, etc);</li>
-            </ol>
+            <li>adhere to mathematical style conventions, such as:
+                <ol>
+                    <li>using math mode for math symbols,</li>
+                    <li>writing sentences that do not start in math mode,</li>
+                    <li>not writing "two-column" proofs reminiscent of a high school geometry class,</li>
+                    <li>using aligned equations when a string of equations is too long for a page,</li>
+                    <li>using inline equations for minor mathematical manipulations;</li>
+                    <li>using appropriate LaTeX environments (proof, prop*, example*, etc);</li>
+                </ol>
+            </li>
             <li>discern when to write an example instead of a proposition and proof;</li>
             <li>adhere to the conventions of grammar;</li>
             <li>write clearly and concisely in a way that does not obscure the logic or mathematics.</li>
