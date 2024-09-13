@@ -129,9 +129,9 @@
 
         <p> For the statement <m>\lnot(p\land q)</m> to be true, we see that we need one of <m>p</m> or <m>q</m> to be false (not necessarily both).  That is, the truth value should match the truth value of the compound statement <m>(\lnot p) \lor (\lnot q)</m>.  To verify this, we look at the truth table for the statement <m>(\lnot p) \lor (\lnot q)</m>: "(Not <m>p</m>) or (not <m>q</m>)."</p>
         <table>  
-          <title>Truth Table for <m>(\lnot p)\lor (\lnot q)</m></title>
+          <title>Truth Table for <m>(\lnot p) \lor (\lnot q)</m></title>
           <tabular halign="center">
-            <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\lnot p</m></cell><cell><m>\lnot q</m></cell><cell>(\lnot p)\lor (\lnot q)</cell></row>
+            <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>\lnot p</m></cell><cell><m>\lnot q</m></cell><cell><m>(\lnot p)\lor (\lnot q)</m></cell></row>
             <row><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
             <row><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell></row>
             <row><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell></row>
@@ -156,7 +156,39 @@
         </statement>
       </definition>
 
-      <p>Logical equivalence allows us to manipulate compound statements without changing their truth tables.</p>
+      <p>Logical equivalence allows us to manipulate compound statements without changing their truth tables. This helps us determine how to negate compound statements.</p>
+
+      <theorem xml:id="thm-de-Morgan">
+        <title>De Morgan's Laws</title>
+        <statement>
+          <p>
+            For any statements <m>p</m> and <m>q</m>,
+              <ol>
+                <li>
+                  <p>
+                    <m>\lnot (p \land q) \equiv (\lnot p) \lor (\lnot q)</m>, and
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>\lnot(p \lor q) \equiv (\lnot p) \land (\lnot q)</m>.
+                  </p>
+                </li>
+              </ol>
+          </p>
+        </statement>
+      </theorem>
+
+      <theorem xml:id="thm-double-neg">
+        <statement>
+          <p>
+            For any statement <m>p</m>,
+            <me>\lnot(\lnot p) \equiv p.</me>
+          </p>
+        </statement>
+      </theorem>
+      
+      
     </section>
   </chapter>
 

@@ -15,6 +15,9 @@
     <xi:include href="./ch-introduction.ptx" />
     <xi:include href="./ch-chapter-1-connectives.ptx" />
 
+    <!-- Include appendices -->
+    <xi:include href="./app-style-conventions.ptx" />
+
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
