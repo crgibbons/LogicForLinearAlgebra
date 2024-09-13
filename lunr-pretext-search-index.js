@@ -88,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Compound Statements",
-  "body": " Compound Statements  Negation is a function of one binary variable (that is, we \"plug in\" one statement). Conjunctions and disjunctions are functions of two binary variables (that is, we \"plug in\" two statements). We can compose logical connectives just as we can compose functions to create compound statements .  Consider the statement : \"It is not the case that ( and ).\"   Truth Table for    T T T F  T F F T  F T F T  F F F T    For the statement to be true, we see that we need one of or to be false (not necessarily both). That is, the truth value should match the truth value of the compound statement . To verify this, we look at the truth table for the statement : \"(Not ) or (not ).\"   Truth Table for   (\\lnot p)\\lor (\\lnot q)  T T F F F  T F F T T  F T T F T  F F T T T    We can see from the final column of these truth tables that the statements and correspond to the same function of and .     logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .    Logical equivalence allows us to manipulate compound statements without changing their truth tables.  "
+  "body": " Compound Statements  Negation is a function of one binary variable (that is, we \"plug in\" one statement). Conjunctions and disjunctions are functions of two binary variables (that is, we \"plug in\" two statements). We can compose logical connectives just as we can compose functions to create compound statements .  Consider the statement : \"It is not the case that ( and ).\"   Truth Table for    T T T F  T F F T  F T F T  F F F T    For the statement to be true, we see that we need one of or to be false (not necessarily both). That is, the truth value should match the truth value of the compound statement . To verify this, we look at the truth table for the statement : \"(Not ) or (not ).\"   Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T    We can see from the final column of these truth tables that the statements and correspond to the same function of and .     logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .    Logical equivalence allows us to manipulate compound statements without changing their truth tables. This helps us determine how to negate compound statements.   De Morgan's Laws   For any statements and ,    , and     .         For any statement ,     "
 },
 {
   "id": "ch-chapter-1-connectives-7-2",
@@ -114,8 +114,8 @@ var ptx_lunr_docs = [
   "url": "ch-chapter-1-connectives-7.html#ch-chapter-1-connectives-7-6",
   "type": "Table",
   "number": "2.2.2",
-  "title": "Truth Table for <span class=\"process-math\">\\((\\lnot p)\\lor (\\lnot q)\\)<\/span>",
-  "body": " Truth Table for   (\\lnot p)\\lor (\\lnot q)  T T F F F  T F F T T  F T T F T  F F T T T   "
+  "title": "Truth Table for <span class=\"process-math\">\\((\\lnot p) \\lor (\\lnot q)\\)<\/span>",
+  "body": " Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T   "
 },
 {
   "id": "def-",
@@ -125,6 +125,60 @@ var ptx_lunr_docs = [
   "number": "2.2.3",
   "title": "",
   "body": "   logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .   "
+},
+{
+  "id": "thm-de-Morgan",
+  "level": "2",
+  "url": "ch-chapter-1-connectives-7.html#thm-de-Morgan",
+  "type": "Theorem",
+  "number": "2.2.4",
+  "title": "De Morgan’s Laws.",
+  "body": " De Morgan's Laws   For any statements and ,    , and     .      "
+},
+{
+  "id": "thm-double-neg",
+  "level": "2",
+  "url": "ch-chapter-1-connectives-7.html#thm-double-neg",
+  "type": "Theorem",
+  "number": "2.2.5",
+  "title": "",
+  "body": "  For any statement ,    "
+},
+{
+  "id": "logic",
+  "level": "1",
+  "url": "logic.html",
+  "type": "Section",
+  "number": "A.1",
+  "title": "Logic",
+  "body": " Logic  The authors...   state claims (propositions, theorems, lemmas, etc.) as logical statements;  state claims appropriate to the assigned problem;  write proofs with first and last sentences that indicate the proof technique they are using;*  define notation and symbols before using them;  employ a valid proof technique for the statement as written;  employ a valid proof technique for the statement appropriate to the problem;  include all necessary cases in the proof;  write examples with a clear topic sentence;  write prose using evidence to support claims;  employ sound logic even in mathematical prose.   *this criterion relaxes a bit after the first proofs course; if you're proving a theorem directly, you can just get to the proof without repeating the hypotheses at the beginning of the proof. But if you're in your first proofs course, please include the first and last sentences that lay out your hypotheses and conclusions!  "
+},
+{
+  "id": "mathematics",
+  "level": "1",
+  "url": "mathematics.html",
+  "type": "Section",
+  "number": "A.2",
+  "title": "Mathematics",
+  "body": " Mathematics  The authors...   use definitions, theorems, and other results from the appropriate source(s) or chapter(s);  cite definitions, theorems, and other results from the appropriate source(s) or chapter(s);  cite named definitions, theorems, and results;  employ correct calculations;  address all cases and subcases;  do not re-prove prior results.   "
+},
+{
+  "id": "style",
+  "level": "1",
+  "url": "style.html",
+  "type": "Section",
+  "number": "A.3",
+  "title": "Style",
+  "body": " Style  The authors...   use the appropriate LaTeX template for the course;  adhere to mathematical style conventions, such as:   using math mode for math symbols,  writing sentences that do not start in math mode,  not writing \"two-column\" proofs reminiscent of a high school geometry class,  using aligned equations when a string of equations is too long for a page,  using inline equations for minor mathematical manipulations;  using appropriate LaTeX environments (proof, prop*, example*, etc);   discern when to write an example instead of a proposition and proof;  adhere to the conventions of grammar;  write clearly and concisely in a way that does not obscure the logic or mathematics.   "
+},
+{
+  "id": "examples",
+  "level": "1",
+  "url": "examples.html",
+  "type": "Section",
+  "number": "A.4",
+  "title": "Examples (and how to write them)",
+  "body": " Examples (and how to write them)  Here's a note about the difference between a proposition in math (versus formal logic). In math, we understand propositions (and theorems, lemmas, corollaries, etc.) to be statements that are true (and proved\/provable) so that we can cite them when we need to use them. You can see the confusion that would ensue if a paper contained \"Proposition 1: All even integers are prime\" under that assumption, even if followed immediately by a counterexample! So, if you are showing that a statement is not true as part of a writing assignment, here's what that might look like:   Example  It is not the case that every even integer is prime. Notice that the integer is even. Although divides , it divides neither nor . Therefore, by (definition of prime\/proposition about prime numbers\/whatever it is), is not prime.   To break that down into more of a template:   Example   [Topic sentence: what's the point of this example?]  [Supporting mathematical evidence, less formal than a proof, but still following the stylistic conventions of good mathematical writing!]  [Concluding sentence.]    "
 },
 {
   "id": "backmatter-2",
