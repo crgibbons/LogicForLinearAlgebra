@@ -43,8 +43,8 @@
         <title>Style</title>
         <p>The authors...</p>
         <ol>
-            <li>use the appropriate LaTeX template for the course;</li>
-            <li>adhere to mathematical style conventions, such as:
+            <li><p>use the appropriate LaTeX template for the course;</p></li>
+            <li><p>adhere to mathematical style conventions, such as:</p>
                 <ol>
                     <li>using math mode for math symbols,</li>
                     <li>writing sentences that do not start in math mode,</li>
