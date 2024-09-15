@@ -10,20 +10,11 @@ var ptx_lunr_docs = [
   "body": "  My Website   copyright  "
 },
 {
-  "id": "ch-introduction",
-  "level": "1",
-  "url": "ch-introduction.html",
-  "type": "Chapter",
-  "number": "1",
-  "title": "Introduction",
-  "body": " Introduction  In many mathematics courses, students learn how to apply known, established mathematical facts to problems that need solutions: \"Farmer Bill wants to build a rectangular pen for his sheep with 25 yards of fence material, and he would like to maximize their grazing potential. Find the dimensions of the pen he should build.\" This type of education is important, but it is also incomplete. It does not help a student learn to create mathematics.  In contrast, mathematical reasoning, built upon the foundation of formal logic, is the art of deducing consequences from basic assumptions. Over time, these consequences (called theorems among other names) invoke fewer of the basic assumptions (called axioms ) and instead rely on secondary axioms, defintions, and other theorems. As a body, mathematicians have agreed upon a specialized dialect designed to clearly and precisely describe mathematical ideas to one another. In a very small nutshell, this is why mathematicians write proofs.  This short primer is designed to introduce this dialect, built upon formal logic, so that fledgling mathematicians may begin to discover, prove, and communicate new mathematics. Moreover, it is a work in progress by Professor Gibbons; if you have comments, criticisms, or suggestions for improvement, don't hesitate to let her know.  "
-},
-{
   "id": "sec-ch1-not-and-or",
   "level": "1",
   "url": "sec-ch1-not-and-or.html",
   "type": "Section",
-  "number": "2.1",
+  "number": "1.1",
   "title": "First Connectives: Not, And, and Or",
   "body": " First Connectives: Not, And, and Or  In this section we define three logical connectives.     logical negation    The negation of a statement , denoted , is the statement: \"It is not the case that .\"  In casual conversation, we refer to the negation of a proposition as \"not \".  If we know the truth value of , then has exactly the opposite truth value. We denote this relationship with a truth table . In fact, we can take the truth table to be the defintion of the negation connective.   Truth Table for Negation    T F  F T       Negating statements  The negation of the statement, \"Hamilton College is located in Clinton, NY\" is the statement, \"It is not the case that Hamilton College is located in Clinton, NY,\" or, \"Hamilton College is not located in Clinton, NY.\"   Some logical connectives take two statements. The first of these is the logical \"and\" which we call conjunction.     logical cojunction    The conjunction of two statements and , denoted , is the statement, \" and .\"  In casual conversation, we refer to the conjunction as \" and \".  Conjunction is defined by the truth table below.   Truth Table for Conjunction    T T T  T F F  F T F  F F F       Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is false no matter what statement follows the \"and.\" In order for a conjunction of two statements to be true, both original statements must be true.   The next connective is the logical \"or\" which we call disjunction.     logical disjunction    The disjunction of two statements and , denoted , is the statement, \" or .\"  In casual conversation, we refer to the disjunction as \" or \".  Disjunction is defined by the truth table below.   Truth Table for Disjunction    T T T  T F T  F T T  F F F       Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is only false if the statement is false.   "
 },
@@ -32,7 +23,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ch1-not-and-or.html#sec-ch1-not-and-or-3",
   "type": "Definition",
-  "number": "2.1.1",
+  "number": "1.1.1",
   "title": "",
   "body": "   logical negation    The negation of a statement , denoted , is the statement: \"It is not the case that .\"  In casual conversation, we refer to the negation of a proposition as \"not \".  If we know the truth value of , then has exactly the opposite truth value. We denote this relationship with a truth table . In fact, we can take the truth table to be the defintion of the negation connective.   Truth Table for Negation    T F  F T     "
 },
@@ -41,7 +32,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ch1-not-and-or.html#sec-ch1-not-and-or-4",
   "type": "Example",
-  "number": "2.1.3",
+  "number": "1.1.3",
   "title": "Negating statements.",
   "body": " Negating statements  The negation of the statement, \"Hamilton College is located in Clinton, NY\" is the statement, \"It is not the case that Hamilton College is located in Clinton, NY,\" or, \"Hamilton College is not located in Clinton, NY.\"  "
 },
@@ -50,7 +41,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ch1-not-and-or.html#sec-ch1-not-and-or-6",
   "type": "Definition",
-  "number": "2.1.4",
+  "number": "1.1.4",
   "title": "",
   "body": "   logical cojunction    The conjunction of two statements and , denoted , is the statement, \" and .\"  In casual conversation, we refer to the conjunction as \" and \".  Conjunction is defined by the truth table below.   Truth Table for Conjunction    T T T  T F F  F T F  F F F     "
 },
@@ -59,7 +50,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ch1-not-and-or.html#sec-ch1-not-and-or-7",
   "type": "Example",
-  "number": "2.1.6",
+  "number": "1.1.6",
   "title": "",
   "body": " Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is false no matter what statement follows the \"and.\" In order for a conjunction of two statements to be true, both original statements must be true.  "
 },
@@ -68,7 +59,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ch1-not-and-or.html#sec-ch1-not-and-or-9",
   "type": "Definition",
-  "number": "2.1.7",
+  "number": "1.1.7",
   "title": "",
   "body": "   logical disjunction    The disjunction of two statements and , denoted , is the statement, \" or .\"  In casual conversation, we refer to the disjunction as \" or \".  Disjunction is defined by the truth table below.   Truth Table for Disjunction    T T T  T F T  F T T  F F F     "
 },
@@ -77,7 +68,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-ch1-not-and-or.html#sec-ch1-not-and-or-10",
   "type": "Example",
-  "number": "2.1.9",
+  "number": "1.1.9",
   "title": "",
   "body": " Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is only false if the statement is false.  "
 },
@@ -86,7 +77,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ch-chapter-1-connectives-4.html",
   "type": "Section",
-  "number": "2.2",
+  "number": "1.2",
   "title": "Compound Statements",
   "body": " Compound Statements  Negation is a function of one binary variable (that is, we \"plug in\" one statement). Conjunctions and disjunctions are functions of two binary variables (that is, we \"plug in\" two statements). We can compose logical connectives just as we can compose functions to create compound statements .  Consider the statement : \"It is not the case that ( and ).\"   Truth Table for    T T T F  T F F T  F T F T  F F F T    For the statement to be true, we see that we need one of or to be false (not necessarily both). That is, the truth value should match the truth value of the compound statement . To verify this, we look at the truth table for the statement : \"(Not ) or (not ).\"   Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T    We can see from the final column of these truth tables that the statements and correspond to the same function of and .     logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .    Logical equivalence allows us to manipulate compound statements without changing their truth tables. This helps us determine how to negate compound statements.   De Morgan's Laws   For any statements and ,    , and     .        The Law of the Double Negative   For any statement ,     "
 },
@@ -104,7 +95,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-4.html#ch-chapter-1-connectives-4-4",
   "type": "Table",
-  "number": "2.2.1",
+  "number": "1.2.1",
   "title": "Truth Table for <span class=\"process-math\">\\(\\lnot(p\\land q)\\)<\/span>",
   "body": " Truth Table for    T T T F  T F F T  F T F T  F F F T   "
 },
@@ -113,7 +104,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-4.html#ch-chapter-1-connectives-4-6",
   "type": "Table",
-  "number": "2.2.2",
+  "number": "1.2.2",
   "title": "Truth Table for <span class=\"process-math\">\\((\\lnot p) \\lor (\\lnot q)\\)<\/span>",
   "body": " Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T   "
 },
@@ -122,7 +113,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-4.html#def-equivalence",
   "type": "Definition",
-  "number": "2.2.3",
+  "number": "1.2.3",
   "title": "",
   "body": "   logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .   "
 },
@@ -131,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-4.html#thm-de-Morgan",
   "type": "Theorem",
-  "number": "2.2.4",
+  "number": "1.2.4",
   "title": "De Morgan’s Laws.",
   "body": " De Morgan's Laws   For any statements and ,    , and     .      "
 },
@@ -140,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-4.html#thm-double-neg",
   "type": "Theorem",
-  "number": "2.2.5",
+  "number": "1.2.5",
   "title": "The Law of the Double Negative.",
   "body": " The Law of the Double Negative   For any statement ,    "
 },
@@ -149,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ch-chapter-1-connectives-5.html",
   "type": "Section",
-  "number": "2.3",
+  "number": "1.3",
   "title": "Conditional and Biconditional Statements",
   "body": " Conditional and Biconditional Statements  The last two logical connectives deal with implication.     Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.  Truth Table for Implication    T T T  T F F  F T T  F F T   An implication in which the premise is false is called vacuously true .    You may be looking at the last two rows of the truth table and wondering what's going on. For lay people, the statement is meaningless when is false. But then wouldn't be a statement. Statements must have a truth value!   Consider the statement, \"If two is odd, then one is even.\" The constituent statements \"two is odd\" and \"one is even\" are both false, and the compound statement is defined to true. Any implication with the premise \"two is odd\" is vacuously true.   In formal mathematical logic, no causation in implied by an if-then statement. That is, the statement, \"If it's raining, then it's wet outside\" doesn't the same thing as, \"It's wet outside because it is raining.\" For all we know, it could be wet outside because someone sprayed everything down with a fire hose. And so, even though the statement, \"If , then Mars is a planet,\" is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise (\"Mars is a planet\" is true regardless of arithmetic!).   Negating Implications   For any statements and ,    , and     .        We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification fpr     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have    There are three implications that are related to the statement , and they are defined as follows.    Let and be statements and consider the implication . The converse of is the statement . The inverse of is the statement . The contrapositive of is the statement .    Observe that the implication is logically equivalent to its contrapositive . The converse is logically equivalent to the inverse .    Let be the statement, \"It's raining,\" and be the statement, \"It's wet outside.\" Match the sentences to the correct compound statements.    Implication  If it's raining, then it's wet outside.    Converse of  If it's wet ouside, then it's raining.    Inverse of  If it's not raining, then it's not wet outside.    Contrapositive of  If it's not wet outside, then it's not raining.    "
 },
@@ -158,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-5.html#def-implication",
   "type": "Definition",
-  "number": "2.3.1",
+  "number": "1.3.1",
   "title": "",
   "body": "   Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.  Truth Table for Implication    T T T  T F F  F T T  F F T   An implication in which the premise is false is called vacuously true .   "
 },
@@ -167,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-5.html#ch-chapter-1-connectives-5-5",
   "type": "Example",
-  "number": "2.3.3",
+  "number": "1.3.3",
   "title": "",
   "body": " Consider the statement, \"If two is odd, then one is even.\" The constituent statements \"two is odd\" and \"one is even\" are both false, and the compound statement is defined to true. Any implication with the premise \"two is odd\" is vacuously true.  "
 },
@@ -176,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-5.html#thm-neg-imp",
   "type": "Theorem",
-  "number": "2.3.4",
+  "number": "1.3.4",
   "title": "Negating Implications.",
   "body": " Negating Implications   For any statements and ,    , and     .      "
 },
@@ -185,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-5.html#ch-chapter-1-connectives-5-8",
   "type": "Proof",
-  "number": "2.3.1",
+  "number": "1.3.1",
   "title": "",
   "body": " We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification fpr     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have   "
 },
@@ -194,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-5.html#def-implications-related",
   "type": "Definition",
-  "number": "2.3.6",
+  "number": "1.3.6",
   "title": "",
   "body": "  Let and be statements and consider the implication . The converse of is the statement . The inverse of is the statement . The contrapositive of is the statement .   "
 },
@@ -203,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ch-chapter-1-connectives-5.html#ch-chapter-1-connectives-5-12",
   "type": "Checkpoint",
-  "number": "2.3.7",
+  "number": "1.3.7",
   "title": "",
   "body": "  Let be the statement, \"It's raining,\" and be the statement, \"It's wet outside.\" Match the sentences to the correct compound statements.    Implication  If it's raining, then it's wet outside.    Converse of  If it's wet ouside, then it's raining.    Inverse of  If it's not raining, then it's not wet outside.    Contrapositive of  If it's not wet outside, then it's not raining.   "
 },
