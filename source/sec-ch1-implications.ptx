@@ -1,0 +1,229 @@
+<section>
+    <title>Conditional and Biconditional Statements</title>
+    
+    <p>The last two logical connectives deal with implication.</p>
+        
+    <definition xml:id="def-implication">
+        <notation>
+            <usage><m>\implies</m></usage>
+          <description>Logical implication</description>
+        </notation>
+
+        <statement>
+            <p>
+                The compound statement "if <m>p</m>, then <m>q</m>" or "<m>p</m> implies <m>q</m>"
+                 is called an <term>implication</term> or a <term>conditional statement</term>, denoted <m>p \implies q</m>,
+                 where <m>p</m> is referred to as the <term>hypothesis</term> or <term>premise</term> and <m>q</m> is referred to
+                 as the <term>conclusion</term>. The implication is defined by the truth table below.
+
+                 <table>
+                    <title>Truth Table for Implication</title>
+                    <tabular halign="center">
+                    <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\lor q</m></cell></row>
+                    <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
+                    <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell></row>
+                    <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell></row>
+                    <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell></row>
+                    </tabular>
+                </table>
+
+                An implication in which the premise is false is called <term>vacuously true</term>.
+            </p>
+        </statement>
+    </definition>
+    
+    <p>You may be looking at the last two rows of the truth table and wondering what's going on. For lay people, the statement <m>p \implies q</m>
+        is meaningless when <m>p</m> is false. But then <m>p \implies q</m> wouldn't be a statement. Statements must have a truth value!</p>
+
+    <example>
+        <p> 
+            Consider the statement, "If two is odd, then one is even." The constituent statements "two is odd" and "one is even" are both false,
+            and the compound statement is defined to true. Any implication with the premise "two is odd" is vacuously true.
+        </p>
+    </example>
+
+    <p>In formal mathematical logic, no causation in implied by an if-then statement. That is, the statement, "If it's raining, then it's wet outside"
+    doesn't the same thing as, "It's wet outside <em>because</em> it is raining." For all we know, it could be wet outside because someone sprayed
+    everything down with a fire hose. And so, even though the statement, "If <m>2+2=5</m>, then Mars is a planet," is a true statement, we don't infer
+    that the truth of the conclusion is dependent on its causal relationship to the premise ("Mars is a planet" is true regardless of arithmetic!).</p>
+
+    <theorem xml:id="thm-neg-imp">
+        <title>Negating Implications</title>
+        <statement>
+            <p>
+                For any statements <m>p</m> and <m>q</m>,
+                <ol>
+                    <li>
+                        <p>
+                            <m>\lnot(p \implies q) \equiv p \land (\lnot q)</m>, and
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>p \implies q \equiv (\lnot p) \lor q</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </theorem>
+    
+    <proof>
+        <p>
+            We see from the truth tables for <m>\lnot(p \implies q)</m> and <m>p \land (\lnot q)</m> that these statements are logically equivalent. Indeed,
+            we have
+            <table>
+            <title><p>Truth Table Verification fpr <m>\lnot(p \implies q) \equiv p \land(\lnot q)</m></p></title>
+            <tabular halign="center">
+                <row header = "yes" bottom = "minor">
+                     <cell><m>p</m></cell><cell right="minor"><m>q</m></cell><cell><m>p \implies q</m></cell><cell><m>\lnot (p \implies q)</m></cell><cell><m>\lnot q</m></cell><cell><m>p \land (\lnot q)</m></cell></row>
+                <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+                <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+                <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+                <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell></row>
+            </tabular>
+            </table>
+            as desired.
+        </p>
+
+        <p> For the remaining equivalence, we have
+            <md>
+                <mrow>    p \implies q \amp\equiv \lnot\left(\lnot(p \implies q)\right) \amp\text{by the Law of the Double Negative,}</mrow>
+                <mrow>                 \amp\equiv \lnot\left(p \land(\lnot q)\right) \amp\text{by the previous equivalence,}</mrow>
+                <mrow>                 \amp\equiv (\lnot p) \lor \left(\lnot(\lnot q)\right) \amp\text{by De Morgan's Law,}</mrow>
+                <mrow>                \amp\equiv (\lnot p) \lor q \amp\text{by the Law of the Double Negative.}</mrow>
+            </md>
+        </p>
+    </proof>
+
+    <p>There are three implications that are related to the statement <m>p \implies q</m>, and they are defined as follows.</p>
+    
+    <definition xml:id="def-implications-related">
+        <statement>
+            <p>
+                Let <m>p</m> and <m>q</m> be statements and consider the implication <m>p \implies q</m>. The <term>converse of <m>p \implies q</m></term>
+                is the statement <m>q \implies p</m>. The <term>inverse of <m>p \implies q</m></term> is the statement <m>(\lnot p) \implies (\lnot q)</m>.
+                The <term>contrapositive of <m>p \implies q</m></term> is the statement <m>(\lnot q) \implies (\lnot p)</m>.
+            </p>
+        </statement>
+    </definition>
+            
+    <p>Observe that the implication <m>p \implies q</m> is logically equivalent to its contrapositive <m>(\lnot q) \implies (\lnot p)</m>. The converse
+    <m>q \implies p</m> is logically equivalent to the inverse <m>(\lnot p) \implies (\lnot q)</m>.</p>
+
+    <exercise>
+        <p>
+            
+        </p>
+
+        <task>
+            <statement>
+                <p>
+                    Let <m>p</m> be the statement, "It's raining," and <m>q</m> be the statement, "It's wet outside." Match the sentences to the correct compound statements.
+                </p>
+            </statement>
+            <matches>
+                <match order="1">
+                    <premise>Implication <m>p \implies q</m></premise>
+                    <response>If it's raining, then it's wet outside.</response>
+                </match>
+                <match order="">
+                    <premise>Converse of <m>p \implies q</m></premise>
+                    <response>If it's wet ouside, then it's raining.</response>
+                </match>
+                <match order="">
+                    <premise>Inverse of <m>p \implies q</m></premise>
+                    <response>If it's not raining, then it's not wet outside.</response>
+                </match>
+                <match order="">
+                    <premise>Contrapositive of <m>p \implies q</m></premise>
+                    <response>If it's not wet outside, then it's not raining.</response>
+                </match>
+            </matches>
+        </task>
+    </exercise>
+
+</section>
+
+<!-- 
+\begin{example} Let $p$ be the statement, ``it's raining'' and $q$ be the statement, ``it's wet outside.''  Then,
+
+\begin{center}
+\begin{tabular}{|c | l|}
+\hline
+$p \implies q$ & ``If it's raining, then it's wet out.''\\
+$(\lnot q) \implies (\lnot p)$ & ``If it's not wet out, then it's not raining.''\\
+\hline
+$q \implies p$ & ``If it's wet out, then it's raining.''\\
+$(\lnot p) \implies (\lnot q)$ & ``If it's not raining, then it's not wet out.''\\
+\hline
+\end{tabular}
+\end{center}
+\end{example}
+
+In addition to the conditional, there's a compound statement that we know well from our mathematical upbringing. 
+
+\begin{defn} The \defi{biconditional} of statements $p$ and $q$ is the compound statement ``$p$ if and only if $q$,'' denoted $p \iff q$.
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c | c }
+$p$ & $q$ & $p \iff q$ \\
+\hline
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & T 
+\end{tabular}
+\caption{The truth table for the biconditional statement $p \iff q$.}
+\end{figure}
+Some verbiage we use to describe the biconditional is, ``$p$ is necessary and sufficient for $q$.'' In particular, ``$p$ is necessary for $q$'' describes the implication $q \implies p$, and ``$p$ is sufficient for $q$'' describes the implication $p \implies q$.
+\end{defn}
+
+\begin{example}\label{biconditionalequiv}It's no surprise that \[[p \iff q] \equiv [(p \implies q) \land (q \implies p)].\] Indeed, we can see this from the truth tables:
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c | c || c | c | c }
+$p$ & $q$ & $p \iff q$ & $p \implies q$ & $q \implies p$ & $(p \implies q) \land (q \implies p)$\\
+\hline
+T & T & T & T & T & T\\
+T & F & F & F & T & F \\
+F & T & F & T & F & F\\
+F & F & T & T & T & T
+\end{tabular}
+\end{figure}
+\end{example}
+
+\begin{example}[All mathematical definitions are biconditional statements] A matrix is symmetric \textit{if and only if} it equals its own transpose.
+\end{example}
+
+\begin{example}[The contrapositve of the biconditional] From the equivalences we've established, we see
+\begin{align*}(\lnot p) \iff (\lnot q) 
+&\equiv [(\lnot p) \implies (\lnot q)] \land [(\lnot q) \implies (\lnot p)]&\text{ Example~\ref{biconditionalequiv}}\\
+&\equiv
+(q \implies p) \land (p \implies q)& \text{Contrapositve of ``$\implies$''}\\
+&\equiv p \iff q &\text{Example~\ref{biconditionalequiv}}.
+\end{align*}
+\end{example}
+
+\begin{defn} A \defi{tautology} is a compound statement that is true for all truth values of its constituent statements.  A \defi{contradiction} is a compound statement that is fall for all truth values of its constituent statements.
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c | c || c || c  }
+$p$ & $\lnot p$ & $p \lor (\lnot p)$ & $p \land (\lnot p)$ \\
+\hline
+T & F & T & F \\
+F & T & T & F 
+\end{tabular}
+\caption{The compound statement $p \lor (\lnot p)$ is a tautology, and the compound statement $p \land (\lnot p)$ is a contradiction.}
+\end{figure}
+
+We refer to the tautology $p \lor (\lnot p)$ as the Law of the Excluded Middle.
+\end{defn}
+
+\begin{remark}[The Logical Rule of Inference] More generally, we say that a compound implication $P \implies Q$ is a tautology whenever the truth values of the constituent propositions make $P$ true (because, in this case, $Q$ is also true).
+\end{remark}
+
+-->

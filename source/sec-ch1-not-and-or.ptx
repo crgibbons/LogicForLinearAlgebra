@@ -1,0 +1,92 @@
+<section xml:id="sec-ch1-not-and-or">
+<title>First Connectives: Not, And, and Or</title>
+<p>In this section we define three logical connectives.</p>
+
+<definition>
+    <notation>
+    <usage><m>\lnot</m></usage>
+    <description>logical negation</description>
+    </notation>
+
+    <statement>
+    <p>The <term>negation</term> of a statement <m>p</m>, denoted <m>\lnot p</m>, is the statement: "It is not the case that <m>p</m>."</p>
+    <p>In casual conversation, we refer to the negation of a proposition <m>p</m> as "not <m>p</m>".</p>
+
+    <p> If we know the truth value of <m>p</m>, then <m>\lnot p</m> has exactly the opposite truth value.  We denote this relationship with a <term>truth table</term>. In fact, we can take the truth table to be the defintion of the negation connective.</p>
+
+    <table>
+        <title>Truth Table for Negation</title>
+        <tabular halign="center">
+            <row header = "yes" bottom = "minor"><cell right="minor"><m>p</m></cell><cell><m>\lnot p</m></cell></row>
+            <row><cell right="minor">T</cell><cell>F</cell></row>
+            <row><cell right="minor">F</cell><cell>T</cell></row>
+        </tabular>
+        </table>
+    </statement>
+</definition>
+
+<example>
+    <title>Negating statements</title>
+    <p> The negation of the statement, "Hamilton College is located in Clinton, NY" is the statement, "It is not the case that Hamilton College is located in Clinton, NY," or, "Hamilton College is not located in Clinton, NY."</p>
+</example>
+
+<p>Some logical connectives take two statements. The first of these is the logical "and" which we call conjunction.</p>
+
+<definition> 
+    <notation>
+    <usage><m>\land</m></usage>
+    <description>logical cojunction</description>
+    </notation>
+
+    <statement>
+    <p>The <term>conjunction</term> of two statements <m>p</m> and <m>q</m>, denoted <m>p \land q</m>, is the statement, "<m>p</m> and <m>q</m>."</p>
+    <p>In casual conversation, we refer to the conjunction as "<m>p</m> and <m>q</m>".</p>
+    <p> Conjunction is defined by the truth table below. </p>
+
+    <table>
+        <title>Truth Table for Conjunction</title>
+        <tabular halign="center">
+        <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell right="minor"><m>q</m></cell><cell><m>p\land q</m></cell></row>
+        <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
+        <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell></row>
+        <row><cell>F</cell><cell right="minor">T</cell><cell>F</cell></row>
+        <row><cell>F</cell><cell right="minor">F</cell><cell>F</cell></row>
+        </tabular>
+    </table>
+    </statement>
+</definition>
+
+<example>
+    <p>Consider the unambiguously false statement, "A banana is a natural number."  Then the statement, "A banana is a natural number and <m>p</m>" is false no matter what statement <m>p</m> follows the "and."  In order for a conjunction of two statements to be true, both original statements must be true.</p>
+</example>
+
+<p>The next connective is the logical "or" which we call disjunction.</p>
+
+<definition> 
+    <notation>
+    <usage><m>\lor</m></usage>
+    <description>logical disjunction</description>
+    </notation>
+
+    <statement>
+    <p>The <term>disjunction</term> of two statements <m>p</m> and <m>q</m>, denoted <m>p \lor q</m>, is the statement, "<m>p</m> or <m>q</m>."</p>
+    <p>In casual conversation, we refer to the disjunction as "<m>p</m> or <m>q</m>".</p>
+    <p> Disjunction is defined by the truth table below. </p>
+
+    <table>
+        <title>Truth Table for Disjunction</title>
+        <tabular halign="center">
+        <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell right="minor"><m>q</m></cell><cell><m>p\lor q</m></cell></row>
+        <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
+        <row><cell>T</cell><cell right="minor">F</cell><cell>T</cell></row>
+        <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell></row>
+        <row><cell>F</cell><cell right="minor">F</cell><cell>F</cell></row>
+        </tabular>
+    </table>
+    </statement>
+</definition>
+
+<example>
+    <p>Consider the unambiguously false statement, "A banana is a natural number."  Then the statement, "A banana is a natural number and <m>p</m>" is only false if the statement <m>p</m> is false.</p>
+</example>
+</section>

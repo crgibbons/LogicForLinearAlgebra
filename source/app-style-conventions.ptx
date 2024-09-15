@@ -1,9 +1,9 @@
 <appendix xml:id="style-conventions-formal-mathematical-writing">
     <title>Style Conventions for Formal Mathematical Writing</title>
     <introduction>
-    <p>If you've taken proofs classes from different professors, you know that we share some basic beliefs about writing, but we also have our own quirks and preferences. (If you haven't yet taken proofs classes from different professors... get ready! We share some basic beliefs, but we also have our own quirks and preferences). What you'll see below are the guidelines that I consider the standards for submitting to the Gibbons Journal of Mathematics (by which I mean, sending in a writing assignment to be assessed in a proofs class that you're taking with me).</p>
+      <p>If you've taken proofs classes from different professors, you know that we share some basic beliefs about writing, but we also have our own quirks and preferences. (If you haven't yet taken proofs classes from different professors... get ready! We share some basic beliefs, but we also have our own quirks and preferences). What you'll see below are the guidelines that I consider the standards for submitting to the Gibbons Journal of Mathematics (by which I mean, sending in a writing assignment to be assessed in a proofs class that you're taking with me).</p>
 
-    <p>Mathematical writing breaks into three (entangled) pieces: Logic, Mathematics, and Style.</p>
+      <p>Mathematical writing breaks into three (entangled) pieces: Logic, Mathematics, and Style.</p>
     </introduction>
 
       <section xml:id="logic">
@@ -12,16 +12,16 @@
         
         <p>In other words, the authors...</p>
         <ol>
-            <li>state claims (propositions, theorems, lemmas, etc.) as logical statements;</li>
-            <li>state claims appropriate to the assigned problem;</li>
-            <li>write proofs with first and last sentences that indicate the proof technique they are using;*</li>
-            <li>define notation and symbols before using them;</li>
-            <li>employ a valid proof technique for the statement as written;</li>
-            <li>employ a valid proof technique for the statement appropriate to the problem;</li>
-            <li>include all necessary cases in the proof;</li>
-            <li>write examples with a clear topic sentence;</li>
-            <li>write prose using evidence to support claims;</li>
-            <li>employ sound logic even in mathematical prose.</li>
+            <li><p>state claims (propositions, theorems, lemmas, etc.) as logical statements;</p></li>
+            <li><p>state claims appropriate to the assigned problem;</p></li>
+            <li><p>write proofs with first and last sentences that indicate the proof technique they are using;*</p></li>
+            <li><p>define notation and symbols before using them;</p></li>
+            <li><p>employ a valid proof technique for the statement as written;</p></li>
+            <li><p>employ a valid proof technique for the statement appropriate to the problem;</p></li>
+            <li><p>include all necessary cases in the proof;</p></li>
+            <li><p>write examples with a clear topic sentence;</p></li>
+            <li><p>write prose using evidence to support claims;</p></li>
+            <li><p>employ sound logic even in mathematical prose.</p></li>
         </ol>
         <p>*this criterion relaxes a bit after the first proofs course; if you're proving a theorem directly, you can just get to the proof without repeating the hypotheses at the beginning of the proof. But if you're in your first proofs course, please include the first and last sentences that lay out your hypotheses and conclusions!</p>
       </section>
@@ -30,12 +30,12 @@
         <title>Mathematics</title>
         <p>The authors...</p>
         <ol>
-            <li>use definitions, theorems, and other results from the appropriate source(s) or chapter(s);</li>
-            <li>cite definitions, theorems, and other results from the appropriate source(s) or chapter(s);</li>
-            <li>cite named definitions, theorems, and results;</li>
-            <li>employ correct calculations;</li>
-            <li>address all cases and subcases;</li>
-            <li>do not re-prove prior results.</li>
+            <li><p>use definitions, theorems, and other results from the appropriate source(s) or chapter(s);</p></li>
+            <li><p>cite definitions, theorems, and other results from the appropriate source(s) or chapter(s);</p></li>
+            <li><p>cite named definitions, theorems, and results;</p></li>
+            <li><p>employ correct calculations;</p></li>
+            <li><p>address all cases and subcases;</p></li>
+            <li><p>do not re-prove prior results.</p></li>
         </ol>
       </section>
 
@@ -46,17 +46,17 @@
             <li><p>use the appropriate LaTeX template for the course;</p></li>
             <li><p>adhere to mathematical style conventions, such as:</p>
                 <ol>
-                    <li>using math mode for math symbols,</li>
-                    <li>writing sentences that do not start in math mode,</li>
-                    <li>not writing "two-column" proofs reminiscent of a high school geometry class,</li>
-                    <li>using aligned equations when a string of equations is too long for a page,</li>
-                    <li>using inline equations for minor mathematical manipulations;</li>
-                    <li>using appropriate LaTeX environments (proof, prop*, example*, etc);</li>
+                    <li><p>using math mode for math symbols,</p></li>
+                    <li><p>writing sentences that do not start in math mode,</p></li>
+                    <li><p>not writing "two-column" proofs reminiscent of a high school geometry class,</p></li>
+                    <li><p>using aligned equations when a string of equations is too long for a page,</p></li>
+                    <li><p>using inline equations for minor mathematical manipulations,</p></li>
+                    <li><p>using appropriate LaTeX environments (proof, prop*, example*, etc);</p></li>
                 </ol>
             </li>
-            <li>discern when to write an example instead of a proposition and proof;</li>
-            <li>adhere to the conventions of grammar;</li>
-            <li>write clearly and concisely in a way that does not obscure the logic or mathematics.</li>
+            <li><p>discern when to write an example instead of a proposition and proof;</p></li>
+            <li><p>adhere to the conventions of grammar;</p></li>
+            <li><p>write clearly and concisely in a way that does not obscure the logic or mathematics.</p></li>
         </ol>
       </section>
 
