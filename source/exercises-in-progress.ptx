@@ -16,96 +16,63 @@
     </statement>
     <evaluation>
         <evaluate> <!-- 1 -->
-            <test correct="yes">
+            <test>
                 <strcmp use-answer="yes"/>
             </test>
         </evaluate>
         <evaluate> <!-- 2 -->
-            <test correct="yes">
-                <strcmp use-answer='yes'/>
-            </test>
             <test>
-                <strcmp>,*</strcmp>
+                <strcmp use-answer='yes'/>
             </test>
         </evaluate>
         <evaluate> <!-- 3 -->
             <test>
                 <strcmp use-answer='yes'/>
             </test>
-            <test>
-                <strcmp>,*</strcmp>
-            </test>
         </evaluate>
         <evaluate> <!-- 4 -->
             <test>
                 <strcmp use-answer='yes'/>
-            </test>
-            <test>
-                <strcmp>,*</strcmp>
             </test>
         </evaluate>
         <evaluate> <!-- 5 -->
             <test>
                 <strcmp use-answer='yes'/>
             </test>
-            <test>
-                <strcmp>,*</strcmp>
-            </test>
         </evaluate>
         <evaluate> <!-- 6 -->
             <test>
                 <strcmp use-answer='yes'/>
-            </test>
-            <test>
-                <strcmp>,*</strcmp>
             </test>
         </evaluate>
         <evaluate> <!-- 7 -->
             <test>
                 <strcmp use-answer='yes'/>
             </test>
-            <test>
-                <strcmp>,*</strcmp>
-            </test>
         </evaluate>
         <evaluate> <!-- 8 -->
             <test>
                 <strcmp use-answer='yes'/>
-            </test>
-            <test>
-                <strcmp>,*</strcmp>
             </test>
         </evaluate>
         <evaluate> <!-- 9 -->
             <test>
                 <strcmp use-answer='yes'/>
             </test>
-            <test>
-                <strcmp>,*</strcmp>
-            </test>
         </evaluate>
         <evaluate> <!-- 10 -->
             <test>
                 <strcmp use-answer='yes'/>
-            </test>
-            <test>
-                <strcmp>,*</strcmp>
             </test>
         </evaluate>
         <evaluate> <!-- 11 -->
             <test>
                 <strcmp use-answer='yes'/>
             </test>
-            <test>
-                <strcmp>,*</strcmp>
-            </test>
         </evaluate>
         <evaluate> <!-- 12 -->
             <test>
                 <strcmp use-answer='yes'/>
-            </test>
-            <test>
-                <strcmp>,*</strcmp>
             </test>
         </evaluate>
     </evaluation>

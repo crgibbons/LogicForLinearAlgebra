@@ -14,21 +14,20 @@
                 The compound statement "if <m>p</m>, then <m>q</m>" or "<m>p</m> implies <m>q</m>"
                  is called an <term>implication</term> or a <term>conditional statement</term>, denoted <m>p \implies q</m>,
                  where <m>p</m> is referred to as the <term>hypothesis</term> or <term>premise</term> and <m>q</m> is referred to
-                 as the <term>conclusion</term>. The implication is defined by the truth table below.
+                 as the <term>conclusion</term>. The implication is defined by the truth table below.</p>
 
-                 <table>
-                    <title>Truth Table for Implication</title>
-                    <tabular halign="center">
-                    <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\lor q</m></cell></row>
-                    <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
-                    <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell></row>
-                    <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell></row>
-                    <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell></row>
-                    </tabular>
-                </table>
+            <table>
+                <title>Truth Table for Implication</title>
+                <tabular halign="center">
+                <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\implies q</m></cell></row>
+                <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
+                <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell></row>
+                <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell></row>
+                <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell></row>
+                </tabular>
+            </table>
 
-                An implication in which the premise is false is called <term>vacuously true</term>.
-            </p>
+            <p>An implication in which the premise is false is called <term>vacuously true</term>.</p>
         </statement>
     </definition>
     
@@ -112,104 +111,179 @@
     <m>q \implies p</m> is logically equivalent to the inverse <m>(\lnot p) \implies (\lnot q)</m>.</p>
 
     <exercise>
-        <p>
-            
-        </p>
-
-        <task>
-            <statement>
-                <p>
-                    Let <m>p</m> be the statement, "It's raining," and <m>q</m> be the statement, "It's wet outside." Match the sentences to the correct compound statements.
-                </p>
-            </statement>
-            <matches>
-                <match order="1">
-                    <premise>Implication <m>p \implies q</m></premise>
-                    <response>If it's raining, then it's wet outside.</response>
-                </match>
-                <match order="">
-                    <premise>Converse of <m>p \implies q</m></premise>
-                    <response>If it's wet ouside, then it's raining.</response>
-                </match>
-                <match order="">
-                    <premise>Inverse of <m>p \implies q</m></premise>
-                    <response>If it's not raining, then it's not wet outside.</response>
-                </match>
-                <match order="">
-                    <premise>Contrapositive of <m>p \implies q</m></premise>
-                    <response>If it's not wet outside, then it's not raining.</response>
-                </match>
-            </matches>
-        </task>
+        <statement>
+            <p>
+                Let <m>p</m> be the statement, "It's raining," and <m>q</m> be the statement, "It's wet outside." Match the sentences to the correct compound statements.
+            </p>
+        </statement>
+        <matches>
+            <match order="">
+                <premise>Implication <m>p \implies q</m></premise>
+                <response>If it's raining, then it's wet outside.</response>
+            </match>
+            <match order="">
+                <premise>Converse of <m>p \implies q</m></premise>
+                <response>If it's wet ouside, then it's raining.</response>
+            </match>
+            <match order="">
+                <premise>Inverse of <m>p \implies q</m></premise>
+                <response>If it's not raining, then it's not wet outside.</response>
+            </match>
+            <match order="">
+                <premise>Contrapositive of <m>p \implies q</m></premise>
+                <response>If it's not wet outside, then it's not raining.</response>
+            </match>
+        </matches>
     </exercise>
 
+    <exercise label="fillin-string-integer-new">
+        <title>Fill-In, String and Number Answers</title>
+
+        <statement>
+            <p>Complete the following line of a Python program so that it will declare an integer variable <c>age</c> with an initial value of <c>5</c>.</p>
+            <table>
+                <tabular>
+                    <row>
+                        <cell><fillin mode="string" answer="int"/></cell><cell><fillin mode="number" answer="5"/></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+        <evaluation>
+            <evaluate>
+                <test>
+                    <strcmp use-answer='yes'/>
+                    <feedback>
+                      <p>A variable of type <c>int</c> is appropriate for whole number ages.</p>
+                    </feedback>
+                </test>
+                <test>
+                    <strcmp>.*</strcmp>
+                    <feedback>
+                        <p>Remember that Java uses just the first three letters of the word <q>integer</q> to define an integral type.</p>
+                    </feedback>
+                </test>
+            </evaluate>
+            <evaluate>
+                <test>
+                    <numcmp use-answer='yes'/>
+                    <feedback>
+                        <p>An integer variable may be initialized to a value.</p>
+                    </feedback>
+                </test>
+                <test>
+                    <strcmp>.*</strcmp>
+                    <feedback>
+                        <p>Use <c>5</c> as the initial value of the variable.</p>
+                    </feedback>
+                </test>
+            </evaluate>
+        </evaluation>
+    </exercise>
+
+    In addition to the conditional statement <m>p \implies q</m>, there's another compound statement that we know well from mathematics.
+
+    <definition xml:id="def-biconditional">
+        <notation>
+            <usage><m>\iff</m>></usage>
+          <description>biconditional</description>
+        </notation>
+        <statement>
+            <p>
+                The <term>biconditional</term> of statements <m>p</m> and <m>q</m> is the compound statement "<m>p</m> if and only if <m>q</m>," denoted <m>p \iff q</m>.
+                It is defined by the truth table below.
+            </p>
+            <table>
+                <title>Truth Table for Implication</title>
+                <tabular halign="center">
+                <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\iff q</m></cell></row>
+                <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
+                <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell></row>
+                <row><cell>F</cell><cell right="minor">T</cell><cell>F</cell></row>
+                <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell></row>
+                </tabular>
+            </table>
+        </statement>
+    </definition>
+
+    <exercise>
+        <statement>
+            <p>
+                Verify the logical equivalence <m>p \iff q \equiv (p \implies q) \land (q \implies p)</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <p>
+        Another way to express <m>p \iff q</m> is, "<m>p</m> is necessary and sufficient for <m>q</m>." 
+        In particular, "<m>p</m> is necessary for <m>q</m>" describes the implication <m>q \implies p</m>, 
+        and "<m>p</m> is sufficient for <m>q</m>" describes the implication <m>p \implies q</m>.
+    </p>
+
+    <example>
+        <title>Mathematical Definitions are Biconditional Statements</title>
+        <statement>
+            <p>
+                A matrix is <term>symmetric</term> if and only if it equals its transpose.
+            </p>
+        </statement>
+    </example>
+
+    <example>
+        <title>The Contrapositive of the Biconditional</title>
+        <statement>
+            <p>
+                From the logical equivalences we've established, we see:
+                <md>
+                    <mrow>    (\lnot p) \iff (\lnot q) \amp\equiv  [(\lnot p) \implies (\lnot q)] \land [(\lnot q) \implies (\lnot p)] \amp\text{by the previous example,}</mrow>
+                    <mrow>                 \amp\equiv (q \implies p) \land (p \implies q) \amp\text{by contrapositive of implications,}</mrow>
+                    <mrow>                 \amp\equiv p \iff q \amp\text{by the previous example.}</mrow>
+                </md>
+                This means that the biconditional is logically equivalent to its contrapositive.
+            </p>
+        </statement>
+    </example>
+
+    <definition xml:id="def-tautology-contradiction">
+        <statement>
+            <p>
+                A <term>tautology</term> is a compound statement that is true for all truth values of its constituent statements.  
+                A <term>contradiction</term> is a compound statement that is fall for all truth values of its constituent statements.
+            </p>
+        </statement>
+    </definition>
+
+    <exercise>
+        <statement>
+            <p>
+                Verify that <m>p \lor (\lnot p)</m> is a tautology and <m>p \land (\lnot p)</m> is a contradiction.
+            </p>
+        </statement>
+    </exercise>
+
+    <p>We refer to the tautology <m>p \lor (\lnot p)</m> as the <term>Law of the Excluded Middle</term>.</p>
+
+    <definition xml:id="modus-ponens">
+        <title>Logical Rules of Inference</title>
+        <statement>
+            <p>
+                We can use implication to build logical rules of inference out of simpler statements. Here are two of the most
+                common rules of inference.
+                <ul>
+                    <li>
+                        <p>
+                            <term>Modus Ponens</term> refers to the tautology <m>[p \land (p \implies q)] \implies  q</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Modus Tollens</term> refers to the tautology <m>[(\lnot q) \land (p \implies q)] \implies (\lnot p)]</m>.
+                        </p>
+                    </li>
+                </ul>
+                These logical rules of inference allow us to construct arguments called proofs.
+            </p>
+        </statement>
+    </definition>
+
 </section>
-
-<!--
-
-In addition to the conditional, there's a compound statement that we know well from our mathematical upbringing. 
-
-\begin{defn} The \defi{biconditional} of statements $p$ and $q$ is the compound statement ``$p$ if and only if $q$,'' denoted $p \iff q$.
-
-\begin{figure}[!h]
-\centering
-\begin{tabular}{c | c | c }
-$p$ & $q$ & $p \iff q$ \\
-\hline
-T & T & T \\
-T & F & F \\
-F & T & F \\
-F & F & T 
-\end{tabular}
-\caption{The truth table for the biconditional statement $p \iff q$.}
-\end{figure}
-Some verbiage we use to describe the biconditional is, ``$p$ is necessary and sufficient for $q$.'' In particular, ``$p$ is necessary for $q$'' describes the implication $q \implies p$, and ``$p$ is sufficient for $q$'' describes the implication $p \implies q$.
-\end{defn}
-
-\begin{example}\label{biconditionalequiv}It's no surprise that \[[p \iff q] \equiv [(p \implies q) \land (q \implies p)].\] Indeed, we can see this from the truth tables:
-
-\begin{figure}[!h]
-\centering
-\begin{tabular}{c | c | c || c | c | c }
-$p$ & $q$ & $p \iff q$ & $p \implies q$ & $q \implies p$ & $(p \implies q) \land (q \implies p)$\\
-\hline
-T & T & T & T & T & T\\
-T & F & F & F & T & F \\
-F & T & F & T & F & F\\
-F & F & T & T & T & T
-\end{tabular}
-\end{figure}
-\end{example}
-
-\begin{example}[All mathematical definitions are biconditional statements] A matrix is symmetric \textit{if and only if} it equals its own transpose.
-\end{example}
-
-\begin{example}[The contrapositve of the biconditional] From the equivalences we've established, we see
-\begin{align*}(\lnot p) \iff (\lnot q) 
-&\equiv [(\lnot p) \implies (\lnot q)] \land [(\lnot q) \implies (\lnot p)]&\text{ Example~\ref{biconditionalequiv}}\\
-&\equiv
-(q \implies p) \land (p \implies q)& \text{Contrapositve of ``$\implies$''}\\
-&\equiv p \iff q &\text{Example~\ref{biconditionalequiv}}.
-\end{align*}
-\end{example}
-
-\begin{defn} A \defi{tautology} is a compound statement that is true for all truth values of its constituent statements.  A \defi{contradiction} is a compound statement that is fall for all truth values of its constituent statements.
-
-\begin{figure}[!h]
-\centering
-\begin{tabular}{c | c || c || c  }
-$p$ & $\lnot p$ & $p \lor (\lnot p)$ & $p \land (\lnot p)$ \\
-\hline
-T & F & T & F \\
-F & T & T & F 
-\end{tabular}
-\caption{The compound statement $p \lor (\lnot p)$ is a tautology, and the compound statement $p \land (\lnot p)$ is a contradiction.}
-\end{figure}
-
-We refer to the tautology $p \lor (\lnot p)$ as the Law of the Excluded Middle.
-\end{defn}
-
-\begin{remark}[The Logical Rule of Inference] More generally, we say that a compound implication $P \implies Q$ is a tautology whenever the truth values of the constituent propositions make $P$ true (because, in this case, $Q$ is also true).
-\end{remark}
-
--->

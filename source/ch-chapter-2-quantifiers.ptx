@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-2-quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quantifiers</title>
+
+  <introduction>
+    <p> If we read the sentences, "He is taller than that," or "She is from Darien, CT," or even "<m>x^2 \geq y + 4</m>," 
+      we note that they are not statements because their truth values are ambiguous. After all, who is he? What is that? Who is she?
+      Which values of <m>x</m> and <m>y</m> are we considering? If we knew the answers to these questions, these sentences would be statements; 
+      such sentences are called <term>propositional functions</term>, and we make statements out of them using quantifiers. 
+      </p>
+  </introduction>
+
+  <definition xml:id="def-propfunc">
+    <notation>
+      <usage><m>p(x)</m></usage>
+      <description>simple propositional function</description>
+    </notation>
+    <notation>
+      <usage><m>P(x,y)</m></usage>
+      <description>compound propositional function</description>
+    </notation>
+    <statement>
+      <p>
+        A <term>propositional function</term> is a sentence that becomes a statement when ambiguity is removed.
+        We denote a propositional function as <m>p(x)</m> if it results in a simple statement or <m>P(x,y)</m> if it results in a compound statement. 
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-universal-quantifier">
+    <notation>
+      <usage><m>\forall</m>></usage>
+      <description>universal quantifier</description>
+    </notation>
+    <statement>
+      <p>
+        Given a domain of discourse <m>D</m>, a <term>universal quantifier</term> is the specification, "for all <m>x</m> in <m>D</m>," or, "for each <m>x</m> in <m>D</m>."
+        It is denoted <m>\forall x \in D</m>.
+        The logical shorthand for a universally quantified statement is <m>\forall x \in D, p(x)</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+    <statement>
+      <p>
+        The statement, "For all real numbers <m>x</m>, <m>x^2 \geq 0</m>" is a universally quantified statement with a truth value of <c>T</c>. 
+        The statement, "For all real numbers <m>x</m>, <m>\tan(x)</m> is a real number" is a universally quantified statement with a truth value of <c>F</c>.
+      </p>
+    </statement>
+  </example>
+
+  <definition xml:id="def-existential-quantifier">
+    <notation>
+      <usage><m>\exists</m></usage>
+      <description>existential quantifier</description>
+    </notation>
+    <notation>
+      <usage><m>\backepsilon</m></usage>
+      <description>such that</description>
+    </notation>
+    <statement>
+      <p>
+        Given a domain of discourse <m>D</m>, an <term>existential quantifier</term> is the specification, "there exists <m>x</m> in <m>D</m>," or, "for some <m>x</m> in <m>D</m>."
+        It is denoted <m>\exists x \in D</m>. An <term>existentially quantified statement</term> takes the form, "there exists <m>x</m> in <m>D</m> such that <m>p(x)</m>" or "<m>p(x)</m> for some <m>x</m> in <m>D</m>."
+        The logical shorthand for an existentially quantified statement is <m>\exists x \in D \backepsilon p(x)</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+    <statement>
+      <p>
+        The statement, "There exists a real number <m>x</m> such that <m>x^2 \geq 10</m>" is an existentially quantified statement with a truth value of <c>T</c>. 
+        The statement, "There exists a real number <m>x</m> such that <m>\cos(x) > 2</m> " is an existentially quantified statement with a truth value of <c>F</c>.
+      </p>
+    </statement>
+  </example>
+
+
+  <exercise>
+    <statement>
+      <p>
+        Are the following quantified statements true or false? Justify your answers.
+        <ol>
+          <li>
+            <p>
+              "For all real numbers <m>x</m> and <m>y</m>, <m>x^2 \geq y+4</m>."
+            </p>
+          </li>
+          <li>
+            <p>
+              "There exist real numbers <m>x</m> and <m>y</m> such that <m>x^2 \geq y+4</m>."
+            </p>
+          </li>
+          <li>
+            <p>
+              "For all real numbers <m>x</m>, there exists a real number <m>y</m> such that <m>x^2 \geq y+4</m>."
+            </p>
+          </li>
+          <li>
+            <p>
+              "There exists a real number <m>x</m> such that for all real numbers <m>y</m>, <m>x^2 \geq y+4</m>."
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <!-- exercises section-->
+
+</chapter>
+
+<!-- The set $D$, for which $\forall x \in D$ or $\exists x \in D$, is called the \textit{\textbf{domain of discourse}}.  This almost literally translates to ``the set we're talking about'' (as in, ``there exists $x$ that is an element of the set we're talking about'').
+
+\begin{example} Recall Theorem 1.1d from our course textbook:
+\[\forall A \in M_{m,n}, \exists D \in M_{m,n} \suchthat A + D = D + A = 0.\]
+
+The domain of discourse in this example is the set of $m \times n$ matrices.
+
+What if we reverse the quantifiers?
+\[\exists A \in M_{m,n} \forall D \in M_{m,n} \suchthat A + D = D + A = 0.\]
+Parsing this sentence in English, we have, ``There exists an $m \times n$ matrix $A$ for all $m \times n$ matrices $D$ such that $A + D = D + A = 0$.''  This really says that there's some matrix $A$ that's the additive inverse for \textit{every} matrix $D$.  This statement is false!
+\end{example}
+
+\begin{defn} The negations of the logical quantifiers are defined to be 
+\begin{align*}
+\lnot[\forall x, p(x)] &\equiv \exists x \suchthat \lnot p(x) \\
+\lnot[\exists x \suchthat q(x)] &\equiv \forall x [\lnot q(x)].
+\end{align*}
+\end{defn}
+
+\begin{example} Let's negate the following statements: ``For all $\female$ in the set of women in our class, $\female$ is from Darien, CT'' and ``There exists a $\male$ in the set of men in our class such that $\male$ is taller than the Eiffel Tower.''
+
+The first statement, negated, is equivalent to ``There is a $\female$ in  the set of women in our class such that $\female$ is not from Darien, CT'' (or: ``There's a woman in our class who's not from Darien, CT'').
+
+The second statement, negated, is equivalent to ``For all $\male$ in the set of men in our class, $\male$ is not taller than the Eiffel Tower'' (or: ``All of the men in our class are shorter than the Eiffel Tower'').
+\end{example}
+
+\section{Exercises}
+
+\begin{enumerate}[resume=exercises]
+	\item Let $P(x,y)$ denote $x \geq y$.  Determine whether the following statement are true or false; justify your answer.
+			\begin{enumerate}[label=(\alph*)]
+				\item $\forall x, y \in \mathbb{N}, P(x,y)$
+				\item $\forall x \in \mathbb{N}, \exists y \in \mathbb{N}$ such that $P(x,y)$
+				\item $\exists x \in  \mathbb{N}$ such that $\forall y \in \mathbb{N}$,  $P(x,y)$
+				\item $\exists x,y \in  \mathbb{N}$ such that $P(x,y)$
+			\end{enumerate}
+	\item Write down the negation of the following statements, moving the negation symbol $\lnot$ as far to the right as possible. Use  symbolic logic notation.
+			\begin{enumerate}[label=(\alph*)]
+				\item $\forall x \in A \left [ p(x) \implies q(x) \right ]$ 
+				\item $\exists x \in A $ such that $ \left [ \left ( \lnot p(x)\right ) \land q(x) \right ]$ 
+				\item $\forall x \in A \left [ p(x) \implies \left ( \exists y \in B \text{ such that } \left [ q(x,y) \land r(x,y) \right] \right ) \right ]$
+			\end{enumerate}
+	\item Rewrite the following sentence using symbolic logic notation for the logical connectives and quantifiers ($\mathcal{F}$ denotes the set of all functions $\mathbb{R} \to \mathbb{R}$).\\
+		``For any function $f \in \mathcal{F}$ that is continuous on $[a, b]$, there is some $c \in [a,b]$  such that for all $x\in [a,b]$, $f(c) \leq f(x)$.''
+	
+	\end{enumerate}
+  -->
