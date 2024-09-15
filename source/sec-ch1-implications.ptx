@@ -145,21 +145,7 @@
 
 </section>
 
-<!-- 
-\begin{example} Let $p$ be the statement, ``it's raining'' and $q$ be the statement, ``it's wet outside.''  Then,
-
-\begin{center}
-\begin{tabular}{|c | l|}
-\hline
-$p \implies q$ & ``If it's raining, then it's wet out.''\\
-$(\lnot q) \implies (\lnot p)$ & ``If it's not wet out, then it's not raining.''\\
-\hline
-$q \implies p$ & ``If it's wet out, then it's raining.''\\
-$(\lnot p) \implies (\lnot q)$ & ``If it's not raining, then it's not wet out.''\\
-\hline
-\end{tabular}
-\end{center}
-\end{example}
+<!--
 
 In addition to the conditional, there's a compound statement that we know well from our mathematical upbringing. 
 
