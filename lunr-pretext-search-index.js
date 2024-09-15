@@ -82,45 +82,45 @@ var ptx_lunr_docs = [
   "body": " Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is only false if the statement is false.  "
 },
 {
-  "id": "ch-chapter-1-connectives-7",
+  "id": "ch-chapter-1-connectives-4",
   "level": "1",
-  "url": "ch-chapter-1-connectives-7.html",
+  "url": "ch-chapter-1-connectives-4.html",
   "type": "Section",
   "number": "2.2",
   "title": "Compound Statements",
-  "body": " Compound Statements  Negation is a function of one binary variable (that is, we \"plug in\" one statement). Conjunctions and disjunctions are functions of two binary variables (that is, we \"plug in\" two statements). We can compose logical connectives just as we can compose functions to create compound statements .  Consider the statement : \"It is not the case that ( and ).\"   Truth Table for    T T T F  T F F T  F T F T  F F F T    For the statement to be true, we see that we need one of or to be false (not necessarily both). That is, the truth value should match the truth value of the compound statement . To verify this, we look at the truth table for the statement : \"(Not ) or (not ).\"   Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T    We can see from the final column of these truth tables that the statements and correspond to the same function of and .     logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .    Logical equivalence allows us to manipulate compound statements without changing their truth tables. This helps us determine how to negate compound statements.   De Morgan's Laws   For any statements and ,    , and     .         For any statement ,     "
+  "body": " Compound Statements  Negation is a function of one binary variable (that is, we \"plug in\" one statement). Conjunctions and disjunctions are functions of two binary variables (that is, we \"plug in\" two statements). We can compose logical connectives just as we can compose functions to create compound statements .  Consider the statement : \"It is not the case that ( and ).\"   Truth Table for    T T T F  T F F T  F T F T  F F F T    For the statement to be true, we see that we need one of or to be false (not necessarily both). That is, the truth value should match the truth value of the compound statement . To verify this, we look at the truth table for the statement : \"(Not ) or (not ).\"   Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T    We can see from the final column of these truth tables that the statements and correspond to the same function of and .     logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .    Logical equivalence allows us to manipulate compound statements without changing their truth tables. This helps us determine how to negate compound statements.   De Morgan's Laws   For any statements and ,    , and     .        The Law of the Double Negative   For any statement ,     "
 },
 {
-  "id": "ch-chapter-1-connectives-7-2",
+  "id": "ch-chapter-1-connectives-4-2",
   "level": "2",
-  "url": "ch-chapter-1-connectives-7.html#ch-chapter-1-connectives-7-2",
+  "url": "ch-chapter-1-connectives-4.html#ch-chapter-1-connectives-4-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "compound statements "
 },
 {
-  "id": "ch-chapter-1-connectives-7-4",
+  "id": "ch-chapter-1-connectives-4-4",
   "level": "2",
-  "url": "ch-chapter-1-connectives-7.html#ch-chapter-1-connectives-7-4",
+  "url": "ch-chapter-1-connectives-4.html#ch-chapter-1-connectives-4-4",
   "type": "Table",
   "number": "2.2.1",
   "title": "Truth Table for <span class=\"process-math\">\\(\\lnot(p\\land q)\\)<\/span>",
   "body": " Truth Table for    T T T F  T F F T  F T F T  F F F T   "
 },
 {
-  "id": "ch-chapter-1-connectives-7-6",
+  "id": "ch-chapter-1-connectives-4-6",
   "level": "2",
-  "url": "ch-chapter-1-connectives-7.html#ch-chapter-1-connectives-7-6",
+  "url": "ch-chapter-1-connectives-4.html#ch-chapter-1-connectives-4-6",
   "type": "Table",
   "number": "2.2.2",
   "title": "Truth Table for <span class=\"process-math\">\\((\\lnot p) \\lor (\\lnot q)\\)<\/span>",
   "body": " Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T   "
 },
 {
-  "id": "def-",
+  "id": "def-equivalence",
   "level": "2",
-  "url": "ch-chapter-1-connectives-7.html#def-",
+  "url": "ch-chapter-1-connectives-4.html#def-equivalence",
   "type": "Definition",
   "number": "2.2.3",
   "title": "",
@@ -129,7 +129,7 @@ var ptx_lunr_docs = [
 {
   "id": "thm-de-Morgan",
   "level": "2",
-  "url": "ch-chapter-1-connectives-7.html#thm-de-Morgan",
+  "url": "ch-chapter-1-connectives-4.html#thm-de-Morgan",
   "type": "Theorem",
   "number": "2.2.4",
   "title": "De Morgan’s Laws.",
@@ -138,11 +138,74 @@ var ptx_lunr_docs = [
 {
   "id": "thm-double-neg",
   "level": "2",
-  "url": "ch-chapter-1-connectives-7.html#thm-double-neg",
+  "url": "ch-chapter-1-connectives-4.html#thm-double-neg",
   "type": "Theorem",
   "number": "2.2.5",
+  "title": "The Law of the Double Negative.",
+  "body": " The Law of the Double Negative   For any statement ,    "
+},
+{
+  "id": "ch-chapter-1-connectives-5",
+  "level": "1",
+  "url": "ch-chapter-1-connectives-5.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Conditional and Biconditional Statements",
+  "body": " Conditional and Biconditional Statements  The last two logical connectives deal with implication.     Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.  Truth Table for Implication    T T T  T F F  F T T  F F T   An implication in which the premise is false is called vacuously true .    You may be looking at the last two rows of the truth table and wondering what's going on. For lay people, the statement is meaningless when is false. But then wouldn't be a statement. Statements must have a truth value!   Consider the statement, \"If two is odd, then one is even.\" The constituent statements \"two is odd\" and \"one is even\" are both false, and the compound statement is defined to true. Any implication with the premise \"two is odd\" is vacuously true.   In formal mathematical logic, no causation in implied by an if-then statement. That is, the statement, \"If it's raining, then it's wet outside\" doesn't the same thing as, \"It's wet outside because it is raining.\" For all we know, it could be wet outside because someone sprayed everything down with a fire hose. And so, even though the statement, \"If , then Mars is a planet,\" is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise (\"Mars is a planet\" is true regardless of arithmetic!).   Negating Implications   For any statements and ,    , and     .        We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification fpr     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have    There are three implications that are related to the statement , and they are defined as follows.    Let and be statements and consider the implication . The converse of is the statement . The inverse of is the statement . The contrapositive of is the statement .    Observe that the implication is logically equivalent to its contrapositive . The converse is logically equivalent to the inverse .    Let be the statement, \"It's raining,\" and be the statement, \"It's wet outside.\" Match the sentences to the correct compound statements.    Implication  If it's raining, then it's wet outside.    Converse of  If it's wet ouside, then it's raining.    Inverse of  If it's not raining, then it's not wet outside.    Contrapositive of  If it's not wet outside, then it's not raining.    "
+},
+{
+  "id": "def-implication",
+  "level": "2",
+  "url": "ch-chapter-1-connectives-5.html#def-implication",
+  "type": "Definition",
+  "number": "2.3.1",
   "title": "",
-  "body": "  For any statement ,    "
+  "body": "   Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.  Truth Table for Implication    T T T  T F F  F T T  F F T   An implication in which the premise is false is called vacuously true .   "
+},
+{
+  "id": "ch-chapter-1-connectives-5-5",
+  "level": "2",
+  "url": "ch-chapter-1-connectives-5.html#ch-chapter-1-connectives-5-5",
+  "type": "Example",
+  "number": "2.3.3",
+  "title": "",
+  "body": " Consider the statement, \"If two is odd, then one is even.\" The constituent statements \"two is odd\" and \"one is even\" are both false, and the compound statement is defined to true. Any implication with the premise \"two is odd\" is vacuously true.  "
+},
+{
+  "id": "thm-neg-imp",
+  "level": "2",
+  "url": "ch-chapter-1-connectives-5.html#thm-neg-imp",
+  "type": "Theorem",
+  "number": "2.3.4",
+  "title": "Negating Implications.",
+  "body": " Negating Implications   For any statements and ,    , and     .      "
+},
+{
+  "id": "ch-chapter-1-connectives-5-8",
+  "level": "2",
+  "url": "ch-chapter-1-connectives-5.html#ch-chapter-1-connectives-5-8",
+  "type": "Proof",
+  "number": "2.3.1",
+  "title": "",
+  "body": " We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification fpr     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have   "
+},
+{
+  "id": "def-implications-related",
+  "level": "2",
+  "url": "ch-chapter-1-connectives-5.html#def-implications-related",
+  "type": "Definition",
+  "number": "2.3.6",
+  "title": "",
+  "body": "  Let and be statements and consider the implication . The converse of is the statement . The inverse of is the statement . The contrapositive of is the statement .   "
+},
+{
+  "id": "ch-chapter-1-connectives-5-12",
+  "level": "2",
+  "url": "ch-chapter-1-connectives-5.html#ch-chapter-1-connectives-5-12",
+  "type": "Checkpoint",
+  "number": "2.3.7",
+  "title": "",
+  "body": "  Let be the statement, \"It's raining,\" and be the statement, \"It's wet outside.\" Match the sentences to the correct compound statements.    Implication  If it's raining, then it's wet outside.    Converse of  If it's wet ouside, then it's raining.    Inverse of  If it's not raining, then it's not wet outside.    Contrapositive of  If it's not wet outside, then it's not raining.   "
 },
 {
   "id": "logic",
@@ -169,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "A.3",
   "title": "Style",
-  "body": " Style  The authors...   use the appropriate LaTeX template for the course;  adhere to mathematical style conventions, such as:   using math mode for math symbols,  writing sentences that do not start in math mode,  not writing \"two-column\" proofs reminiscent of a high school geometry class,  using aligned equations when a string of equations is too long for a page,  using inline equations for minor mathematical manipulations;  using appropriate LaTeX environments (proof, prop*, example*, etc);    discern when to write an example instead of a proposition and proof;  adhere to the conventions of grammar;  write clearly and concisely in a way that does not obscure the logic or mathematics.   "
+  "body": " Style  The authors...   use the appropriate LaTeX template for the course;  adhere to mathematical style conventions, such as:   using math mode for math symbols,  writing sentences that do not start in math mode,  not writing \"two-column\" proofs reminiscent of a high school geometry class,  using aligned equations when a string of equations is too long for a page,  using inline equations for minor mathematical manipulations,  using appropriate LaTeX environments (proof, prop*, example*, etc);    discern when to write an example instead of a proposition and proof;  adhere to the conventions of grammar;  write clearly and concisely in a way that does not obscure the logic or mathematics.   "
 },
 {
   "id": "examples",

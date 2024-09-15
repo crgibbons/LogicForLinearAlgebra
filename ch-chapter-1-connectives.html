@@ -88,10 +88,44 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.00db6230172ad960.bundle.js"></script><script src="_static/prefix-347.8328b60515045466.bundle.js"></script><script src="_static/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f64dcc3632d7a0c3.css">
 <style>
 #thm-de-Morgan-2-1-3 { counter-set: thm-de-Morgan-2-1-3 0; }
 #thm-de-Morgan-2-1-3 > li::marker { content: ""counter(thm-de-Morgan-2-1-3,decimal)"."; }
 #thm-de-Morgan-2-1-3 > li { counter-increment: thm-de-Morgan-2-1-3; }
+#thm-neg-imp-2-1-3 { counter-set: thm-neg-imp-2-1-3 0; }
+#thm-neg-imp-2-1-3 > li::marker { content: ""counter(thm-neg-imp-2-1-3,decimal)"."; }
+#thm-neg-imp-2-1-3 > li { counter-increment: thm-neg-imp-2-1-3; }
 #logic-4 { counter-set: logic-4 0; }
 #logic-4 > li::marker { content: ""counter(logic-4,decimal)"."; }
 #logic-4 > li { counter-increment: logic-4; }
@@ -138,7 +172,8 @@ window.MathJax = {
 <div class="toc-title-box"><a href="ch-chapter-1-connectives.html" class="internal"><span class="codenumber">2</span> <span class="title">Connectives</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ch1-not-and-or.html" class="internal"><span class="codenumber">2.1</span> <span class="title">First Connectives: Not, And, and Or</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-chapter-1-connectives-7.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Compound Statements</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-chapter-1-connectives-4.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Compound Statements</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-chapter-1-connectives-5.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Conditional and Biconditional Statements</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-appendix">
@@ -155,9 +190,15 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-chapter-1-connectives"><h2 class="heading">
 <span class="type">Chapter</span><span class="space"> </span><span class="codenumber">2</span><span class="space"> </span><span class="title">Connectives</span>
 </h2>
-<nav class="summary-links"><ul>
+<section class="introduction" id="ch-chapter-1-connectives-2"><div class="para" id="ch-chapter-1-connectives-2-1">Just as numbers are the building blocks of arithmetic, statements are the building blocks of formal proofs.  However, the value of a statement is is not numerical; the value of statement is called its <dfn class="terminology">truth value</dfn>, which comes in two flavors: True and False.  And, just as we can define operations like addition or division on numbers, we can define operations on statements, called <dfn class="terminology">logical connectives</dfn>.</div> <article class="definition definition-like" id="ch-chapter-1-connectives-2-2"><h2 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.0.1</span><span class="period">.</span>
+</h2>
+<div class="para" id="ch-chapter-1-connectives-2-2-1-1">A <dfn class="terminology">statement</dfn> is a sentence that is unambiguously true or false.</div></article> <details id="ch-chapter-1-connectives-2-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.0.2</span><span class="period">.</span><span class="space"> </span><span class="title">Statements and non-statements.</span>
+</h2></summary><article class="example example-like knowl__content"> <div class="para" id="ch-chapter-1-connectives-2-3-2">"Hamilton College is located in Clinton, NY" is a statement; its truth value is "true."  Furthermore, "Our class meets sixteen days a week" is a statement; its truth value is "false."</div> <div class="para" id="ch-chapter-1-connectives-2-3-3">On the other hand, "Green is the best color" is not a statement, because its truth value isn’t well-defined; that is, the truth of the statement is ambiguous.</div></article></details> <div class="para" id="ch-chapter-1-connectives-2-4">Regarding notation: we will typically reserve the variables <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> <span class="process-math">\(r\)</span> (and so on) as <dfn class="terminology">propositional variables</dfn> (meaning that they are statements).</div></section><nav class="summary-links"><ul>
 <li><a href="sec-ch1-not-and-or.html" class="internal"><span class="codenumber">2.1</span> <span class="title">First Connectives: Not, And, and Or</span></a></li>
-<li><a href="ch-chapter-1-connectives-7.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Compound Statements</span></a></li>
+<li><a href="ch-chapter-1-connectives-4.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Compound Statements</span></a></li>
+<li><a href="ch-chapter-1-connectives-5.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Conditional and Biconditional Statements</span></a></li>
 </ul></nav></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-introduction.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ch1-not-and-or.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
