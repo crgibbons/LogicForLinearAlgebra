@@ -105,12 +105,15 @@
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
     <css
         style="default"
-        colors="blue_red"
+        colors="blue_green"
         knowls="default"
         toc="default"
         banner="default"
         navbar="default"
     />
+    <knowl example="no" />
+    <knowl exercise-inline="no" />
+    <knowl exercise="no" />
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
     <search variant="default" />

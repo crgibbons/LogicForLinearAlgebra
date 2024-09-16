@@ -6,7 +6,7 @@
   <introduction>
     <p> 
 		Many mathematical theorems are universally quantified. For example, in linear algebra, we can prove the theorem, 
-		"For all <m>n \times n</m> matrices <m>A</m>, <m>A</m> is nonsingular if and only if <m>A^\perp</m> is nonsingular." This chapter introduces three elementary
+		"For all <m>n \times n</m> matrices <m>A</m>, <m>A</m> is nonsingular if and only if <m>A^\top</m> is nonsingular." This chapter introduces three elementary
 		proof techniques.
     </p>
   </introduction>
