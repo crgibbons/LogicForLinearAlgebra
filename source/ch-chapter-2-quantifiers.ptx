@@ -45,8 +45,8 @@
   <example>
     <statement>
       <p>
-        The statement, "For all real numbers <m>x</m>, <m>x^2 \geq 0</m>" is a universally quantified statement with a truth value of <c>T</c>. 
-        The statement, "For all real numbers <m>x</m>, <m>\tan(x)</m> is a real number" is a universally quantified statement with a truth value of <c>F</c>.
+        The statement, "For all real numbers <m>x</m>, <m>x^2 \geq 0</m>" is a universally quantified statement with a truth value of true. 
+        The statement, "For all real numbers <m>x</m>, <m>\tan(x)</m> is a real number" is a universally quantified statement with a truth value of false.
       </p>
     </statement>
   </example>
@@ -72,8 +72,8 @@
   <example>
     <statement>
       <p>
-        The statement, "There exists a real number <m>x</m> such that <m>x^2 \geq 10</m>" is an existentially quantified statement with a truth value of <c>T</c>. 
-        The statement, "There exists a real number <m>x</m> such that <m>\cos(x) > 2</m> " is an existentially quantified statement with a truth value of <c>F</c>.
+        The statement, "There exists a real number <m>x</m> such that <m>x^2 \geq 10</m>" is an existentially quantified statement with a truth value of true. 
+        The statement, "There exists a real number <m>x</m> such that <m>\cos(x) > 2</m> " is an existentially quantified statement with a truth value of false.
       </p>
     </statement>
   </example>
