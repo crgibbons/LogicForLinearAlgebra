@@ -80,9 +80,9 @@
     <!-- Lots of elements have this possibility; see the guide -->
     <knowl
       theorem="no"
-      proof="yes"
+      proof="no"
       definition="no"
-      example="yes"
+      example="no"
       example-solution="yes"
       project="no"
       task="no"
@@ -93,7 +93,7 @@
       table="no"
       listing="no"
       list="no"
-      exercise-inline="yes"
+      exercise-inline="no"
       exercise-divisional="no"
       exercise-worksheet="no"
       exercise-readingquestion="no"
@@ -111,9 +111,6 @@
         banner="default"
         navbar="default"
     />
-    <knowl example="no" />
-    <knowl exercise-inline="no" />
-    <knowl exercise="no" />
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
     <search variant="default" />

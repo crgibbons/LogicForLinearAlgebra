@@ -136,46 +136,83 @@
         </matches>
     </exercise>
 
-    <exercise label="fillin-string-integer-new">
-        <title>Fill-In, String and Number Answers</title>
-
+    <exercise>
         <statement>
-            <p>Complete the following line of a Python program so that it will declare an integer variable <c>age</c> with an initial value of <c>5</c>.</p>
+            <p>
+                Complete the truth table to verify the observations above.
+            </p>
             <table>
-                <tabular>
-                    <row>
-                        <cell><fillin mode="string" answer="int"/></cell><cell><fillin mode="number" answer="5"/></cell>
-                    </row>
-                </tabular>
+            <tabular halign="center">
+                <row header = "yes">
+                    <cell></cell><cell></cell><cell>Implication</cell><cell>Converse</cell><cell>Inverse</cell><cell>Contrapositive</cell></row>
+                <row bottom = "minor">
+                        <cell><m>p</m></cell><cell right="minor"><m>q</m></cell><cell><m>p \implies q</m></cell><cell><m>q \implies p</m></cell><cell><m>(\lnot p) \implies (\lnot q)</m></cell><cell><m>(\lnot q) \implies (\lnot p)</m></cell></row>
+                <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell> <cell><fillin width="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell></row>
+                <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell> <cell><fillin width="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="F" /></cell></row>
+                <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell> <cell><fillin width="3" mode="string" answer="F" /></cell><cell><fillin characters="3" mode="string" answer="F" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell></row>
+                <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell> <cell><fillin width="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell></row>
+            </tabular>
             </table>
         </statement>
         <evaluation>
-            <evaluate>
+            <evaluate> <!-- 1 -->
                 <test>
-                    <strcmp use-answer='yes'/>
-                    <feedback>
-                      <p>A variable of type <c>int</c> is appropriate for whole number ages.</p>
-                    </feedback>
-                </test>
-                <test>
-                    <strcmp>.*</strcmp>
-                    <feedback>
-                        <p>Remember that Java uses just the first three letters of the word <q>integer</q> to define an integral type.</p>
-                    </feedback>
+                    <strcmp use-answer="yes"/>
                 </test>
             </evaluate>
-            <evaluate>
+            <evaluate> <!-- 2 -->
                 <test>
-                    <numcmp use-answer='yes'/>
-                    <feedback>
-                        <p>An integer variable may be initialized to a value.</p>
-                    </feedback>
+                    <strcmp use-answer='yes'/>
                 </test>
+            </evaluate>
+            <evaluate> <!-- 3 -->
                 <test>
-                    <strcmp>.*</strcmp>
-                    <feedback>
-                        <p>Use <c>5</c> as the initial value of the variable.</p>
-                    </feedback>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 4 -->
+                <test>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 5 -->
+                <test>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 6 -->
+                <test>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 7 -->
+                <test>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 8 -->
+                <test>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 9 -->
+                <test>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 10 -->
+                <test>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 11 -->
+                <test>
+                    <strcmp use-answer='yes'/>
+                </test>
+            </evaluate>
+            <evaluate> <!-- 12 -->
+                <test>
+                    <strcmp use-answer='yes'/>
                 </test>
             </evaluate>
         </evaluation>
