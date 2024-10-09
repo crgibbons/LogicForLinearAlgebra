@@ -151,7 +151,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Conditional and Biconditional Statements",
-  "body": " Conditional and Biconditional Statements  The last two logical connectives deal with implication.     Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.   Truth Table for Implication    T T T  T F F  F T T  F F T    An implication in which the premise is false is called vacuously true .    You may be looking at the last two rows of the truth table and wondering what's going on. For lay people, the statement is meaningless when is false. But then wouldn't be a statement. Statements must have a truth value!   Consider the statement, \"If two is odd, then one is even.\" The constituent statements \"two is odd\" and \"one is even\" are both false, and the compound statement is defined to true. Any implication with the premise \"two is odd\" is vacuously true.   In formal mathematical logic, no causation in implied by an if-then statement. That is, the statement, \"If it's raining, then it's wet outside\" doesn't the same thing as, \"It's wet outside because it is raining.\" For all we know, it could be wet outside because someone sprayed everything down with a fire hose. And so, even though the statement, \"If , then Mars is a planet,\" is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise (\"Mars is a planet\" is true regardless of arithmetic!).   Negating Implications   For any statements and ,    , and     .        We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification fpr     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have    There are three implications that are related to the statement , and they are defined as follows.    Let and be statements and consider the implication . The converse of is the statement . The inverse of is the statement . The contrapositive of is the statement .    Observe that the implication is logically equivalent to its contrapositive . The converse is logically equivalent to the inverse .   Let be the statement, \"It's raining,\" and be the statement, \"It's wet outside.\" Match the sentences to the correct compound statements.    Implication  If it's raining, then it's wet outside.    Converse of  If it's wet ouside, then it's raining.    Inverse of  If it's not raining, then it's not wet outside.    Contrapositive of  If it's not wet outside, then it's not raining.     Complete the truth table to verify the observations above.     Implication Converse Inverse Contrapositive    T T T   T F F   F T T   F F T                                                                              In addition to the conditional statement , there's another compound statement that we know well from mathematics.   >  biconditional    The biconditional of statements and is the compound statement \" if and only if ,\" denoted . It is defined by the truth table below.   Truth Table for Implication    T T T  T F F  F T F  F F T       Verify the logical equivalence .   Another way to express is, \" is necessary and sufficient for .\" In particular, \" is necessary for \" describes the implication , and \" is sufficient for \" describes the implication .   Mathematical Definitions are Biconditional Statements   A matrix is symmetric if and only if it equals its transpose.     The Contrapositive of the Biconditional   From the logical equivalences we've established, we see: This means that the biconditional is logically equivalent to its contrapositive.      A tautology is a compound statement that is true for all truth values of its constituent statements. A contradiction is a compound statement that is fall for all truth values of its constituent statements.     Verify that is a tautology and is a contradiction.   We refer to the tautology as the Law of the Excluded Middle .   Logical Rules of Inference   We can use implication to build logical rules of inference out of simpler statements. Here are two of the most common rules of inference.    Modus Ponens refers to the tautology .     Modus Tollens refers to the tautology .   These logical rules of inference allow us to construct arguments called proofs.    "
+  "body": " Conditional and Biconditional Statements  The last two logical connectives deal with implication.     Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.   Truth Table for Implication    T T T  T F F  F T T  F F T    An implication in which the premise is false is called vacuously true .    You may be looking at the last two rows of the truth table and wondering what's going on. For lay people, the statement is meaningless when is false. But then wouldn't be a statement. Statements must have a truth value!   Consider the statement, \"If two is odd, then one is even.\" The constituent statements \"two is odd\" and \"one is even\" are both false, and the compound statement is defined to true. Any implication with the premise \"two is odd\" is vacuously true.   In formal mathematical logic, no causation in implied by an if-then statement. That is, the statement, \"If it's raining, then it's wet outside\" doesn't the same thing as, \"It's wet outside because it is raining.\" For all we know, it could be wet outside because someone sprayed everything down with a fire hose. And so, even though the statement, \"If , then Mars is a planet,\" is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise (\"Mars is a planet\" is true regardless of arithmetic!).   Negating Implications   For any statements and ,    , and     .        We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification for     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have    There are three implications that are related to the statement , and they are defined as follows.    Let and be statements and consider the implication . The converse of is the statement . The inverse of is the statement . The contrapositive of is the statement .    Observe that the implication is logically equivalent to its contrapositive . The converse is logically equivalent to the inverse .   Let be the statement, \"It's raining,\" and be the statement, \"It's wet outside.\" Match the sentences to the correct compound statements.    Implication  If it's raining, then it's wet outside.    Converse of  If it's wet ouside, then it's raining.    Inverse of  If it's not raining, then it's not wet outside.    Contrapositive of  If it's not wet outside, then it's not raining.     Complete the truth table to verify the observations above.     Implication Converse Inverse Contrapositive    T T T   T F F   F T T   F F T                                                                              In addition to the conditional statement , there's another compound statement that we know well from mathematics.   >  biconditional    The biconditional of statements and is the compound statement \" if and only if ,\" denoted . It is defined by the truth table below.   Truth Table for Implication    T T T  T F F  F T F  F F T       Verify the logical equivalence .   Another way to express is, \" is necessary and sufficient for .\" In particular, \" is necessary for \" describes the implication , and \" is sufficient for \" describes the implication .   Mathematical Definitions are Biconditional Statements   A matrix is symmetric if and only if it equals its transpose.     The Contrapositive of the Biconditional   From the logical equivalences we've established, we see: This means that the biconditional is logically equivalent to its contrapositive.      A tautology is a compound statement that is true for all truth values of its constituent statements. A contradiction is a compound statement that is fall for all truth values of its constituent statements.     Verify that is a tautology and is a contradiction.   We refer to the tautology as the Law of the Excluded Middle .   Logical Rules of Inference   We can use implication to build logical rules of inference out of simpler statements. Here are two of the most common rules of inference.    Modus Ponens refers to the tautology .     Modus Tollens refers to the tautology .   These logical rules of inference allow us to construct arguments called proofs.    "
 },
 {
   "id": "def-implication",
@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Proof",
   "number": "1.3.1",
   "title": "",
-  "body": " We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification fpr     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have   "
+  "body": " We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification for     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have   "
 },
 {
   "id": "def-implications-related",
@@ -361,13 +361,85 @@ var ptx_lunr_docs = [
   "body": " Are the following quantified statements true or false? Justify your answers.   \"For all real numbers and , .\"    \"There exist real numbers and such that .\"    \"For all real numbers , there exists a real number such that .\"    \"There exists a real number such that for all real numbers , .\"     "
 },
 {
-  "id": "ch-chapter-3-proofs",
+  "id": "sec-directproof",
   "level": "1",
-  "url": "ch-chapter-3-proofs.html",
-  "type": "Chapter",
-  "number": "3",
-  "title": "Proof Techniques",
-  "body": " Proof Techniques   Many mathematical theorems are universally quantified. For example, in linear algebra, we can prove the theorem, \"For all matrices , is nonsingular if and only if is nonsingular.\" This chapter introduces three elementary proof techniques.    "
+  "url": "sec-directproof.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "Direct Proofs",
+  "body": " Direct Proofs  Let's recall the truth table for an implication.   Truth Table for Implication    T T T  T F F  F T T  F F T    Note that an implication is guaranteed to be true whenever the hypothesis is false. So, for a direct proof, we only need to worry about showing the implication is true when the hypothesis is true. Thus, our strategy becomes   Assume is true.    Use this assumption (and definitions, theorems, or previous results) to show that must be true, too.   Then, it follows that the truth value of the implication is true.   Claim. For all , if is even, then is even. (Recall that an integer is defined to be even provided there exists an integer for which . Otherwise, is odd, and there exists an integer for whic .)   Let . Assume is even. This means that there exists an integer for which . It follows that . Since , we see that is even.    "
+},
+{
+  "id": "sec-directproof-3",
+  "level": "2",
+  "url": "sec-directproof.html#sec-directproof-3",
+  "type": "Table",
+  "number": "3.1.1",
+  "title": "Truth Table for Implication",
+  "body": " Truth Table for Implication    T T T  T F F  F T T  F F T   "
+},
+{
+  "id": "sec-directproof-5",
+  "level": "2",
+  "url": "sec-directproof.html#sec-directproof-5",
+  "type": "Example",
+  "number": "3.1.2",
+  "title": "",
+  "body": " Claim. For all , if is even, then is even. (Recall that an integer is defined to be even provided there exists an integer for which . Otherwise, is odd, and there exists an integer for whic .)   Let . Assume is even. This means that there exists an integer for which . It follows that . Since , we see that is even.   "
+},
+{
+  "id": "sec-indirect-proofs",
+  "level": "1",
+  "url": "sec-indirect-proofs.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "Indirect Proofs",
+  "body": " Indirect Proofs   Proof by Contrapositive  Proof by contrapositive is a technique based on the logical equivalence . To show is true, we can show directly. Our strategy becomes   Assume is true (equivalently, assume is false).    Use this assumption (and definitions, theorems, or previous results) to show that must be true, too. (Equivalently, must be false.)   Then, it follows that the truth value of the implication is true.   Claim. For all , if is even, then is even.   Let . Assume is not even; this means that is odd. Thus there exists an integer for which . It follows that . Since , we see that is odd and therefore not even.      Proof by Contradiction  In a proof by contradiction, we show the statement is true by showing it cannot possibly be false (we're really invoking the Law of the Excluded Middle here). In other words, we assume that the entire implication is false, and then we show that this contradicts some other known result.  Remember that an implication is false exactly when the hypothesis is true and the conclusion is false. That is, by the Law of Implication (b), .   Claim. For all real numbers , if , then is irrational. (Recall that a number is rational provided there exist integers and sharing no common factor such that .)   Let . Seeking a contradiction, assume and is rational. Then by definition of rational, for some ( ) having no common factors. By assumpition, , which implies that . By Example (referenvce), we see that is even. That is, there exists such that . Then , so . By Example (ref), we have that is even, too. So there exists such that . But now and share a common factor of , and this is a contradiction.      Other Logical Equivalences  As our implications become more complicated, like , we will develop logical equivalences to make these statements easier to prove. Often this means moving the implication symbol as far to the right as possible so that we can assume as much as possible. Then, prove the new implication directly.  Having established in a previous exercise that , we can use this equivalence to prove the following statement.   Claim. For all integers and , if is even, then or is even.   Let and be integers. Assume the product is even but is not even. This means that there exist integers and for which and . It follows that , and isolating , we find . Since is an integer, it follows that is even.     "
+},
+{
+  "id": "subsec-contrapositive-3",
+  "level": "2",
+  "url": "sec-indirect-proofs.html#subsec-contrapositive-3",
+  "type": "Example",
+  "number": "3.2.1",
+  "title": "",
+  "body": " Claim. For all , if is even, then is even.   Let . Assume is not even; this means that is odd. Thus there exists an integer for which . It follows that . Since , we see that is odd and therefore not even.   "
+},
+{
+  "id": "subsec-contradiction-4",
+  "level": "2",
+  "url": "sec-indirect-proofs.html#subsec-contradiction-4",
+  "type": "Example",
+  "number": "3.2.2",
+  "title": "",
+  "body": " Claim. For all real numbers , if , then is irrational. (Recall that a number is rational provided there exist integers and sharing no common factor such that .)   Let . Seeking a contradiction, assume and is rational. Then by definition of rational, for some ( ) having no common factors. By assumpition, , which implies that . By Example (referenvce), we see that is even. That is, there exists such that . Then , so . By Example (ref), we have that is even, too. So there exists such that . But now and share a common factor of , and this is a contradiction.   "
+},
+{
+  "id": "subsec-other-equiv-4",
+  "level": "2",
+  "url": "sec-indirect-proofs.html#subsec-other-equiv-4",
+  "type": "Example",
+  "number": "3.2.3",
+  "title": "",
+  "body": " Claim. For all integers and , if is even, then or is even.   Let and be integers. Assume the product is even but is not even. This means that there exist integers and for which and . It follows that , and isolating , we find . Since is an integer, it follows that is even.   "
+},
+{
+  "id": "sec-counterexamples",
+  "level": "1",
+  "url": "sec-counterexamples.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Counterexamples",
+  "body": " Counterexamples  If you are asked to disprove a universally quantified statement, it's enough to exhibit a single counterexample. Indeed, remember that the negation of the statement is the statement .   Disprove: For all matrices with real entries, if is not the zero matrix, then is nonsingular.  It is not the case that every nonzero matrix with real entries is nonsingular. Indeed, the matrix  has the property that for any matrix    "
+},
+{
+  "id": "sec-counterexamples-3",
+  "level": "2",
+  "url": "sec-counterexamples.html#sec-counterexamples-3",
+  "type": "Example",
+  "number": "3.3.1",
+  "title": "",
+  "body": " Disprove: For all matrices with real entries, if is not the zero matrix, then is nonsingular.  It is not the case that every nonzero matrix with real entries is nonsingular. Indeed, the matrix  has the property that for any matrix   "
 },
 {
   "id": "logic",
