@@ -289,76 +289,103 @@ var ptx_lunr_docs = [
   "body": " Logical Rules of Inference   We can use implication to build logical rules of inference out of simpler statements. Here are two of the most common rules of inference.    Modus Ponens refers to the tautology .     Modus Tollens refers to the tautology .   These logical rules of inference allow us to construct arguments called proofs.   "
 },
 {
-  "id": "ch-chapter-2-quantifiers",
+  "id": "sec-propositional-functions",
   "level": "1",
-  "url": "ch-chapter-2-quantifiers.html",
-  "type": "Chapter",
-  "number": "2",
-  "title": "Quantifiers",
-  "body": " Quantifiers   If we read the sentences, \"He is taller than that,\" or \"She is from Darien, CT,\" or even \" ,\" we note that they are not statements because their truth values are ambiguous. After all, who is he? What is that? Who is she? Which values of and are we considering? If we knew the answers to these questions, these sentences would be statements; such sentences are called propositional functions , and we make statements out of them using quantifiers.      simple propositional function     compound propositional function    A propositional function is a sentence that becomes a statement when ambiguity is removed. We denote a propositional function as if it results in a simple statement or if it results in a compound statement.      >  universal quantifier    Given a domain of discourse , a universal quantifier is the specification, \"for all in ,\" or, \"for each in .\" It is denoted . The logical shorthand for a universally quantified statement is .      The statement, \"For all real numbers , \" is a universally quantified statement with a truth value of true. The statement, \"For all real numbers , is a real number\" is a universally quantified statement with a truth value of false.       existential quantifier     such that    Given a domain of discourse , an existential quantifier is the specification, \"there exists in ,\" or, \"for some in .\" It is denoted . An existentially quantified statement takes the form, \"there exists in such that \" or \" for some in .\" The logical shorthand for an existentially quantified statement is .      The statement, \"There exists a real number such that \" is an existentially quantified statement with a truth value of true. The statement, \"There exists a real number such that \" is an existentially quantified statement with a truth value of false.     Are the following quantified statements true or false? Justify your answers.   \"For all real numbers and , .\"    \"There exist real numbers and such that .\"    \"For all real numbers , there exists a real number such that .\"    \"There exists a real number such that for all real numbers , .\"       "
-},
-{
-  "id": "ch-chapter-2-quantifiers-2-1",
-  "level": "2",
-  "url": "ch-chapter-2-quantifiers.html#ch-chapter-2-quantifiers-2-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "propositional functions "
+  "url": "sec-propositional-functions.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Propositional Functions",
+  "body": " Propositional Functions     simple propositional function     compound propositional function    A propositional function is a sentence that becomes a statement when ambiguity is removed. We denote a propositional function as if it results in a simple statement or if it results in a compound statement.      >  universal quantifier    Given a domain of discourse , a universal quantifier is the specification, for all in , or, for each in . It is denoted . The logical shorthand for a universally quantified statement is .      The statement, For all real numbers , is a universally quantified statement with a truth value of true. The statement, For all real numbers , is a real number is a universally quantified statement with a truth value of false.       existential quantifier     such that    Given a domain of discourse , an existential quantifier is the specification, there exists in , or, for some in . It is denoted . An existentially quantified statement takes the form, there exists in such that or for some in . The logical shorthand for an existentially quantified statement is .      The statement, There exists a real number such that is an existentially quantified statement with a truth value of true. The statement, There exists a real number such that is an existentially quantified statement with a truth value of false.    Are the following quantified statements true or false? Justify your answers.     For all real numbers and , .     This statement is false because there are pairs of real numbers like and .       There exist real numbers and such that .     This is true. The real numbers and satisfy the statement.       For all real numbers , there exists a real number such that .     This is true. Given any real number , taking any satstifies the statement.       There exists a real number such that for all real numbers , .      This is false. Given any candidate for , we can take to build a counterexample.      "
 },
 {
   "id": "def-propfunc",
   "level": "2",
-  "url": "ch-chapter-2-quantifiers.html#def-propfunc",
+  "url": "sec-propositional-functions.html#def-propfunc",
   "type": "Definition",
-  "number": "2.0.1",
+  "number": "2.1.1",
   "title": "",
   "body": "   simple propositional function     compound propositional function    A propositional function is a sentence that becomes a statement when ambiguity is removed. We denote a propositional function as if it results in a simple statement or if it results in a compound statement.   "
 },
 {
   "id": "def-universal-quantifier",
   "level": "2",
-  "url": "ch-chapter-2-quantifiers.html#def-universal-quantifier",
+  "url": "sec-propositional-functions.html#def-universal-quantifier",
   "type": "Definition",
-  "number": "2.0.2",
+  "number": "2.1.2",
   "title": "",
-  "body": "  >  universal quantifier    Given a domain of discourse , a universal quantifier is the specification, \"for all in ,\" or, \"for each in .\" It is denoted . The logical shorthand for a universally quantified statement is .   "
+  "body": "  >  universal quantifier    Given a domain of discourse , a universal quantifier is the specification, for all in , or, for each in . It is denoted . The logical shorthand for a universally quantified statement is .   "
 },
 {
-  "id": "ch-chapter-2-quantifiers-5",
+  "id": "sec-propositional-functions-4",
   "level": "2",
-  "url": "ch-chapter-2-quantifiers.html#ch-chapter-2-quantifiers-5",
+  "url": "sec-propositional-functions.html#sec-propositional-functions-4",
   "type": "Example",
-  "number": "2.0.3",
+  "number": "2.1.3",
   "title": "",
-  "body": "  The statement, \"For all real numbers , \" is a universally quantified statement with a truth value of true. The statement, \"For all real numbers , is a real number\" is a universally quantified statement with a truth value of false.   "
+  "body": "  The statement, For all real numbers , is a universally quantified statement with a truth value of true. The statement, For all real numbers , is a real number is a universally quantified statement with a truth value of false.   "
 },
 {
   "id": "def-existential-quantifier",
   "level": "2",
-  "url": "ch-chapter-2-quantifiers.html#def-existential-quantifier",
+  "url": "sec-propositional-functions.html#def-existential-quantifier",
   "type": "Definition",
-  "number": "2.0.4",
+  "number": "2.1.4",
   "title": "",
-  "body": "   existential quantifier     such that    Given a domain of discourse , an existential quantifier is the specification, \"there exists in ,\" or, \"for some in .\" It is denoted . An existentially quantified statement takes the form, \"there exists in such that \" or \" for some in .\" The logical shorthand for an existentially quantified statement is .   "
+  "body": "   existential quantifier     such that    Given a domain of discourse , an existential quantifier is the specification, there exists in , or, for some in . It is denoted . An existentially quantified statement takes the form, there exists in such that or for some in . The logical shorthand for an existentially quantified statement is .   "
 },
 {
-  "id": "ch-chapter-2-quantifiers-7",
+  "id": "sec-propositional-functions-6",
   "level": "2",
-  "url": "ch-chapter-2-quantifiers.html#ch-chapter-2-quantifiers-7",
+  "url": "sec-propositional-functions.html#sec-propositional-functions-6",
   "type": "Example",
-  "number": "2.0.5",
+  "number": "2.1.5",
   "title": "",
-  "body": "  The statement, \"There exists a real number such that \" is an existentially quantified statement with a truth value of true. The statement, \"There exists a real number such that \" is an existentially quantified statement with a truth value of false.   "
+  "body": "  The statement, There exists a real number such that is an existentially quantified statement with a truth value of true. The statement, There exists a real number such that is an existentially quantified statement with a truth value of false.   "
 },
 {
-  "id": "ch-chapter-2-quantifiers-8",
+  "id": "sec-propositional-functions-7",
   "level": "2",
-  "url": "ch-chapter-2-quantifiers.html#ch-chapter-2-quantifiers-8",
+  "url": "sec-propositional-functions.html#sec-propositional-functions-7",
   "type": "Checkpoint",
-  "number": "2.0.6",
+  "number": "2.1.6",
   "title": "",
-  "body": " Are the following quantified statements true or false? Justify your answers.   \"For all real numbers and , .\"    \"There exist real numbers and such that .\"    \"For all real numbers , there exists a real number such that .\"    \"There exists a real number such that for all real numbers , .\"     "
+  "body": "Are the following quantified statements true or false? Justify your answers.     For all real numbers and , .     This statement is false because there are pairs of real numbers like and .       There exist real numbers and such that .     This is true. The real numbers and satisfy the statement.       For all real numbers , there exists a real number such that .     This is true. Given any real number , taking any satstifies the statement.       There exists a real number such that for all real numbers , .      This is false. Given any candidate for , we can take to build a counterexample.     "
+},
+{
+  "id": "sec-exercises",
+  "level": "1",
+  "url": "sec-exercises.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Exercises",
+  "body": " Exercises  Let denote . Determine whether the following statement are true or false; justify your answer.            such that        such that ,        such that      Write down the negation of the following statements, moving the negation symbol as far to the right as possible. Use symbolic logic notation.         such that           Rewrite the following sentence using symbolic logic notation for the logical connectives and quantifiers ( denotes the set of all functions ).   For any function that is continuous on , there is some such that for all , .    "
+},
+{
+  "id": "sec-exercises-2",
+  "level": "2",
+  "url": "sec-exercises.html#sec-exercises-2",
+  "type": "Checkpoint",
+  "number": "2.2.1",
+  "title": "",
+  "body": "Let denote . Determine whether the following statement are true or false; justify your answer.            such that        such that ,        such that     "
+},
+{
+  "id": "sec-exercises-3",
+  "level": "2",
+  "url": "sec-exercises.html#sec-exercises-3",
+  "type": "Checkpoint",
+  "number": "2.2.2",
+  "title": "",
+  "body": "Write down the negation of the following statements, moving the negation symbol as far to the right as possible. Use symbolic logic notation.         such that         "
+},
+{
+  "id": "sec-exercises-4",
+  "level": "2",
+  "url": "sec-exercises.html#sec-exercises-4",
+  "type": "Checkpoint",
+  "number": "2.2.3",
+  "title": "",
+  "body": " Rewrite the following sentence using symbolic logic notation for the logical connectives and quantifiers ( denotes the set of all functions ).   For any function that is continuous on , there is some such that for all , .   "
 },
 {
   "id": "sec-directproof",
@@ -442,11 +469,101 @@ var ptx_lunr_docs = [
   "body": " Disprove: For all matrices with real entries, if is not the zero matrix, then is nonsingular.  It is not the case that every nonzero matrix with real entries is nonsingular. Indeed, the matrix  has the property that for any matrix   "
 },
 {
+  "id": "sec-exercises-ch3",
+  "level": "1",
+  "url": "sec-exercises-ch3.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Exercises",
+  "body": " Exercises  Use truth tables to prove that the statements below are tautologies.                  Let be a tautology (a statement that always has truth value ). Show that for any proposition , and .    If represents a contradiction (a statement that always has truth value ) and is any proposition, what can be said about and ?    Prove that for all statements , and , by (a) using a truth table and (b) stringing together previously established logical equivalences (be sure to cite each equivalence law you use).    The previous problem shows also that . Explain why this means you only need to prove one of those statements (not both!) to prove the original implication.   "
+},
+{
+  "id": "sec-exercises-ch3-2",
+  "level": "2",
+  "url": "sec-exercises-ch3.html#sec-exercises-ch3-2",
+  "type": "Checkpoint",
+  "number": "3.4.1",
+  "title": "",
+  "body": "Use truth tables to prove that the statements below are tautologies.                "
+},
+{
+  "id": "sec-exercises-ch3-3",
+  "level": "2",
+  "url": "sec-exercises-ch3.html#sec-exercises-ch3-3",
+  "type": "Checkpoint",
+  "number": "3.4.2",
+  "title": "",
+  "body": " Let be a tautology (a statement that always has truth value ). Show that for any proposition , and .  "
+},
+{
+  "id": "sec-exercises-ch3-4",
+  "level": "2",
+  "url": "sec-exercises-ch3.html#sec-exercises-ch3-4",
+  "type": "Checkpoint",
+  "number": "3.4.3",
+  "title": "",
+  "body": " If represents a contradiction (a statement that always has truth value ) and is any proposition, what can be said about and ?  "
+},
+{
+  "id": "sec-exercises-ch3-5",
+  "level": "2",
+  "url": "sec-exercises-ch3.html#sec-exercises-ch3-5",
+  "type": "Checkpoint",
+  "number": "3.4.4",
+  "title": "",
+  "body": " Prove that for all statements , and , by (a) using a truth table and (b) stringing together previously established logical equivalences (be sure to cite each equivalence law you use).  "
+},
+{
+  "id": "sec-exercises-ch3-6",
+  "level": "2",
+  "url": "sec-exercises-ch3.html#sec-exercises-ch3-6",
+  "type": "Checkpoint",
+  "number": "3.4.5",
+  "title": "",
+  "body": " The previous problem shows also that . Explain why this means you only need to prove one of those statements (not both!) to prove the original implication.  "
+},
+{
+  "id": "ch-chapter-4-more-exercises",
+  "level": "1",
+  "url": "ch-chapter-4-more-exercises.html",
+  "type": "Chapter",
+  "number": "4",
+  "title": "Challenging Exercises",
+  "body": " Challenging Exercises These problems require creative thinking or build on results you have proved in other problems.  Statements (1) and (2) below are implicitly of the form . In this exercise, you will rewrite them to be explicitly of this form.   Using logical notation, rewrite each of statements (1) and (2) in this form, with appropriate domain of discourse , and appropriate propositional functions and (you may not want to use as the variable). You answer will look like with the blanks filled in appropriately.    Use part (a) to rewrite the statement, with moved as far to the right as possible. (Your answer should still use formal logic notation.)    Express the statement in (b) in as simple an English sentence as possible; i.e., it should not sound like it was produced by a logical negation machine. In this answer, you should have no formal logic notation.     Statement (1). Being nonzero is not a sufficient condition for an matrix to be nonsingular.  Statement (2). A consistent linear system doesn't necessarily have a unique solution. (Use to denote the set of all linear systems.)   Are the following pairs of statements logically equivalent? If yes, simply state Yes. If no, give an example in which one statement is true and the other is false, where the domain of discourse is the set of all Hamilton students. (You will have to decide what properties of students and represent. Be imaginative!)                         The logical connective exclusive-or is defined by Prove that , by showing that both are logically equivalent to . Do not use truth tables! Cite any equivalence laws you use by name!   "
+},
+{
+  "id": "ch-chapter-4-more-exercises-2",
+  "level": "2",
+  "url": "ch-chapter-4-more-exercises.html#ch-chapter-4-more-exercises-2",
+  "type": "Checkpoint",
+  "number": "4.0.1",
+  "title": "",
+  "body": " Statements (1) and (2) below are implicitly of the form . In this exercise, you will rewrite them to be explicitly of this form.   Using logical notation, rewrite each of statements (1) and (2) in this form, with appropriate domain of discourse , and appropriate propositional functions and (you may not want to use as the variable). You answer will look like with the blanks filled in appropriately.    Use part (a) to rewrite the statement, with moved as far to the right as possible. (Your answer should still use formal logic notation.)    Express the statement in (b) in as simple an English sentence as possible; i.e., it should not sound like it was produced by a logical negation machine. In this answer, you should have no formal logic notation.     Statement (1). Being nonzero is not a sufficient condition for an matrix to be nonsingular.  Statement (2). A consistent linear system doesn't necessarily have a unique solution. (Use to denote the set of all linear systems.)  "
+},
+{
+  "id": "ch-chapter-4-more-exercises-3",
+  "level": "2",
+  "url": "ch-chapter-4-more-exercises.html#ch-chapter-4-more-exercises-3",
+  "type": "Checkpoint",
+  "number": "4.0.2",
+  "title": "",
+  "body": "Are the following pairs of statements logically equivalent? If yes, simply state Yes. If no, give an example in which one statement is true and the other is false, where the domain of discourse is the set of all Hamilton students. (You will have to decide what properties of students and represent. Be imaginative!)                       "
+},
+{
+  "id": "ch-chapter-4-more-exercises-4",
+  "level": "2",
+  "url": "ch-chapter-4-more-exercises.html#ch-chapter-4-more-exercises-4",
+  "type": "Checkpoint",
+  "number": "4.0.3",
+  "title": "",
+  "body": " The logical connective exclusive-or is defined by Prove that , by showing that both are logically equivalent to . Do not use truth tables! Cite any equivalence laws you use by name!  "
+},
+{
   "id": "logic",
   "level": "1",
   "url": "logic.html",
   "type": "Section",
-  "number": "4.1",
+  "number": "5.1",
   "title": "Logic",
   "body": " Logic  Authors should adhere to the rules of logic in such a way that their readers understand what logical techniques they are employing.  In other words, the authors...   state claims (propositions, theorems, lemmas, etc.) as logical statements;  state claims appropriate to the assigned problem;  write proofs with first and last sentences that indicate the proof technique they are using;*  define notation and symbols before using them;  employ a valid proof technique for the statement as written;  employ a valid proof technique for the statement appropriate to the problem;  include all necessary cases in the proof;  write examples with a clear topic sentence;  write prose using evidence to support claims;  employ sound logic even in mathematical prose.   *this criterion relaxes a bit after the first proofs course; if you're proving a theorem directly, you can just get to the proof without repeating the hypotheses at the beginning of the proof. But if you're in your first proofs course, please include the first and last sentences that lay out your hypotheses and conclusions!  "
 },
@@ -455,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "mathematics.html",
   "type": "Section",
-  "number": "4.2",
+  "number": "5.2",
   "title": "Mathematics",
   "body": " Mathematics  The authors...   use definitions, theorems, and other results from the appropriate source(s) or chapter(s);  cite definitions, theorems, and other results from the appropriate source(s) or chapter(s);  cite named definitions, theorems, and results;  employ correct calculations;  address all cases and subcases;  do not re-prove prior results.   "
 },
@@ -464,18 +581,18 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "style.html",
   "type": "Section",
-  "number": "4.3",
+  "number": "5.3",
   "title": "Style",
-  "body": " Style  The authors...   use the appropriate LaTeX template for the course;  adhere to mathematical style conventions, such as:   using math mode for math symbols,  writing sentences that do not start in math mode,  not writing \"two-column\" proofs reminiscent of a high school geometry class,  using aligned equations when a string of equations is too long for a page,  using inline equations for minor mathematical manipulations,  using appropriate LaTeX environments (proof, prop*, example*, etc);    discern when to write an example instead of a proposition and proof;  adhere to the conventions of grammar;  write clearly and concisely in a way that does not obscure the logic or mathematics.   "
+  "body": " Style  The authors...   use the appropriate LaTeX template for the course;  adhere to mathematical style conventions, such as:   using math mode for math symbols,  writing sentences that do not start in math mode,  not writing two-column proofs reminiscent of a high school geometry class,  using aligned equations when a string of equations is too long for a page,  using inline equations for minor mathematical manipulations,  using appropriate LaTeX environments (proof, prop*, example*, etc);    discern when to write an example instead of a proposition and proof;  adhere to the conventions of grammar;  write clearly and concisely in a way that does not obscure the logic or mathematics.   "
 },
 {
   "id": "examples",
   "level": "1",
   "url": "examples.html",
   "type": "Section",
-  "number": "4.4",
+  "number": "5.4",
   "title": "Examples (and how to write them)",
-  "body": " Examples (and how to write them)  Here's a note about the difference between a proposition in math (versus formal logic). In math, we understand propositions (and theorems, lemmas, corollaries, etc.) to be statements that are true (and proved\/provable) so that we can cite them when we need to use them. You can see the confusion that would ensue if a paper contained \"Proposition 1: All even integers are prime\" under that assumption, even if followed immediately by a counterexample! So, if you are showing that a statement is not true as part of a writing assignment, here's what that might look like:   Example  It is not the case that every even integer is prime. Notice that the integer is even. Although divides , it divides neither nor . Therefore, by (definition of prime\/proposition about prime numbers\/whatever it is), is not prime.   To break that down into more of a template:   Example   [Topic sentence: what's the point of this example?]  [Supporting mathematical evidence, less formal than a proof, but still following the stylistic conventions of good mathematical writing!]  [Concluding sentence.]    "
+  "body": " Examples (and how to write them)  Here's a note about the difference between a proposition in math (versus formal logic). In math, we understand propositions (and theorems, lemmas, corollaries, etc.) to be statements that are true (and proved\/provable) so that we can cite them when we need to use them. You can see the confusion that would ensue if a paper contained Proposition 1: All even integers are prime under that assumption, even if followed immediately by a counterexample! So, if you are showing that a statement is not true as part of a writing assignment, here's what that might look like:   Example  It is not the case that every even integer is prime. Notice that the integer is even. Although divides , it divides neither nor . Therefore, by (definition of prime\/proposition about prime numbers\/whatever it is), is not prime.   To break that down into more of a template:   Example   [Topic sentence: what's the point of this example?]  [Supporting mathematical evidence, less formal than a proof, but still following the stylistic conventions of good mathematical writing!]  [Concluding sentence.]    "
 },
 {
   "id": "backmatter-2",
