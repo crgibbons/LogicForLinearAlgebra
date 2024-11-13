@@ -4,112 +4,223 @@
   <title>Quantifiers</title>
 
   <introduction>
-    <p> If we read the sentences, "He is taller than that," or "She is from Darien, CT," or even "<m>x^2 \geq y + 4</m>," 
+    <p>
+      If we read the sentences, <q>He is taller than that,</q> or <q>She is from Darien, CT,</q> or even <q><m>x^2 \geq y + 4</m>,</q>
       we note that they are not statements because their truth values are ambiguous. After all, who is he? What is that? Who is she?
       Which values of <m>x</m> and <m>y</m> are we considering? If we knew the answers to these questions, these sentences would be statements; 
       such sentences are called <term>propositional functions</term>, and we make statements out of them using quantifiers. 
-      </p>
+    </p>
   </introduction>
 
-  <definition xml:id="def-propfunc">
-    <notation>
-      <usage><m>p(x)</m></usage>
-      <description>simple propositional function</description>
-    </notation>
-    <notation>
-      <usage><m>P(x,y)</m></usage>
-      <description>compound propositional function</description>
-    </notation>
-    <statement>
-      <p>
-        A <term>propositional function</term> is a sentence that becomes a statement when ambiguity is removed.
-        We denote a propositional function as <m>p(x)</m> if it results in a simple statement or <m>P(x,y)</m> if it results in a compound statement. 
-      </p>
-    </statement>
-  </definition>
+  <section xml:id="sec-propositional-functions">
+    <title>Propositional Functions</title>
+    
+    <definition xml:id="def-propfunc">
+      <notation>
+        <usage><m>p(x)</m></usage>
+        <description>simple propositional function</description>
+      </notation>
+      <notation>
+        <usage><m>P(x,y)</m></usage>
+        <description>compound propositional function</description>
+      </notation>
+      <statement>
+        <p>
+          A <term>propositional function</term> is a sentence that becomes a statement when ambiguity is removed.
+          We denote a propositional function as <m>p(x)</m> if it results in a simple statement or <m>P(x,y)</m> if it results in a compound statement. 
+        </p>
+      </statement>
+    </definition>
 
-  <definition xml:id="def-universal-quantifier">
-    <notation>
-      <usage><m>\forall</m>></usage>
-      <description>universal quantifier</description>
-    </notation>
-    <statement>
-      <p>
-        Given a domain of discourse <m>D</m>, a <term>universal quantifier</term> is the specification, "for all <m>x</m> in <m>D</m>," or, "for each <m>x</m> in <m>D</m>."
-        It is denoted <m>\forall x \in D</m>.
-        The logical shorthand for a universally quantified statement is <m>\forall x \in D, p(x)</m>.
-      </p>
-    </statement>
-  </definition>
+    <definition xml:id="def-universal-quantifier">
+      <notation>
+        <usage><m>\forall</m>></usage>
+        <description>universal quantifier</description>
+      </notation>
+      <statement>
+        <p>
+          Given a domain of discourse <m>D</m>, a <term>universal quantifier</term> is the specification,
+          <q>for all <m>x</m> in <m>D</m>,</q> or, <q>for each <m>x</m> in <m>D</m>.</q>
+          It is denoted <m>\forall x \in D</m>.
+          The logical shorthand for a universally quantified statement is <m>\forall x \in D, p(x)</m>.
+        </p>
+      </statement>
+    </definition>
 
-  <example>
-    <statement>
-      <p>
-        The statement, "For all real numbers <m>x</m>, <m>x^2 \geq 0</m>" is a universally quantified statement with a truth value of true. 
-        The statement, "For all real numbers <m>x</m>, <m>\tan(x)</m> is a real number" is a universally quantified statement with a truth value of false.
-      </p>
-    </statement>
-  </example>
+    <example>
+      <statement>
+        <p>
+          The statement, <q>For all real numbers <m>x</m>, <m>x^2 \geq 0</m></q> is a universally quantified statement with a truth value of true. 
+          The statement, <q>For all real numbers <m>x</m>, <m>\tan(x)</m> is a real number</q> is a universally quantified statement with a truth value of false.
+        </p>
+      </statement>
+    </example>
 
-  <definition xml:id="def-existential-quantifier">
-    <notation>
-      <usage><m>\exists</m></usage>
-      <description>existential quantifier</description>
-    </notation>
-    <notation>
-      <usage><m>\backepsilon</m></usage>
-      <description>such that</description>
-    </notation>
-    <statement>
-      <p>
-        Given a domain of discourse <m>D</m>, an <term>existential quantifier</term> is the specification, "there exists <m>x</m> in <m>D</m>," or, "for some <m>x</m> in <m>D</m>."
-        It is denoted <m>\exists x \in D</m>. An <term>existentially quantified statement</term> takes the form, "there exists <m>x</m> in <m>D</m> such that <m>p(x)</m>" or "<m>p(x)</m> for some <m>x</m> in <m>D</m>."
-        The logical shorthand for an existentially quantified statement is <m>\exists x \in D \backepsilon p(x)</m>.
-      </p>
-    </statement>
-  </definition>
+    <definition xml:id="def-existential-quantifier">
+      <notation>
+        <usage><m>\exists</m></usage>
+        <description>existential quantifier</description>
+      </notation>
+      <notation>
+        <usage><m>\backepsilon</m></usage>
+        <description>such that</description>
+      </notation>
+      <statement>
+        <p>
+          Given a domain of discourse <m>D</m>, an <term>existential quantifier</term> is the specification, 
+          <q>there exists <m>x</m> in <m>D</m>,</q> or, <q>for some <m>x</m> in <m>D</m>.</q>
+          It is denoted <m>\exists x \in D</m>. An <term>existentially quantified statement</term> takes the form, 
+          <q>there exists <m>x</m> in <m>D</m> such that <m>p(x)</m></q> or <q><m>p(x)</m> for some <m>x</m> in <m>D</m>.</q>
+          The logical shorthand for an existentially quantified statement is <m>\exists x \in D \backepsilon p(x)</m>.
+        </p>
+      </statement>
+    </definition>
 
-  <example>
-    <statement>
-      <p>
-        The statement, "There exists a real number <m>x</m> such that <m>x^2 \geq 10</m>" is an existentially quantified statement with a truth value of true. 
-        The statement, "There exists a real number <m>x</m> such that <m>\cos(x) > 2</m> " is an existentially quantified statement with a truth value of false.
-      </p>
-    </statement>
-  </example>
+    <example>
+      <statement>
+        <p>
+          The statement, <q>There exists a real number <m>x</m> such that <m>x^2 \geq 10</m></q> is an existentially quantified statement with a truth value of true. 
+          The statement, <q>There exists a real number <m>x</m> such that <m>\cos(x) > 2</m></q> is an existentially quantified statement with a truth value of false.
+        </p>
+      </statement>
+    </example>
 
-
-  <exercise>
-    <statement>
+    <exercise>
       <p>
         Are the following quantified statements true or false? Justify your answers.
         <ol>
           <li>
-            <p>
-              "For all real numbers <m>x</m> and <m>y</m>, <m>x^2 \geq y+4</m>."
-            </p>
+            <statement correct="no">
+              <p>
+                <q>For all real numbers <m>x</m> and <m>y</m>, <m>x^2 \geq y+4</m>.</q>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This statement is false because there are pairs of real numbers like <m>x = 0</m> and <m>y = 1</m>.
+              </p>
+            </solution>
           </li>
           <li>
-            <p>
-              "There exist real numbers <m>x</m> and <m>y</m> such that <m>x^2 \geq y+4</m>."
-            </p>
+            <statement correct="yes">
+              <p>
+                <q>There exist real numbers <m>x</m> and <m>y</m> such that <m>x^2 \geq y+4</m>.</q>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This is true. The real numbers <m>x = 0</m> and <m>y = -5</m> satisfy the statement.
+              </p>
+            </solution>
           </li>
           <li>
-            <p>
-              "For all real numbers <m>x</m>, there exists a real number <m>y</m> such that <m>x^2 \geq y+4</m>."
-            </p>
+            <statement correct="yes">
+              <p>
+                <q>For all real numbers <m>x</m>, there exists a real number <m>y</m> such that <m>x^2 \geq y+4</m>.</q>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This is true. Given any real number <m>x</m>, taking any <m>y \leq x^2 - 4</m> satstifies the statement.
+              </p>
+            </solution>
           </li>
           <li>
-            <p>
-              "There exists a real number <m>x</m> such that for all real numbers <m>y</m>, <m>x^2 \geq y+4</m>."
-            </p>
+            <statement correct="no">
+              <p>
+                <q>There exists a real number <m>x</m> such that for all real numbers <m>y</m>, <m>x^2 \geq y+4</m>.</q>
+              </p>
+            </statement>
+            <response />
+            <solution>
+              <p>
+                This is false. Given any candidate for <m>x</m>, we can take <m>y = x^2 -3</m> to build a counterexample.
+              </p>
+            </solution>
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    </exercise>
+  </section>
 
-  <!-- exercises section-->
+  <section xml:id="sec-exercises">
+    <title>Exercises</title>
+
+    <exercise>
+      <p>
+        Let <m>P(x,y)</m> denote <m>x \geq y</m>.  Determine whether the following statement are true or false; justify your answer.
+      </p>
+      <ol>
+        <li>
+          <statement correct="no">
+            <p>
+              <m>\forall x, y \in \mathbb{N}, P(x,y)</m>
+            </p>
+          </statement>
+        </li>
+        <li>
+          <statement>
+            <p>
+              <m>\forall x \in \mathbb{N}, \exists y \in \mathbb{N}</m> such that <m>P(x,y)</m>
+            </p>
+          </statement>
+        </li>
+        <li>
+          <statement correct="no">
+            <p>
+              <m>\exists x \in  \mathbb{N}</m> such that <m>\forall y \in \mathbb{N}</m>,  <m>P(x,y)</m>
+            </p>
+          </statement>
+        </li>
+        <li>
+          <statement correct="yes">
+            <p>
+                <m>\exists x,y \in  \mathbb{N}</m> such that <m>P(x,y)</m>
+            </p>
+          </statement>
+        </li>
+      </ol>
+    </exercise>
+
+    <exercise>
+      <p>
+        Write down the negation of the following statements, moving the negation symbol <m>\lnot</m> as far to the right as possible. Use  symbolic logic notation.
+      </p>
+      <ol>
+        <li>
+          <p>
+            <m>\forall x \in A \left [ p(x) \implies q(x) \right ]</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\exists x \in A </m> such that <m> \left [ \left ( \lnot p(x)\right ) \land q(x) \right ]</m>
+          </p>
+        </li>
+        <li>
+          <p>
+             <m>\forall x \in A \left [ p(x) \implies \left ( \exists y \in B \text{ such that } \left [ q(x,y) \land r(x,y) \right] \right ) \right ]</m>
+          </p>
+        </li>
+      </ol>
+    </exercise>
+
+    
+    <exercise>
+      <statement>
+        <p>
+          Rewrite the following sentence using symbolic logic notation for the logical connectives and quantifiers 
+         (<m>\mathcal{F}</m> denotes the set of all functions <m>\mathbb{R} \to \mathbb{R}</m>).
+        </p>
+        <p>
+          <q>
+            For any function <m>f \in \mathcal{F}</m> that is continuous on <m>[a, b]</m>, 
+            there is some <m>c \in [a,b]</m>  such that for all <m>x\in [a,b]</m>, <m>f(c) \leq f(x)</m>.
+          </q>
+        </p>
+      </statement>
+    </exercise>
+  </section>
 
 </chapter>
 
@@ -141,22 +252,67 @@ The second statement, negated, is equivalent to ``For all $\male$ in the set of 
 
 \section{Exercises}
 
-\begin{enumerate}[resume=exercises]
-	\item Let $P(x,y)$ denote $x \geq y$.  Determine whether the following statement are true or false; justify your answer.
-			\begin{enumerate}[label=(\alph*)]
-				\item $\forall x, y \in \mathbb{N}, P(x,y)$
-				\item $\forall x \in \mathbb{N}, \exists y \in \mathbb{N}$ such that $P(x,y)$
-				\item $\exists x \in  \mathbb{N}$ such that $\forall y \in \mathbb{N}$,  $P(x,y)$
-				\item $\exists x,y \in  \mathbb{N}$ such that $P(x,y)$
-			\end{enumerate}
-	\item Write down the negation of the following statements, moving the negation symbol $\lnot$ as far to the right as possible. Use  symbolic logic notation.
-			\begin{enumerate}[label=(\alph*)]
-				\item $\forall x \in A \left [ p(x) \implies q(x) \right ]$ 
-				\item $\exists x \in A $ such that $ \left [ \left ( \lnot p(x)\right ) \land q(x) \right ]$ 
-				\item $\forall x \in A \left [ p(x) \implies \left ( \exists y \in B \text{ such that } \left [ q(x,y) \land r(x,y) \right] \right ) \right ]$
-			\end{enumerate}
-	\item Rewrite the following sentence using symbolic logic notation for the logical connectives and quantifiers ($\mathcal{F}$ denotes the set of all functions $\mathbb{R} \to \mathbb{R}$).\\
-		``For any function $f \in \mathcal{F}$ that is continuous on $[a, b]$, there is some $c \in [a,b]$  such that for all $x\in [a,b]$, $f(c) \leq f(x)$.''
-	
-	\end{enumerate}
+<ol>
+	<li>
+	<p>
+		 Let <m>P(x,y)</m> denote <m>x \geq y</m>.  Determine whether the following statement are true or false; justify your answer.
+</p>
+</li>
+<ol>
+	<li>
+	<p>
+		 <m>\forall x, y \in \mathbb{N}, P(x,y)</m>
+</p>
+</li>
+<li>
+	<p>
+		 <m>\forall x \in \mathbb{N}, \exists y \in \mathbb{N}</m> such that <m>P(x,y)</m>
+</p>
+</li>
+<li>
+	<p>
+		 <m>\exists x \in  \mathbb{N}</m> such that <m>\forall y \in \mathbb{N}</m>,  <m>P(x,y)</m>
+</p>
+</li>
+<li>
+	<p>
+		 <m>\exists x,y \in  \mathbb{N}</m> such that <m>P(x,y)</m>
+</p>
+</li>
+
+</ol>
+<li>
+	<p>
+		 Write down the negation of the following statements, moving the negation symbol <m>\lnot</m> as far to the right as possible. Use  symbolic logic notation.
+</p>
+</li>
+<ol>
+	<li>
+	<p>
+		 <m>\forall x \in A \left [ p(x) \implies q(x) \right ]</m>
+</p>
+</li>
+<li>
+	<p>
+		 <m>\exists x \in A </m> such that <m> \left [ \left ( \lnot p(x)\right ) \land q(x) \right ]</m>
+</p>
+</li>
+<li>
+	<p>
+		 <m>\forall x \in A \left [ p(x) \implies \left ( \exists y \in B \text{ such that } \left [ q(x,y) \land r(x,y) \right] \right ) \right ]</m>
+</p>
+</li>
+
+</ol>
+<li>
+	<p>
+		 Rewrite the following sentence using symbolic logic notation for the logical connectives and quantifiers (<m>\mathcal{F}</m> denotes the set of all functions <m>\mathbb{R} \to \mathbb{R}</m>).\\
+</p>
+</li>
+<p>
+	<q>For any function <m>f \in \mathcal{F}</m> that is continuous on <m>[a, b]</m>, there is some <m>c \in [a,b]</m>  such that for all <m>x\in [a,b]</m>, <m>f(c) \leq f(x)</m>.</q>
+</p>
+
+</ol>
+
   -->

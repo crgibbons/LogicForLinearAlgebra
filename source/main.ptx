@@ -16,10 +16,11 @@
     <xi:include href="./ch-chapter-1-connectives.ptx" />
     <xi:include href="./ch-chapter-2-quantifiers.ptx" />
     <xi:include href="./ch-chapter-3-proofs.ptx" />
+    <xi:include href="./ch-chapter-4-more-exercises.ptx" />
 
     <!-- Include appendices -->
     <xi:include href="./app-style-conventions.ptx" />
-
+    <!-- set theory appendix -->
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />

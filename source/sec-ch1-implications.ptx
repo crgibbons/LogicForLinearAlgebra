@@ -117,19 +117,19 @@
             </p>
         </statement>
         <matches>
-            <match order="">
+            <match order="2">
                 <premise>Implication <m>p \implies q</m></premise>
                 <response>If it's raining, then it's wet outside.</response>
             </match>
-            <match order="">
+            <match order="3">
                 <premise>Converse of <m>p \implies q</m></premise>
                 <response>If it's wet ouside, then it's raining.</response>
             </match>
-            <match order="">
+            <match order="1">
                 <premise>Inverse of <m>p \implies q</m></premise>
                 <response>If it's not raining, then it's not wet outside.</response>
             </match>
-            <match order="">
+            <match order="4">
                 <premise>Contrapositive of <m>p \implies q</m></premise>
                 <response>If it's not wet outside, then it's not raining.</response>
             </match>

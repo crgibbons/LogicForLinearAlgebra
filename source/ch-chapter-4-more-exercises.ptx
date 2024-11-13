@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-4-more-exercises" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Challenging Exercises</title>
+
+  These problems require creative thinking or build on results you have proved in other problems.
+
+	<exercise>
+		<statement>
+			<p>
+			Statements (1) and (2) below are <em>implicitly</em> of the form <m>\lnot (\forall x \in D [p(x) \implies q(x)])</m>. 
+			In this exercise, you will rewrite them to be <em>explicitly</em> of this form.
+			<ol>
+				<li>
+					<p>
+						Using logical notation, rewrite each of statements (1) and (2) in this form, with appropriate domain of discourse <m>D</m>, 
+						and appropriate propositional functions <m>p(x)</m> and <m>q(x)</m> (you may not want to use <q><m>x</m></q> as the variable). 
+						You answer will look like 
+						<me>
+							\lnot \bigg(\forall \underline{\qquad} \in \underline{\qquad}\,\, [ \underline{\qquad\qquad\qquad} \implies \underline{\qquad\qquad\qquad}] \bigg)
+						</me>
+						with the blanks filled in appropriately.
+					</p>
+				</li>
+				<li>
+					<p>
+						Use part (a) to rewrite the statement, with <q><m>\lnot</m></q> moved as far to the right as possible.  
+						(Your answer should still use formal logic notation.)
+					</p>
+				</li>
+				<li>
+					<p>
+						Express the statement in (b) in as simple an English sentence as possible; 
+						i.e.,  it should not sound like it was produced by a logical negation machine. 
+						In this answer, you should have no formal logic notation.
+					</p>
+				</li>
+			</ol>
+			</p>
+			<p>
+				Statement (1). Being nonzero is not a sufficient condition for an <m>n \times n</m>  matrix to be nonsingular.
+			</p>
+			<p>
+				Statement (2). A consistent linear system <m>\ell</m> doesn't necessarily have a unique solution. 
+				(Use <m>\mathcal{L}</m> to denote the set of all linear systems.)
+			</p>
+		</statement>
+	</exercise>
+
+	<exercise>
+		<p>
+			Are the following pairs of statements logically equivalent?  
+			If yes, simply state <q>Yes.</q>  If no, give an example in which one statement is true and the other is false, 
+			where the domain of discourse <m>A</m> is the set of all Hamilton students.  
+			(You will have to decide what properties of students <m>p(x)</m>  and <m>q(x)</m> represent. Be imaginative!)
+   		</p>
+   		<ol>
+			<li>
+				<statement>
+					<p>
+						<m>\forall x \in A,  [p(x) \land q(x)]; \quad (\forall x \in A, p(x)) \land (\forall x \in A, q(x))</m>
+					</p>
+				</statement>
+			</li>
+			<li>
+				<statement>
+					<p>
+						<m>\exists x \in A,  [p(x) \land q(x)]; \quad (\exists x \in A, p(x)) \land (\exists x \in A, q(x))</m>
+					</p>
+				</statement>
+			</li>
+			<li>
+				<statement>
+					<p>
+						<m>\exists x \in A,  [p(x) \lor q(x)]; \quad (\exists x \in A, p(x)) \lor (\exists x \in A, q(x))</m>
+					</p>
+				</statement>
+			</li>  
+   		</ol>
+	</exercise>
+	
+	<exercise>
+		<statement>
+			<p>
+				The logical connective <q>exclusive-or</q> is defined by
+				<me>
+					p \oplus q \equiv \left[ p \lor q \right ] \land \left[ \lnot (p \land q) \right].
+				</me> 
+				Prove that <m>p \oplus q \equiv \lnot ( p \Leftrightarrow q)</m>, 
+				by showing that both are logically equivalent to 
+				<m>[ p \land (\lnot q)] \lor [q \land (\lnot p) ]</m>.  
+				Do not use truth tables! Cite any equivalence laws you use by name!
+			</p>
+		</statement>
+	</exercise>
+
+</chapter>
+
+
+<!--
+\chapter{Challenging Problems}
+
+
+
+
+
+\vfill
+\pagebreak
+
+\appendix
+\chapter{Set Theory}
+
+Every set $A$ is made up of its members.  If $a$ is a member of $A$, we write $a \in A$, and we use the symbol ``$\in$'' as the mathematical equivalent of the phrase ``is a member of.'' and a set A. 
+
+We think of sets as their own objects.  If $B$ is another set, and if for every $a \in A$ it follows that $a \in B$, then we say that $A$ is a \textbf{\textit{subset}} of $B$, and we write $A \subseteq B$.  
+
+For example, $\{1,2\}$ is a subset of $\{1,2,3\}$ (i.e., $\{1,2\} \subseteq \{1,2,3\}$), but $\{1,4\}$ is not (i.e., $\{1,4\} \not \subseteq \{1,2,3\}$). From this definition, it is clear that a set is a subset of itself.  We say that the sets $A$ and $B$ are \defi{equal} (and we write $A = B$), if and only if $A \subseteq B$ and $B \subseteq A$.
+
+Just as arithmetic features operations on numbers, set theory features operations on sets:
+
+\begin{itemize}
+\item The \textbf{\textit{union}} of the sets $A$ and $B$, denoted $A \cup B$, is the set of all objects that are a member of $A$, or $B$, or both. Example:
+\[\{1, 2, 3\} \cup \{2, 3, 4\}=\{1, 2, 3, 4\}\]
+\item The \textbf{\textit{intersection}} of the sets $A$ and $B$, denoted $A \cap B$, is the set of all objects that are members of both 
+$A$ and $B$. Example:
+\[\{1, 2, 3\}\cap \{2, 3, 4\}= \{2, 3\}\]
+\end{itemize}
+
+\def\firstcircle{(0,0) circle (1.5cm)}
+\def\secondcircle{(0:2cm) circle (1.5cm)}
+
+\colorlet{circle edge}{blue!50}
+\colorlet{circle area}{blue!20}
+
+\tikzset{filled/.style={fill=circle area, draw=circle edge, thick},
+outline/.style={draw=circle edge, thick}}
+
+\setlength{\parskip}{5mm}
+\begin{figure}[!h]
+\centering
+% A or B
+\begin{tikzpicture}
+\draw[filled] \firstcircle node {$A$}
+                             \secondcircle node{$B$};
+\node[anchor=south] at (current bounding box.north) {${A \cup B}$};
+\end{tikzpicture}\qquad\qquad
+% A and B
+\begin{tikzpicture}
+\begin{scope}
+    \clip \firstcircle;
+    \fill[filled] \secondcircle;
+\end{scope}
+\draw[outline] \firstcircle node {$A$};
+\draw[outline] \secondcircle node {$B$};
+\node[anchor=south] at (current bounding box.north) {$A \cap B$};
+\end{tikzpicture}
+\end{figure}
+
+There are lots of other operations on sets (\textit{set difference}, \textit{symmetric difference}, \textit{Cartesian product}, \textit{power set}, \textit{disjoint union}, \textit{complement}, and more!), but usually we only need to worry about unions and intersections.
+
+Some basic sets of central importance to us in linear algebra are:
+\begin{itemize}
+\item the empty set (the unique set containing no elements), which we denote by $\{ \, \}$ or $\varnothing$; 
+\item the set of natural numbers, which we denote by $\mathbb{N}$; 
+\item the set of integers, which we denote by $\mathbb{Z}$; 
+\item the set of rational numbers, which we denote by $\mathbb{Q}$;
+\item the set of real numbers, which we denote by $\mathbb{R}$; and
+\item the set of complex numbers, which we denote by $\mathbb{C}$.
+\end{itemize} 
+-->

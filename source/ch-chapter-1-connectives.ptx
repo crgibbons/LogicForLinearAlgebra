@@ -13,11 +13,20 @@
 
     <example>
       <title>Statements and non-statements</title>
-      <p>"Hamilton College is located in Clinton, NY" is a statement; its truth value is "true."  Furthermore, "Our class meets sixteen days a week" is a statement; its truth value is "false."</p>
-      <p>On the other hand, "Green is the best color" is not a statement, because its truth value isn't well-defined; that is, the truth of the statement is ambiguous.</p>
+      	<p>
+			<q>Hamilton College is located in Clinton, NY</q> is a statement; its truth value is <q>true.</q>
+			Furthermore, <q>Our class meets sixteen days a week</q> is a statement; its truth value is <q>false.</q>
+		</p>
+      	<p>
+			On the other hand, <q>Green is the best color</q> is not a statement, 
+			because its truth value isn't well-defined; that is, the truth of the statement is ambiguous.
+		</p>
     </example>
 
-    <p> Regarding notation: we will typically reserve the variables <m>p</m>, <m>q</m>, <m>r</m> (and so on) as <term>propositional variables</term> (meaning that they are statements).</p>
+    <p>
+		Regarding notation: we will typically reserve the variables <m>p</m>, <m>q</m>, <m>r</m> (and so on) as 
+		<term>propositional variables</term> (meaning that they are statements).
+	</p>
   </introduction>
 
   <xi:include href="sec-ch1-not-and-or.ptx" />

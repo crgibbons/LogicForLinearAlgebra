@@ -9,24 +9,25 @@
 		"For all <m>n \times n</m> matrices <m>A</m>, <m>A</m> is nonsingular if and only if <m>A^\top</m> is nonsingular." This chapter introduces three elementary
 		proof techniques.
     </p>
-  </introduction>
 
-  <p>To prove that something is true for all <m>x \in D</m>, we begin with "Let <m>x \in D</m>"--
-	that is, we consider a generic element of <m>D</m>, not a a specific element of <m>D</m> (i.e., not an example).  
-	After invoking a generic element, there are several techniques for proving such theorems:
-		<ul>
-			<li>
-				<p>
-					Direct Proof: working with the statement as-is
-				</p>
-			</li>
-			<li>
-				<p>
-					Indirect Proof: modifying the statement before working with it (proof by contrapositve, proof by contradiction, proof by other logical equivalences)
-				</p>
-			</li>
-		</ul>
-	</p>
+	<p>
+		To prove that something is true for all <m>x \in D</m>, we begin with "Let <m>x \in D</m>"--
+		that is, we consider a generic element of <m>D</m>, not a a specific element of <m>D</m> (i.e., not an example).  
+		After invoking a generic element, there are several techniques for proving such theorems:
+			<ul>
+				<li>
+					<p>
+						Direct Proof: working with the statement as-is
+					</p>
+				</li>
+				<li>
+					<p>
+						Indirect Proof: modifying the statement before working with it (proof by contrapositve, proof by contradiction, proof by other logical equivalences)
+					</p>
+				</li>
+			</ul>
+		</p>
+	</introduction>
 
 	<section xml:id="sec-directproof">
 		<title>Direct Proofs</title>
@@ -213,149 +214,79 @@
 		
 	</section>
 
+	<section xml:id="sec-exercises-ch3">
+		<title>Exercises</title>
 
-  <!-- exercises section-->
+		<exercise>
+			<p>
+				Use truth tables to prove that the statements below are tautologies.
+			</p>
+			<ol>
+				<li>
+					<statement>
+						<p>
+							<m>\left [ (p \implies q) \land p \right ] \implies q</m>
+						</p>
+					</statement>
+				</li>
+				<li>
+					<statement>
+						<p>
+							<m>\left [ (p  \land (\lnot p) \right ] \implies q</m>
+						</p>
+					</statement>
+				</li>
+			</ol>
+		</exercise>
 
+		<exercise>
+			<statement>
+				<p>
+					Let <m>T</m> be a tautology (a statement that always has truth value <m>T</m>). 
+					Show that for any proposition <m>p</m>, <m>T \lor p \equiv T</m> and <m>T \land p \equiv p</m>.
+				</p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>
+					If <m>F</m> represents a contradiction (a statement that always has truth value <m>F</m>) and <m>p</m> is any proposition, 
+					what can be said about <m>F \land p</m> and <m>F\lor p</m>?
+				</p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>
+					Prove that for all statements <m>p</m>, <m>q</m>  and  <m>r</m>,
+					<me>
+					\left[p \implies (q \lor r) \right ] \equiv  \left [ (p \land (\lnot q) ) \implies r \right ]
+					</me>
+					by (a) using a truth table and (b) stringing together previously established logical equivalences 
+					(be sure to cite each equivalence law you use).
+				</p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>
+					The previous problem shows also that 
+					<m>[\left [ (p \land (\lnot q) ) \implies r \right ] \equiv \left [ (p \land (\lnot r) ) \implies q \right ]</m>.
+					Explain why this means you only need to prove one of those statements (not both!) to prove the original implication.
+				</p>
+			</statement>
+		</exercise>
+		
+	</section>
 </chapter>
 
-<!-- Many mathematical theorems are universally quantified:
-\begin{center}``Theorem: $\forall x \in D, (p(x) \implies q(x))$.''\end{center}
 
-For instance, in the last homework, you proved the statement:
-\begin{center}
-``Proposition: $\forall A\in M_{n,n}$, $\big(A$ is nonsingular $\implies$ $A^T$ is nonsingular$\big)$.''
-\end{center}
+<!--
 
-To prove that something is true for all $x \in D$, we begin with ``Let $x \in D$'' - that is, we consider a generic element of $D$, not a a specific element of $D$ (i.e., not an example).  After invoking a generic element, there are several techniques for proving such theorems:
-\begin{center}
-\begin{tabular}{l l}
-(1) \defi{Direct proof} & (2) Indirect methods \\
-{}~~~~~~~~~~~~~~~~{}{}~~~~~~~~~~~~~~~~{}& \quad (i) \defi{Proof by contrapositive} \\
-& \quad (ii) \defi{Proof by contradiction} \\
-& \quad (iii) \defi{Proof by other logical equivalences}
-\end{tabular}
-\end{center}
 
-To talk about these proof techniques, let's recall the truth table for an implication:
-\begin{figure}[!h]
-\centering
-\begin{tabular}{c | c | c}
-$p(x)$ & $q(x)$ & $p(x) \implies q(x)$ \\
-\hline
-T & T & T \\
-T & F  & F \\
-F & T & T\\
-F & F & T
-\end{tabular}
-\caption{The truth table for an implication.}
-\end{figure}
-
-\begin{enumerate}[label=(\arabic*)] \item \textbf{Direct Proofs.}
-
-Note that an implication is guaranteed to be true whenever the hypothesis is false.  So, we only need to worry about when the hypothesis is true.
-\begin{enumerate}[label=(\alph*)]
-\item Assume $p$ is true.
-\item Use this assumption (and definitions, theorems, previous results...) to show that $q$ must be true, too.
-\end{enumerate}
-
-\begin{example}\label{even implies even square} Theorem: $\forall a \in \ZZ, (a \text{ is even} \implies a^2 \text{ is even})$.\footnote{Recall the definition of an even integer: $x \in \ZZ$ is even iff $\exists k \in \ZZ$ such that $x = 2k$.\\  Similarly, $x \in \ZZ$ is odd (i.e., not even) iff $\exists k \in \ZZ$ such that $x = 2k + 1$.}
-
-\begin{proof}
-Let $a \in \ZZ$.  Assume $a$ is even.  By the definition of an even number, there exists $k \in \ZZ$ such that $a = 2k$.  Then $a^2 = (2k)^2 = 2(2k^2)$.  Since $2k^2 \in \ZZ$, by definition $a^2$ is even.
-\end{proof}
-\end{example}
-
-\item \textbf{Indirect Methods.}
-\begin{enumerate}[label=(\roman*)]
-\item Proof by contrapositive.  This technique is based on the logical equivalence \[p \implies q \equiv (\lnot q) \implies (\lnot p).\]  To show $p \implies q$ is true, we will show $(\lnot q) \implies (\lnot p)$ is true by the direct method.
-\begin{enumerate}[label=(\alph*)]
-\item Assume $\lnot q$ is true (i.e., assume $q$ is false).
-\item Use this assumption (and definitions, theorems, previous results...) to show that $\lnot p$ must be true, too (i.e., that $p$ is false).
-\end{enumerate}
-
-\begin{example}\label{even square implies even} Theorem: $\forall a \in \ZZ, (a^2 \text{ is even} \implies a \text{ is even})$.
-
-\begin{proof}
-Let $a \in \ZZ$.  We proceed by contrapositive. Assume $a$ is odd. Then by definition of an odd number, there exists $k \in \ZZ$ such that $a = 2k + 1$.  Then $a^2 = (2k+1)^2 = 2(2k^2 + 2k) + 1$.  Since $2k^2 + 2k \in \ZZ$,  by definition $a^2$ is odd.
-\end{proof}
-\end{example}
-
-\item Proof by contradiction.  In this technique, we show the statement $p \implies q$ is true by showing it cannot possibly be false (we're really invoking the Law of the Excluded Middle here).  In other words, we assume that the entire implication is false, and then we show that this contradicts some other known result.
-
-Remember that an implication is false exactly when the hypothesis is true and the conclusion is false.  That is, by the Law of Implication (b), $\lnot(p \implies q) \equiv p \land (\lnot q)$.
-
-\begin{example}[$\sqrt{2}$ is irrational] Theorem: $\forall x \in \RR$, $((x^2 = 2)\implies x \text{ is irrational})$.
-
-Recall that a number $x$ is rational iff $\exists m,n \in \ZZ$ sharing no common factor $\suchthat \, x = \frac{m}{n}$. 
-
-\begin{proof}  Let $x \in \RR$.  Seeking a contradiction, assume $x^2 = 2$ and $x$ is rational.  Then by definition, $x = \frac{m}{n}$ for some $m,n \in \ZZ$ having no common factors.  By assumpition, $x^2 = \frac{m^2}{n^2} = 2$, which implies that $m^2 = 2n^2$.  By Example~\ref{even square implies even}, we see that $m$ is even.  That is, there exists $k \in \ZZ$ such that $m = 2k$.  Then $m^2 = 2(2k^2) = 2n^2$, so $n^2 = 2k^2$.  By Example~\ref{even square implies even}, we have that $n$ is even, too.  So there exists $\ell \in \ZZ$ such that $n = 2 \ell$.  But now $m$ and $n$ share a common factor of $2$, and this is a contradiction.
-\end{proof}
-\end{example}
-
-\item Proof by other logical equivalences.  As our implications become more complicated, like $p \implies (q \lor r)$, we will develop logical equivalences to make these statements easier to prove.  Often this means moving the implication as far to the right as possible so that we can assume as much as possible (see Exercises~\ref{proof-technique}, \ref{proof-technique-2}). 
-\end{enumerate}
-\end{enumerate}
-
-Finally, if you are asked to disprove a universally quantified statement, it's enough to exhibit a single counterexample.  Indeed, remember that the negation of the statement $\forall x \in D, (p(x) \implies q(x))$ is the statement $\exists x \in D \suchthat (p(x) \land(\lnot q(x))$.
-
-\begin{example} Disprove: $\forall A \in M_{n,n}, (A \not = O \implies A \text{ is nonsingular})$.
-
-The following counterexample exhibits a nonzero square matrix that is also singular:  Let $A = \begin{bmatrix} 2 & 3 \\ 0 & 0 \end{bmatrix}$.  For any matrix $B$, $AB$ has a second row of zeros by \S1.3\#28(a), and hence there is no matrix $B$ for which $AB = I_2$ since $I_2$ has a nonzero entry in the second row.  Therefore $A$ is nonzero and singular.
-\end{example}
-
-\section{Exercises}
-\begin{enumerate}[resume=exercises]
-	\item Use truth tables to prove that the statements below are tautologies.
-			\begin{enumerate}[label=(\alph*)]
-			\item  $\left [ (p \implies q) \land p \right ] \implies q$ (This is called {\it modus ponens}.)
-			\item $\left [ (p  \land (\lnot p) \right ] \implies q$ ({\it Anything} follows from a  contradiction!)
-			\end{enumerate}
-	\item Let $T$ be a tautology (a statement that always has truth value $T$). Show that for any proposition $p$, $T \lor p \equiv T$ and $T \land p \equiv p$.
-	\item If $F$ represents a contradiction (a statement that always has truth value $F$) and $p$ is any proposition, what can be said about $F \land p$ and $F\lor p$?
-	\item\label{proof-technique} Prove that for all statements $p$, $q$  and  $r$,  
-		\[
-		\left [p \implies (q \lor r) \right ] \equiv  \left [ (p \land (\lnot q) ) \implies r \right ]
-		\]
-		by (a) using a truth table and (b) stringing together previously established logical equivalences (be sure to cite each equivalence law you use).
-	\item\label{proof-technique-2} Prove that for all statements $p$, $q$  and  $r$,  
-		\[
-		\left [p \implies (q \lor r) \right ] \equiv  \left [ (p \land (\lnot r) ) \implies q \right ]
-		\]
-		by stringing together previously established logical equivalences (be sure to cite each equivalence law you use; your answer will be almost identical to the previous exercise, part (b)).  Note that this implies $[\left [ (p \land (\lnot q) ) \implies r \right ] \equiv \left [ (p \land (\lnot r) ) \implies q \right ]$, and thus you need only prove one of these to show the original implication is true.
-\end{enumerate}
-
-\chapter{Challenging Problems}
-
-These problems require creative thinking or build on results you have proved in other problems.
-
-\subsection{Exercises}
-
-\begin{enumerate}[resume=exercises]
-	\item Statements (1) and (2) below are \textit{implicitly} of the form $\lnot (\forall x \in D [p(x) \implies q(x)])$. In this exercise, you will rewrite them to be \textit{explicitly} of this form.
-		\begin{enumerate}[label=(\alph*)]
-			\item Using logical notation, rewrite each of statements (1) and (2) in this form, with appropriate domain of discourse $D$, and appropriate propositional functions $p(x)$  and $q(x)$  (you may not want to use ``$x$'' as the variable).  You answer will look like \[
-			\lnot\bigg(\forall \underline{\qquad} \in \underline{\qquad}\,\, [ \underline{\qquad\qquad\qquad} \implies \underline{\qquad\qquad\qquad}] \bigg)
-			\] with the blanks filled in appropriately.
-			\item Use part (a) to rewrite the statement, with ``$\lnot$'' moved as far to the right as possible.  (Your answer should still use formal logic notation.)
-			\item Express the statement in (b) in {\it as simple an English sentence as possible}; i.e.,  it should not sound like it was produced by a logical negation machine. In this answer, you should have \textbf{no} formal logic notation.
-		\end{enumerate}
-			
-		(1) Being nonzero is not a sufficient condition for an $n \times n$  matrix to be nonsingular.\\
-		(2) A consistent linear system $\ell$ doesn't necessarily have a unique solution. (Use $\mathcal{L}$ to denote the set of all linear systems.)
-	\item Are the following pairs of statements logically equivalent?  If yes, simply state ``Yes.''  If no, give an example in which one statement is true and the other is false, where the domain of discourse $A$ is the set of all Hamilton students.  (You will have to decide what properties of students $p(x)$  and $q(x)$  represent.  Be imaginative!)
-		\begin{enumerate}[label=(\alph*)]
-			\item $\forall x \in A,  [p(x) \land q(x)]; \quad (\forall x \in A, p(x)) \land (\forall x \in A, q(x))$
-			\item $\exists x \in A,  [p(x) \land q(x)]; \quad (\exists x \in A, p(x)) \land (\exists x \in A, q(x))$
-			\item $\forall x \in A,  [p(x) \lor q(x)]; \quad (\forall x \in A, p(x)) \lor (\forall x \in A, q(x))$
-			\item $\exists x \in A,  [p(x) \lor q(x)]; \quad (\exists x \in A, p(x)) \lor (\exists x \in A, q(x))$
-		\end{enumerate}
-
-	\item The logical connective ``exclusive-or" is defined by 
-		\[
-		p \oplus q \equiv \left[ p \lor q \right ] \land \left[ \lnot (p \land q) \right].
-		\]
-	Prove that $p \oplus q \equiv \lnot ( p \Leftrightarrow q)$, by showing that both are logically equivalent to $[ p \land (\lnot q)] \lor [q \land (\lnot p) ]$.  Do NOT use truth tables! Cite any equivalence laws you use {\it by name}!
-\end{enumerate}
 
 
 

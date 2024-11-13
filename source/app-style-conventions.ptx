@@ -48,7 +48,7 @@
                 <ol>
                     <li><p>using math mode for math symbols,</p></li>
                     <li><p>writing sentences that do not start in math mode,</p></li>
-                    <li><p>not writing "two-column" proofs reminiscent of a high school geometry class,</p></li>
+                    <li><p>not writing <q>two-column</q> proofs reminiscent of a high school geometry class,</p></li>
                     <li><p>using aligned equations when a string of equations is too long for a page,</p></li>
                     <li><p>using inline equations for minor mathematical manipulations,</p></li>
                     <li><p>using appropriate LaTeX environments (proof, prop*, example*, etc);</p></li>
@@ -62,7 +62,14 @@
 
     <section xml:id="examples">
         <title>Examples (and how to write them)</title>
-        <p>Here's a note about the difference between a proposition in math (versus formal logic). In math, we understand propositions (and theorems, lemmas, corollaries, etc.) to be statements that are true (and proved/provable) so that we can cite them when we need to use them. You can see the confusion that would ensue if a paper contained "Proposition 1: All even integers are prime" under that assumption, even if followed immediately by a counterexample! So, if you are showing that a statement is not true as part of a writing assignment, here's what that might look like:</p>
+        <p>Here's a note about the difference between a proposition in math (versus formal logic). 
+          In math, we understand propositions (and theorems, lemmas, corollaries, etc.) to be statements that are true 
+          (and proved/provable) so that we can cite them when we need to use them. 
+          You can see the confusion that would ensue if a paper contained 
+          <q>Proposition 1: All even integers are prime</q> under that assumption, 
+          even if followed immediately by a counterexample! 
+          So, if you are showing that a statement is not true as part of a writing assignment,
+          here's what that might look like:</p>
 
         <paragraphs>
           <title>Example</title>
