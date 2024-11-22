@@ -1,53 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <section>
     <title>Conditional and Biconditional Statements</title>
-    
-    <p>The last two logical connectives deal with implication.</p>
-        
+
+    <p>
+        The last two logical connectives deal with implication.
+    </p>
+
     <definition xml:id="def-implication">
         <notation>
             <usage><m>\implies</m></usage>
-          <description>Logical implication</description>
+            <description>
+                Logical implication
+            </description>
         </notation>
 
         <statement>
             <p>
-                The compound statement "if <m>p</m>, then <m>q</m>" or "<m>p</m> implies <m>q</m>"
-                 is called an <term>implication</term> or a <term>conditional statement</term>, denoted <m>p \implies q</m>,
-                 where <m>p</m> is referred to as the <term>hypothesis</term> or <term>premise</term> and <m>q</m> is referred to
-                 as the <term>conclusion</term>. The implication is defined by the truth table below.</p>
+                The compound statement "if <m>p</m>, then <m>q</m>" or "<m>p</m> implies <m>q</m>" is called an <term>implication</term> or a 
+                <term>conditional statement</term>, denoted <m>p \implies q</m>, where <m>p</m> is referred to as the <term>hypothesis</term> or 
+                <term>premise</term> and <m>q</m> is referred to as the <term>conclusion</term>.
+                The implication is defined by the truth table below.
+            </p>
 
             <table>
                 <title>Truth Table for Implication</title>
+
                 <tabular halign="center">
-                <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\implies q</m></cell></row>
-                <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
-                <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell></row>
-                <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell></row>
-                <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell></row>
+                    <row header = "yes" bottom = "minor">
+                        <cell><m>p</m></cell>
+                        <cell><m>q</m></cell>
+                        <cell><m>p\implies q</m></cell>
+                    </row>
+
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                    </row>
                 </tabular>
             </table>
 
-            <p>An implication in which the premise is false is called <term>vacuously true</term>.</p>
+            <p>
+                An implication in which the premise is false is called <term>vacuously true</term>.
+            </p>
         </statement>
     </definition>
-    
-    <p>You may be looking at the last two rows of the truth table and wondering what's going on. For lay people, the statement <m>p \implies q</m>
-        is meaningless when <m>p</m> is false. But then <m>p \implies q</m> wouldn't be a statement. Statements must have a truth value!</p>
+
+    <p>
+        You may be looking at the last two rows of the truth table and wondering what's going on.
+        For lay people, the statement <m>p \implies q</m> is meaningless when <m>p</m> is false.
+        But then <m>p \implies q</m> wouldn't be a statement.
+        Statements must have a truth value!
+    </p>
 
     <example>
-        <p> 
-            Consider the statement, "If two is odd, then one is even." The constituent statements "two is odd" and "one is even" are both false,
-            and the compound statement is defined to true. Any implication with the premise "two is odd" is vacuously true.
+        <p>
+            Consider the statement, "If two is odd, then one is even." The constituent statements "two is odd" and "one is even" are both false, and the compound statement is defined to true.
+            Any implication with the premise "two is odd" is vacuously true.
         </p>
     </example>
 
-    <p>In formal mathematical logic, no causation in implied by an if-then statement. That is, the statement, "If it's raining, then it's wet outside"
-    doesn't the same thing as, "It's wet outside <em>because</em> it is raining." For all we know, it could be wet outside because someone sprayed
-    everything down with a fire hose. And so, even though the statement, "If <m>2+2=5</m>, then Mars is a planet," is a true statement, we don't infer
-    that the truth of the conclusion is dependent on its causal relationship to the premise ("Mars is a planet" is true regardless of arithmetic!).</p>
+    <p>
+        In formal mathematical logic, no causation in implied by an if-then statement.
+        That is, the statement, "If it's raining, then it's wet outside" doesn't the same thing as, "It's wet outside <em>because</em> it is raining." For all we know, it could be wet outside because someone sprayed everything down with a fire hose.
+        And so, even though the statement, "If <m>2+2=5</m>, then Mars is a planet," is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise ("Mars is a planet" is true regardless of arithmetic!).
+    </p>
 
     <theorem xml:id="thm-neg-imp">
         <title>Negating Implications</title>
+
         <statement>
             <p>
                 For any statements <m>p</m> and <m>q</m>,
@@ -57,6 +97,7 @@
                             <m>\lnot(p \implies q) \equiv p \land (\lnot q)</m>, and
                         </p>
                     </li>
+
                     <li>
                         <p>
                             <m>p \implies q \equiv (\lnot p) \lor q</m>.
@@ -66,49 +107,98 @@
             </p>
         </statement>
     </theorem>
-    
+
+
     <proof>
         <p>
-            We see from the truth tables for <m>\lnot(p \implies q)</m> and <m>p \land (\lnot q)</m> that these statements are logically equivalent. Indeed,
-            we have
+            We see from the truth tables for <m>\lnot(p \implies q)</m> and <m>p \land (\lnot q)</m> that these statements are logically equivalent.
+            Indeed, we have
             <table>
-            <title><p>Truth Table Verification for <m>\lnot(p \implies q) \equiv p \land(\lnot q)</m></p></title>
-            <tabular halign="center">
-                <row header = "yes" bottom = "minor">
-                     <cell><m>p</m></cell><cell right="minor"><m>q</m></cell><cell><m>p \implies q</m></cell><cell><m>\lnot (p \implies q)</m></cell><cell><m>\lnot q</m></cell><cell><m>p \land (\lnot q)</m></cell></row>
-                <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
-                <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
-                <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
-                <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell></row>
-            </tabular>
+                <title>
+                    <p>
+                        Truth Table Verification for <m>\lnot(p \implies q) \equiv p \land(\lnot q)</m>
+                    </p>
+                </title>
+                <tabular halign="center">
+                    <row header = "yes" bottom = "minor">
+                        <cell><m>p</m></cell>
+                        <cell right="minor"><m>q</m></cell>
+                        <cell><m>p \implies q</m></cell>
+                        <cell><m>\lnot (p \implies q)</m></cell>
+                        <cell><m>\lnot q</m></cell>
+                        <cell><m>p \land (\lnot q)</m></cell>
+                    </row>
+
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                    </row>
+
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                    </row>
+
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                    </row>
+
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                    </row>
+                </tabular>
             </table>
             as desired.
         </p>
 
-        <p> For the remaining equivalence, we have
+        <p>
+            For the remaining equivalence, we have
             <md>
                 <mrow>    p \implies q \amp\equiv \lnot\left(\lnot(p \implies q)\right) \amp\text{by the Law of the Double Negative,}</mrow>
                 <mrow>                 \amp\equiv \lnot\left(p \land(\lnot q)\right) \amp\text{by the previous equivalence,}</mrow>
                 <mrow>                 \amp\equiv (\lnot p) \lor \left(\lnot(\lnot q)\right) \amp\text{by De Morgan's Law,}</mrow>
-                <mrow>                \amp\equiv (\lnot p) \lor q \amp\text{by the Law of the Double Negative.}</mrow>
+                <mrow>                 \amp\equiv (\lnot p) \lor q \amp\text{by the Law of the Double Negative.}</mrow>
             </md>
         </p>
     </proof>
 
-    <p>There are three implications that are related to the statement <m>p \implies q</m>, and they are defined as follows.</p>
-    
+    <p>
+        There are three implications that are related to the statement <m>p \implies q</m>, and they are defined as follows.
+    </p>
+
     <definition xml:id="def-implications-related">
         <statement>
             <p>
-                Let <m>p</m> and <m>q</m> be statements and consider the implication <m>p \implies q</m>. The <term>converse of <m>p \implies q</m></term>
-                is the statement <m>q \implies p</m>. The <term>inverse of <m>p \implies q</m></term> is the statement <m>(\lnot p) \implies (\lnot q)</m>.
+                Let <m>p</m> and <m>q</m> be statements and consider the implication <m>p \implies q</m>.
+                The <term>converse of <m>p \implies q</m></term> is the statement <m>q \implies p</m>.
+                The <term>inverse of <m>p \implies q</m></term> is the statement <m>(\lnot p) \implies (\lnot q)</m>.
                 The <term>contrapositive of <m>p \implies q</m></term> is the statement <m>(\lnot q) \implies (\lnot p)</m>.
             </p>
         </statement>
     </definition>
-            
-    <p>Observe that the implication <m>p \implies q</m> is logically equivalent to its contrapositive <m>(\lnot q) \implies (\lnot p)</m>. The converse
-    <m>q \implies p</m> is logically equivalent to the inverse <m>(\lnot p) \implies (\lnot q)</m>.</p>
+
+    <p>
+        Observe that the implication <m>p \implies q</m> is logically equivalent to its contrapositive <m>(\lnot q) \implies (\lnot p)</m>.
+        The converse <m>q \implies p</m> is logically equivalent to the inverse <m>(\lnot p) \implies (\lnot q)</m>.
+    </p>
 
     <exercise>
         <statement>
@@ -116,24 +206,15 @@
                 Let <m>p</m> be the statement, "It's raining," and <m>q</m> be the statement, "It's wet outside." Match the sentences to the correct compound statements.
             </p>
         </statement>
-        <matches>
-            <match order="2">
-                <premise>Implication <m>p \implies q</m></premise>
-                <response>If it's raining, then it's wet outside.</response>
-            </match>
-            <match order="3">
-                <premise>Converse of <m>p \implies q</m></premise>
-                <response>If it's wet ouside, then it's raining.</response>
-            </match>
-            <match order="1">
-                <premise>Inverse of <m>p \implies q</m></premise>
-                <response>If it's not raining, then it's not wet outside.</response>
-            </match>
-            <match order="4">
-                <premise>Contrapositive of <m>p \implies q</m></premise>
-                <response>If it's not wet outside, then it's not raining.</response>
-            </match>
-        </matches>
+        <matches> <match order="2">
+        <premise>
+        Implication <m>p \implies q</m></premise> <response>If it's raining, then it's wet outside.</response> </match> <match order="3">
+        <premise>
+        Converse of <m>p \implies q</m></premise> <response>If it's wet ouside, then it's raining.</response> </match> <match order="1">
+        <premise>
+        Inverse of <m>p \implies q</m></premise> <response>If it's not raining, then it's not wet outside.</response> </match> <match order="4">
+        <premise>
+        Contrapositive of <m>p \implies q</m></premise> <response>If it's not wet outside, then it's not raining.</response> </match> </matches>
     </exercise>
 
     <exercise>
@@ -141,103 +222,127 @@
             <p>
                 Complete the truth table to verify the observations above.
             </p>
+
             <table>
-            <tabular halign="center">
-                <row header = "yes">
-                    <cell></cell><cell></cell><cell>Implication</cell><cell>Converse</cell><cell>Inverse</cell><cell>Contrapositive</cell></row>
-                <row bottom = "minor">
-                        <cell><m>p</m></cell><cell right="minor"><m>q</m></cell><cell><m>p \implies q</m></cell><cell><m>q \implies p</m></cell><cell><m>(\lnot p) \implies (\lnot q)</m></cell><cell><m>(\lnot q) \implies (\lnot p)</m></cell></row>
-                <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell> <cell><fillin width="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell></row>
-                <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell> <cell><fillin width="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="F" /></cell></row>
-                <row><cell>F</cell><cell right="minor">T</cell><cell>T</cell> <cell><fillin width="3" mode="string" answer="F" /></cell><cell><fillin characters="3" mode="string" answer="F" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell></row>
-                <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell> <cell><fillin width="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell><cell><fillin characters="3" mode="string" answer="T" /></cell></row>
-            </tabular>
+                <tabular halign="center">
+                    <row header = "yes">
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>Implication</cell>
+                        <cell>Converse</cell>
+                        <cell>Inverse</cell>
+                        <cell>Contrapositive</cell>
+                    </row>
+
+                    <row bottom = "minor">
+                        <cell><m>p</m></cell>
+                        <cell right="minor"><m>q</m></cell>
+                        <cell><m>p \implies q</m></cell>
+                        <cell><m>q \implies p</m></cell>
+                        <cell><m>(\lnot p) \implies (\lnot q)</m></cell>
+                        <cell><m>(\lnot q) \implies (\lnot p)</m></cell>
+                    </row>
+
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell><fillin width="3" mode="string" answer="T" />
+                        </cell>
+                        <cell><fillin characters="3" mode="string" answer="T" />
+                        </cell>
+                        <cell><fillin characters="3" mode="string" answer="T" />
+                        </cell>
+                    </row>
+
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell><fillin width="3" mode="string" answer="T" />
+                        </cell>
+                        <cell><fillin characters="3" mode="string" answer="T" />
+                        </cell>
+                        <cell><fillin characters="3" mode="string" answer="F" />
+                        </cell>
+                    </row>
+
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell><fillin width="3" mode="string" answer="F" />
+                        </cell>
+                        <cell><fillin characters="3" mode="string" answer="F" />
+                        </cell>
+                        <cell><fillin characters="3" mode="string" answer="T" />
+                        </cell>
+                    </row>
+
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                        <cell><fillin width="3" mode="string" answer="T" />
+                        </cell>
+                        <cell><fillin characters="3" mode="string" answer="T" />
+                        </cell>
+                        <cell><fillin characters="3" mode="string" answer="T" />
+                        </cell>
+                    </row>
+                </tabular>
             </table>
         </statement>
-        <evaluation>
-            <evaluate> <!-- 1 -->
-                <test>
-                    <strcmp use-answer="yes"/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 2 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 3 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 4 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 5 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 6 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 7 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 8 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 9 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 10 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 11 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-            <evaluate> <!-- 12 -->
-                <test>
-                    <strcmp use-answer='yes'/>
-                </test>
-            </evaluate>
-        </evaluation>
+        <evaluation> <evaluate> <!-- 1 --> <test> <strcmp use-answer="yes"/> </test> </evaluate> <evaluate> <!-- 2 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 3 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 4 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 5 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 6 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 7 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 8 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 9 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 10 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 11 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> <evaluate> <!-- 12 --> <test> <strcmp use-answer='yes'/> </test> </evaluate> </evaluation>
     </exercise>
-
     In addition to the conditional statement <m>p \implies q</m>, there's another compound statement that we know well from mathematics.
-
     <definition xml:id="def-biconditional">
         <notation>
             <usage><m>\iff</m>></usage>
-          <description>biconditional</description>
+            <description>
+                biconditional
+            </description>
         </notation>
+
         <statement>
             <p>
                 The <term>biconditional</term> of statements <m>p</m> and <m>q</m> is the compound statement "<m>p</m> if and only if <m>q</m>," denoted <m>p \iff q</m>.
                 It is defined by the truth table below.
             </p>
+
             <table>
                 <title>Truth Table for Implication</title>
+
                 <tabular halign="center">
-                <row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\iff q</m></cell></row>
-                <row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
-                <row><cell>T</cell><cell right="minor">F</cell><cell>F</cell></row>
-                <row><cell>F</cell><cell right="minor">T</cell><cell>F</cell></row>
-                <row><cell>F</cell><cell right="minor">F</cell><cell>T</cell></row>
+                    <row header = "yes" bottom = "minor">
+                        <cell><m>p</m></cell>
+                        <cell><m>q</m></cell>
+                        <cell><m>p\iff q</m></cell>
+                    </row>
+
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                    </row>
+
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                    </row>
                 </tabular>
             </table>
         </statement>
@@ -252,13 +357,12 @@
     </exercise>
 
     <p>
-        Another way to express <m>p \iff q</m> is, "<m>p</m> is necessary and sufficient for <m>q</m>." 
-        In particular, "<m>p</m> is necessary for <m>q</m>" describes the implication <m>q \implies p</m>, 
-        and "<m>p</m> is sufficient for <m>q</m>" describes the implication <m>p \implies q</m>.
+        Another way to express <m>p \iff q</m> is, "<m>p</m> is necessary and sufficient for <m>q</m>." In particular, "<m>p</m> is necessary for <m>q</m>" describes the implication <m>q \implies p</m>, and "<m>p</m> is sufficient for <m>q</m>" describes the implication <m>p \implies q</m>.
     </p>
 
     <example>
         <title>Mathematical Definitions are Biconditional Statements</title>
+
         <statement>
             <p>
                 A matrix is <term>symmetric</term> if and only if it equals its transpose.
@@ -268,6 +372,7 @@
 
     <example>
         <title>The Contrapositive of the Biconditional</title>
+
         <statement>
             <p>
                 From the logical equivalences we've established, we see:
@@ -284,7 +389,7 @@
     <definition xml:id="def-tautology-contradiction">
         <statement>
             <p>
-                A <term>tautology</term> is a compound statement that is true for all truth values of its constituent statements.  
+                A <term>tautology</term> is a compound statement that is true for all truth values of its constituent statements.
                 A <term>contradiction</term> is a compound statement that is fall for all truth values of its constituent statements.
             </p>
         </statement>
@@ -298,20 +403,24 @@
         </statement>
     </exercise>
 
-    <p>We refer to the tautology <m>p \lor (\lnot p)</m> as the <term>Law of the Excluded Middle</term>.</p>
+    <p>
+        We refer to the tautology <m>p \lor (\lnot p)</m> as the <term>Law of the Excluded Middle</term>.
+    </p>
 
     <definition xml:id="modus-ponens">
         <title>Logical Rules of Inference</title>
+
         <statement>
             <p>
-                We can use implication to build logical rules of inference out of simpler statements. Here are two of the most
-                common rules of inference.
+                We can use implication to build logical rules of inference out of simpler statements.
+                Here are two of the most common rules of inference.
                 <ul>
                     <li>
                         <p>
                             <term>Modus Ponens</term> refers to the tautology <m>[p \land (p \implies q)] \implies  q</m>.
                         </p>
                     </li>
+
                     <li>
                         <p>
                             <term>Modus Tollens</term> refers to the tautology <m>[(\lnot q) \land (p \implies q)] \implies (\lnot p)]</m>.
@@ -322,5 +431,4 @@
             </p>
         </statement>
     </definition>
-
 </section>

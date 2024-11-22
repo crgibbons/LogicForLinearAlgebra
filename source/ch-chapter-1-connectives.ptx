@@ -2,39 +2,43 @@
 
 <chapter xml:id="ch-chapter-1-connectives" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Connectives</title>
-  <introduction> 
-    <p> Just as numbers are the building blocks of arithmetic, statements are the building blocks of formal proofs.  However, the value of a statement is is not numerical; the value of statement is called its <term>truth value</term>, which comes in two flavors: True and False.  And, just as we can define operations like addition or division on numbers, we can define operations on statements, called <term>logical connectives</term>.</p>
-      
+
+  <introduction>
+    <p>
+      Just as numbers are the building blocks of arithmetic, statements are the building blocks of formal proofs.
+      However, the value of a statement is is not numerical; the value of statement is called its <term>truth value</term>, which comes in two flavors: True and False.
+      And, just as we can define operations like addition or division on numbers, we can define operations on statements, called <term>logical connectives</term>.
+    </p>
+
     <definition>
       <statement>
-        <p>A <term>statement</term> is a sentence that is unambiguously true or false.</p>
+        <p>
+          A <term>statement</term> is a sentence that is unambiguously true or false.
+        </p>
       </statement>
     </definition>
 
     <example>
       <title>Statements and non-statements</title>
-      	<p>
-			<q>Hamilton College is located in Clinton, NY</q> is a statement; its truth value is <q>true.</q>
-			Furthermore, <q>Our class meets sixteen days a week</q> is a statement; its truth value is <q>false.</q>
-		</p>
-      	<p>
-			On the other hand, <q>Green is the best color</q> is not a statement, 
-			because its truth value isn't well-defined; that is, the truth of the statement is ambiguous.
-		</p>
+
+      <p>
+        <q>Hamilton College is located in Clinton, NY</q> is a statement; its truth value is <q>true.</q> 
+        Furthermore, <q>Our class meets sixteen days a week</q> is a statement; its truth value is <q>false.</q>
+      </p>
+
+      <p>
+        On the other hand, <q>Green is the best color</q> is not a statement, because its truth value isn't well-defined; that is, the truth of the statement is ambiguous.
+      </p>
     </example>
 
     <p>
-		Regarding notation: we will typically reserve the variables <m>p</m>, <m>q</m>, <m>r</m> (and so on) as 
-		<term>propositional variables</term> (meaning that they are statements).
-	</p>
+      Regarding notation: we will typically reserve the variables <m>p</m>, <m>q</m>, <m>r</m> (and so on) as <term>propositional variables</term> 
+      (meaning that they are statements).
+    </p>
   </introduction>
 
   <xi:include href="sec-ch1-not-and-or.ptx" />
-
   <xi:include href="sec-ch1-compound-statements.ptx" />
-
   <xi:include href="sec-ch1-implications.ptx" />
-
   <xi:include href="hw-chapter-1.ptx" />
-
 </chapter>

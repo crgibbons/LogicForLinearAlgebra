@@ -1,234 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <section xml:id="sec-ch1-exercises">
-  <title>Exercises</title>
+	<title>Exercises</title>
 
-  <exercise>
-    <p>
-      Given the statements below, write the following symbolic compound statements in sentences.
-      <ul>
-        <li>
-          <p>
-				Statement <m>p</m>: The car will not start.
-          </p>
-        </li>
-		<li>
+	<exercise>
+		<statement>
 			<p>
-				Statement <m>q</m>: It is freezing outside.
-			</p>
-		</li>
-		<li>
-			<p>
-				Statement <m>r</m>: The food is ready.
-			</p>
-		</li>
-      </ul>
-    </p>
-	<ol>
-		<li>
-			<p>
-				
-					<p>
-						<m>p \land q</m>
-					</p>
-				
-			</p>
-		</li>
-		<li>
-			
-				<p>
-					<m>q \lor (\lnot r)</m>
-				</p>
-			
-		</li>
-		<li>
-			
-				<p>
-					<m>p \land (\lnot )</m>
-				</p>
-			
-		</li>
-		<li>
-			
-				<p>
-					<m>p \land q \land r</m>
-				</p>
-			
-		</li>
-	</ol>
-  </exercise>
-  <exercise>
-	<p>
-			Given the statements above, write the following sentences in logical notation:
-	</p>
-	<ol>
-		<li>
-			
-				<p>
-					The car will start and it is freezing outside.
-				</p>
-			
-		</li>
-		<li>
-			
-				<p>
-					Either the food is ready or it is freezing outside.
-				</p>
-			
-		</li>
-		<li>
-			
-				<p>
-					The food isn't ready and the car won't start.
-				</p>
-			
-		</li>
-	</ol>
-  </exercise>
-  <exercise>
-		<p>
-			Construct a truth table for each of the following statements.
-		</p>
-	<ol>
-		<li>
-				<p>
-					<m>p \land (\lnot q)</m>;
-				</p>
-		</li>
-		<li>
-			 
-				<p>
-					<m>p \lor (q \land (\lnot p))</m>;
-				</p>
-			
-		</li>
-		<li>
-			
-				<p>
-					<m>p \land (q \lor (\lnot p))</m>;
-				</p>
-			
-		</li>
-		<li>
-			
-				<p>
-					<m>p \land (\lnot q)</m>.
-				</p>
-			
-		</li>
-	</ol>
-  </exercise>
-  <exercise>
-	
-		<p>
-			Identify the hypothesis <m>p</m> and the conclusion <m>q</m> in each of the following conditional statements:
-		</p>
-	
-	<ol>
-		<li>
-		<p>
-			I will go to the movies if it rains.
-		</p>
-		</li>
-		<li>
-			<p>
-				If the diagonals of a rectangle are not perpendicular, it is not a square.
-			</p>
-		</li>
-		<li>
-			<p>
-				If <m>x &gt; 0</m> and <m>y &gt; 0</m>, then <m>x+y &gt; 0</m>.
-			</p>
-		</li>
-		<li>
-			<p>
-				<m>f(x)</m> is a function on <m>[a,b]</m> implies that <m>f(x)</m> is continuous on <m>[a,b]</m>.
-			</p>
-		</li>
-		<li>
-			<p>
-				I will pay 5 dollars for a cup of coffee only if elephants fly.
-			</p>
-		</li>
-		<li>
-			<p>
-				All sides are equal provided that <m>T</m> is an equilateral triangle.
-			</p>
-		</li>
-		<li>
-			<p>
-				Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.
-			</p>
-		</li>
-	</ol>
-  </exercise>
-  
-  <exercise>
-	
-		<p>
-			Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other.  
-			That is, for all statements  <m>p</m>, <m>q</m>  and  <m>r</m>, prove the following.
-		</p>
-	
-	<ol>
-		<li>
-			<p>
-				<m>(p \land q) \land r \equiv p \land (q \land r)</m>
-			</p>
-		</li>
-		<li>
-			<p>
-				<m>(p \lor q) \lor r \equiv p \lor (q \lor r)</m>
-			</p>
-		</li>
-		<li>
-			<p>
-				<m>p \land( q \lor r) \equiv (p \land q)  \lor ( p \land r)</m>
-			</p>
-		</li>
-		<li>
-			<p>
-				<m>p \lor( q \land r) \equiv (p \lor q)  \land ( p \lor r)</m>
-			</p>
-		</li>
-	</ol>
-</exercise>
+				Given the statements below, write the following symbolic compound statements in sentences.
+				<ul>
+					<li>
+						<p>
+							Statement <m>p</m>: The car will not start.
+						</p>
+					</li>
 
-<exercise>
-	
-		<p>
-			Is implication associative? That is, are the compound statements
-			<m>\left [(p \implies q) \implies r \right ]</m> and <m>\left [ p \implies(q \implies r)\right ]</m>
-			logically equivalent? Justify your answer!
-		</p>
-	
-</exercise>
-<exercise>
-	
-		<p>
-			Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation).
-		</p>
-	
-	<ol>
-		<li>
-			<p>
-				If two lines are perpendicular, then they intersect at a right angle.
+					<li>
+						<p>
+							Statement <m>q</m>: It is freezing outside.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							Statement <m>r</m>: The food is ready.
+						</p>
+					</li>
+				</ul>
+
+				<ol>
+					<li>
+						<p>
+							<p>
+								<m>p \land q</m>
+							</p>
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>q \lor (\lnot r)</m>
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>p \land (\lnot )</m>
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>p \land q \land r</m>
+						</p>
+					</li>
+				</ol>
 			</p>
-		</li>
-		<li>
+		</statement>
+	</exercise>
+
+	<exercise>
+		<statement>
 			<p>
-				Function <m>f(x)</m> is differentiable provided that <m>f(x)</m> is a polynomial.
+				Given the statements above, write the following sentences in logical notation:
+				<ol>
+					<li>
+						<p>
+							The car will start and it is freezing outside.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							Either the food is ready or it is freezing outside.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							The food isn't ready and the car won't start.
+						</p>
+					</li>
+				</ol>
 			</p>
-		</li>
-		<li>
+		</statement>
+	</exercise>
+
+	<exercise>
+		<statement>
 			<p>
-				(Divergence Test) If <m>\sum_{n=1}^\infty a_n</m> converges, then <m>\lim_{n\to \infty} a_n = 0</m>.
+				Construct a truth table for each of the following statements.
+				<ol>
+					<li>
+						<p>
+							<m>p \land (\lnot q)</m>;
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>p \lor (q \land (\lnot p))</m>;
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>p \land (q \lor (\lnot p))</m>;
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>p \land (\lnot q)</m>.
+						</p>
+					</li>
+				</ol>
 			</p>
-		</li>
-		<li>
+		</statement>
+	</exercise>
+
+	<exercise>
+		<statement>
 			<p>
-				For all <m>n\times n</m> matrices <m>A</m> and <m>B</m>, if <m>A</m> and <m>B</m> are both nonsingular, then <m>AB</m> is nonsingular.
+				Identify the hypothesis <m>p</m> and the conclusion <m>q</m> in each of the following conditional statements.
+				<ol>
+					<li>
+						<p>
+							I will go to the movies if it rains.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							If the diagonals of a rectangle are not perpendicular, it is not a square.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							If <m>x &gt; 0</m> and <m>y &gt; 0</m>, then <m>x+y &gt; 0</m>.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>f(x)</m> is a function on <m>[a,b]</m> implies that <m>f(x)</m> is continuous on <m>[a,b]</m>.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							I will pay 5 dollars for a cup of coffee only if elephants fly.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							All sides are equal provided that <m>T</m> is an equilateral triangle.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.
+						</p>
+					</li>
+				</ol>
 			</p>
-		</li>
-	</ol>
-</exercise>
+		</statement>
+	</exercise>
+
+	<exercise>
+		<statement>
+			<p>
+				Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other.
+				That is, for all statements  <m>p</m>, <m>q</m>  and  <m>r</m>, prove the following.
+				<ol>
+					<li>
+						<p>
+							<m>(p \land q) \land r \equiv p \land (q \land r)</m>
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>(p \lor q) \lor r \equiv p \lor (q \lor r)</m>
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>p \land( q \lor r) \equiv (p \land q)  \lor ( p \land r)</m>
+						</p>
+					</li>
+
+					<li>
+						<p>
+							<m>p \lor( q \land r) \equiv (p \lor q)  \land ( p \lor r)</m>
+						</p>
+					</li>
+				</ol>
+			</p>
+		</statement>
+	</exercise>
+
+	<exercise>
+		<statement>
+			<p>
+				Is implication associative? That is, are the compound statements <m>\left [(p \implies q) \implies r \right ]</m> and <m>\left [ p \implies(q \implies r)\right ]</m> logically equivalent? Justify your answer!
+			</p>
+		</statement>
+	</exercise>
+
+	<exercise>
+		<statement>
+			<p>
+				Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation)
+				<ol>
+					<li>
+						<p>
+							If two lines are perpendicular, then they intersect at a right angle.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							Function <m>f(x)</m> is differentiable provided that <m>f(x)</m> is a polynomial.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							(Divergence Test) If <m>\sum_{n=1}^\infty a_n</m> converges, then <m>\lim_{n\to \infty} a_n = 0</m>.
+						</p>
+					</li>
+
+					<li>
+						<p>
+							For all <m>n\times n</m> matrices <m>A</m> and <m>B</m>, if <m>A</m> and <m>B</m> are both nonsingular, then <m>AB</m> is nonsingular.
+						</p>
+					</li>
+				</ol>
+			</p>
+		</statement>
+	</exercise>
 </section>
-	

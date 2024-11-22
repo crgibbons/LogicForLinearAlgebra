@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-chapter-3-proofs" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Proof Techniques</title>
+	<title>Proof Techniques</title>
 
-  <introduction>
-    <p> 
-		Many mathematical theorems are universally quantified. For example, in linear algebra, we can prove the theorem, 
-		"For all <m>n \times n</m> matrices <m>A</m>, <m>A</m> is nonsingular if and only if <m>A^\top</m> is nonsingular." This chapter introduces three elementary
-		proof techniques.
-    </p>
+	<introduction>
+		<p>
+			Many mathematical theorems are universally quantified.
+			For example, in linear algebra, we can prove the theorem, <q>For all <m>n \times n</m> matrices <m>A</m>, 
+			<m>A</m> is nonsingular if and only if <m>A^\top</m> is nonsingular.</q> This chapter introduces three elementary proof techniques.
+		</p>
 
-	<p>
-		To prove that something is true for all <m>x \in D</m>, we begin with "Let <m>x \in D</m>"--
-		that is, we consider a generic element of <m>D</m>, not a a specific element of <m>D</m> (i.e., not an example).  
-		After invoking a generic element, there are several techniques for proving such theorems:
+		<p>
+			To prove that something is true for all <m>x \in D</m>, we begin with 
+			<q>Let <m>x \in D</m></q>--that is, we consider a generic element of <m>D</m>, not a a specific element of <m>D</m> 
+			(i.e., not an example).
+			After invoking a generic element, there are several techniques for proving such theorems:
 			<ul>
 				<li>
 					<p>
 						Direct Proof: working with the statement as-is
 					</p>
 				</li>
+
 				<li>
 					<p>
-						Indirect Proof: modifying the statement before working with it (proof by contrapositve, proof by contradiction, proof by other logical equivalences)
+						Indirect Proof: modifying the statement before working with it 
+						(proof by contrapositve, proof by contradiction, proof by other logical equivalences)
 					</p>
 				</li>
 			</ul>
@@ -32,19 +35,48 @@
 	<section xml:id="sec-directproof">
 		<title>Direct Proofs</title>
 
-		<p>Let's recall the truth table for an implication.</p>
+		<p>
+			Let's recall the truth table for an implication.
+		</p>
+
 		<table>
 			<title>Truth Table for Implication</title>
+
 			<tabular halign="center">
-			<row header = "yes" bottom = "minor"><cell><m>p</m></cell><cell><m>q</m></cell><cell><m>p\implies q</m></cell></row>
-			<row><cell>T</cell><cell right="minor">T</cell><cell>T</cell></row>
-			<row><cell>T</cell><cell right="minor">F</cell><cell>F</cell></row>
-			<row><cell>F</cell><cell right="minor">T</cell><cell>T</cell></row>
-			<row><cell>F</cell><cell right="minor">F</cell><cell>T</cell></row>
+				<row header = "yes" bottom = "minor">
+					<cell><m>p</m></cell>
+					<cell><m>q</m></cell>
+					<cell><m>p\implies q</m></cell>
+				</row>
+
+				<row>
+					<cell>T</cell>
+					<cell right="minor">T</cell>
+					<cell>T</cell>
+				</row>
+
+				<row>
+					<cell>T</cell>
+					<cell right="minor">F</cell>
+					<cell>F</cell>
+				</row>
+
+				<row>
+					<cell>F</cell>
+					<cell right="minor">T</cell>
+					<cell>T</cell>
+				</row>
+
+				<row>
+					<cell>F</cell>
+					<cell right="minor">F</cell>
+					<cell>T</cell>
+				</row>
 			</tabular>
 		</table>
 
-		<p>Note that an implication <m>p \implies q</m> is guaranteed to be true whenever the hypothesis is false.
+		<p>
+			Note that an implication <m>p \implies q</m> is guaranteed to be true whenever the hypothesis is false.
 			So, for a direct proof, we only need to worry about showing the implication is true when the hypothesis is true.
 			Thus, our strategy becomes
 			<ul>
@@ -53,6 +85,7 @@
 						Assume <m>p</m> is true.
 					</p>
 				</li>
+
 				<li>
 					<p>
 						Use this assumption (and definitions, theorems, or previous results) to show that <m>q</m> must be true, too.
@@ -64,16 +97,19 @@
 
 		<example>
 			<p>
-				Claim. For all <m>a \in \mathbb{Z}</m>, if <m>a</m> is even, then <m>a^2</m> is even. 
-				(Recall that an integer <m>a</m> is defined to be even provided there exists an integer <m>k</m>
-				for which <m>a = 2k</m>. Otherwise, <m>a</m> is odd, and there exists an integer <m>k</m> for whic
-				<m>a = 2k + 1</m>.)
+				Claim.
+				For all <m>a \in \mathbb{Z}</m>, if <m>a</m> is even, then <m>a^2</m> is even.
+				(Recall that an integer <m>a</m> is defined to be even provided there exists an integer <m>k</m> for which <m>a = 2k</m>.
+				Otherwise, <m>a</m> is odd, and there exists an integer <m>k</m> for whic <m>a = 2k + 1</m>.)
 			</p>
-			
+
+
 			<proof>
 				<p>
-					Let <m>a \in \mathbb{Z}</m>. Assume <m>a</m> is even. This means that there exists
-					an integer <m>k</m> for which <m>a = 2k</m>. It follows that <m>a^2 = 2(2k^2)</m>. 
+					Let <m>a \in \mathbb{Z}</m>.
+					Assume <m>a</m> is even.
+					This means that there exists an integer <m>k</m> for which <m>a = 2k</m>.
+					It follows that <m>a^2 = 2(2k^2)</m>.
 					Since <m>2k^2 \in \mathbb{Z}</m>, we see that <m>a^2</m> is even.
 				</p>
 			</proof>
@@ -86,14 +122,17 @@
 		<subsection xml:id="subsec-contrapositive">
 			<title>Proof by Contrapositive</title>
 
-			<p>Proof by contrapositive is a technique based on the logical equivalence <m>p \implies q \equiv (\lnot q) \implies (\lnot p)</m>.
-				To show <m>p \implies q</m> is true, we can show <m>(\lnot q) \implies (\lnot p)</m> directly. Our strategy becomes
+			<p>
+				Proof by contrapositive is a technique based on the logical equivalence <m>p \implies q \equiv (\lnot q) \implies (\lnot p)</m>.
+				To show <m>p \implies q</m> is true, we can show <m>(\lnot q) \implies (\lnot p)</m> directly.
+				Our strategy becomes
 				<ul>
 					<li>
 						<p>
 							Assume <m>(\lnot q)</m> is true (equivalently, assume <m>q</m> is false).
 						</p>
 					</li>
+
 					<li>
 						<p>
 							Use this assumption (and definitions, theorems, or previous results) to show that <m>(\lnot p)</m> must be true, too.
@@ -106,84 +145,93 @@
 
 			<example>
 				<p>
-					Claim. For all <m>a \in \mathbb{Z}</m>, if <m>a^2</m> is even, then <m>a</m> is even. 
+					Claim.
+					For all <m>a \in \mathbb{Z}</m>, if <m>a^2</m> is even, then <m>a</m> is even.
 				</p>
-				
+
+
 				<proof>
 					<p>
-						Let <m>a \in \mathbb{Z}</m>. Assume <m>a</m> is not even; this means that <m>a</m> is odd.
-						Thus there exists an integer <m>k</m> for which <m>a = 2k + 1</m>. It follows that <m>a^2 = 2(2k^2+2k) + 1</m>. 
+						Let <m>a \in \mathbb{Z}</m>.
+						Assume <m>a</m> is not even; this means that <m>a</m> is odd.
+						Thus there exists an integer <m>k</m> for which <m>a = 2k + 1</m>.
+						It follows that <m>a^2 = 2(2k^2+2k) + 1</m>.
 						Since <m>2k^2+2k \in \mathbb{Z}</m>, we see that <m>a^2</m> is odd and therefore not even.
 					</p>
 				</proof>
 			</example>
-
 		</subsection>
+
 
 		<subsection xml:id="subsec-contradiction">
 			<title>Proof by Contradiction</title>
 
 			<p>
-				In a proof by contradiction, we show the statement <m>p \implies q</m> is true by showing it cannot possibly be false 
-				(we're really invoking the Law of the Excluded Middle here).  
+				In a proof by contradiction, we show the statement <m>p \implies q</m> is true by showing it cannot possibly be false (we're really invoking the Law of the Excluded Middle here).
 				In other words, we assume that the entire implication is false, and then we show that this contradicts some other known result.
 			</p>
 
 			<p>
-				Remember that an implication is false exactly when the hypothesis is true and the conclusion is false.  
+				Remember that an implication is false exactly when the hypothesis is true and the conclusion is false.
 				That is, by the Law of Implication (b), <m>\lnot(p \implies q) \equiv p \land (\lnot q)</m>.
 			</p>
 
 			<example>
-				<p> Claim. For all real numbers <m>x</m>, if <m>x^2 = 2</m>, then <m>x</m> is irrational. 
-				(Recall that a number <m>x</m> is rational provided there exist integers <m>m</m> and <m>n \not = 0</m> 
-				sharing no common factor such that <m>x = \frac{m}{n}</m>.)
+				<p>
+					Claim.
+					For all real numbers <m>x</m>, if <m>x^2 = 2</m>, then <m>x</m> is irrational.
+					(Recall that a number <m>x</m> is rational provided there exist integers <m>m</m> and <m>n \not = 0</m> sharing no common factor such that <m>x = \frac{m}{n}</m>.)
 				</p>
+
 
 				<proof>
 					<p>
-						Let <m>x \in \mathbb{R}</m>. Seeking a contradiction, assume <m>x^2 = 2</m> and <m>x</m> is rational.
-						Then by definition of rational, <m>x = \frac{m}{n}</m> for some <m>m,n \in \ZZ</m> (<m>n \not = 0</m>) having no common factors.  
-						By assumpition, <m>x^2 = \frac{m^2}{n^2} = 2</m>, which implies that <m>m^2 = 2n^2</m>.  By Example (referenvce), we see that <m>m</m> is even.  
-						That is, there exists <m>k \in \mathbb{Z}</m> such that <m>m = 2k</m>.  Then <m>m^2 = 2(2k^2) = 2n^2</m>, so <m>n^2 = 2k^2</m>.  
-						By Example (ref), we have that <m>n</m> is even, too.  So there exists <m>\ell \in \mathbb{Z}</m> such that <m>n = 2 \ell</m>.  
+						Let <m>x \in \mathbb{R}</m>.
+						Seeking a contradiction, assume <m>x^2 = 2</m> and <m>x</m> is rational.
+						Then by definition of rational, <m>x = \frac{m}{n}</m> for some <m>m,n \in \ZZ</m> (<m>n \not = 0</m>) having no common factors.
+						By assumpition, <m>x^2 = \frac{m^2}{n^2} = 2</m>, which implies that <m>m^2 = 2n^2</m>.
+						By Example (referenvce), we see that <m>m</m> is even.
+						That is, there exists <m>k \in \mathbb{Z}</m> such that <m>m = 2k</m>.
+						Then <m>m^2 = 2(2k^2) = 2n^2</m>, so <m>n^2 = 2k^2</m>.
+						By Example (ref), we have that <m>n</m> is even, too.
+						So there exists <m>\ell \in \mathbb{Z}</m> such that <m>n = 2 \ell</m>.
 						But now <m>m</m> and <m>n</m> share a common factor of <m>2</m>, and this is a contradiction.
 					</p>
 				</proof>
 			</example>
-	
 		</subsection>
+
 
 		<subsection xml:id="subsec-other-equiv">
 			<title>Other Logical Equivalences</title>
-			
-			<p> As our implications become more complicated, like <m>p \implies (q \lor r)</m>, 
-				we will develop logical equivalences to make these statements easier to prove. 
-				Often this means moving the implication symbol as far to the right as possible 
-				so that we can assume as much as possible. Then, prove the new implication directly.
+
+			<p>
+				As our implications become more complicated, like <m>p \implies (q \lor r)</m>, we will develop logical equivalences to make these statements easier to prove.
+				Often this means moving the implication symbol as far to the right as possible so that we can assume as much as possible.
+				Then, prove the new implication directly.
 			</p>
 
 			<p>
-				Having established in a previous exercise that <m>(p \implies (q \lor r)) \equiv (p \land (\lnot q))\implies r</m>, 
-				we can use this equivalence to prove the following statement.
+				Having established in a previous exercise that <m>(p \implies (q \lor r)) \equiv (p \land (\lnot q))\implies r</m>, we can use this equivalence to prove the following statement.
 			</p>
 
 			<example>
 				<p>
-					Claim. For all integers <m>a</m> and <m>b</m>, if <m>ab</m> is even, then <m>a</m> or <m>b</m> is even.					
+					Claim.
+					For all integers <m>a</m> and <m>b</m>, if <m>ab</m> is even, then <m>a</m> or <m>b</m> is even.
 				</p>
+
 
 				<proof>
 					<p>
-						Let <m>a</m> and <m>b</m> be integers. Assume the product <m>ab</m> is even but <m>a</m> is not even.
+						Let <m>a</m> and <m>b</m> be integers.
+						Assume the product <m>ab</m> is even but <m>a</m> is not even.
 						This means that there exist integers <m>n</m> and <m>m</m> for which <m>ab = 2n</m> and <m>a = 2m+1</m>.
 						It follows that <m>2n = (2m+1)b = 2mb + b</m>, and isolating <m>b</m>, we find <m>b = 2(n-mb)</m>.
 						Since <m>n-mb</m> is an integer, it follows that <m>b</m> is even.
 					</p>
 				</proof>
 			</example>
-
-		
 		</subsection>
 	</section>
 
@@ -191,27 +239,22 @@
 		<title>Counterexamples</title>
 
 		<p>
-			If you are asked to disprove a universally quantified statement, it's enough to exhibit a single counterexample.  
-			Indeed, remember that the negation of the statement <m>\forall x \in D, (p(x) \implies q(x))</m> is the statement 
-			<m>\exists x \in D \text{ such that } (p(x) \land(\lnot q(x))</m>.
+			If you are asked to disprove a universally quantified statement, it's enough to exhibit a single counterexample.
+			Indeed, remember that the negation of the statement <m>\forall x \in D, (p(x) \implies q(x))</m> is the statement <m>\exists x \in D \text{ such that } (p(x) \land(\lnot q(x))</m>.
 		</p>
 
 		<example>
-			<p> Disprove: For all <m>2 \times 2</m> matrices <m>A</m> with real entries, if <m>A</m> is not the <m>2 \times 2</m> zero matrix, 
-				then <m>A</m> is nonsingular.
+			<p>
+				Disprove: For all <m>2 \times 2</m> matrices <m>A</m> with real entries, if <m>A</m> is not the <m>2 \times 2</m> zero matrix, then <m>A</m> is nonsingular.
 			</p>
 
 			<p>
-				It is not the case that every nonzero <m>2 \times 2</m> matrix <m>A</m> with real entries is nonsingular. 
-				Indeed, the matrix <m>A = </m>
-					<!----> has the property that for any matrix
-				<!-- <m>B</m> with entries <m>b_{i,j}</m>, <m>AB = \left[\begin{matrix} b_{1,1} & 0 \\ 0 & 0 \end{matrix}\right]</m>.
-
-				Therefore, there is no matrix <m>B</m> for which <m>AB = \left[\begin{matrix} 1 & 0 \\ 0 & 1 \end{matrix}\right]</m>,
-				so <m>A</m> is singular. -->
+				It is not the case that every nonzero <m>2 \times 2</m> matrix <m>A</m> with real entries is nonsingular.
+				Indeed, the matrix <m>A = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}</m> has the property that for any matrix <m>B</m> with entries <m>b_{i,j}</m>, 
+				<m>AB = \begin{bmatrix} b_{1,1} &amp; 0 \\ 0 &amp; 0 \end{bmatrix}</m>.
+				Therefore, there is no matrix <m>B</m> for which <m>AB = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}</m>, so <m>A</m> is singular.
 			</p>
-		</example>	
-		
+		</example>
 	</section>
 
 	<section xml:id="sec-exercises-ch3">
@@ -220,29 +263,30 @@
 		<exercise>
 			<p>
 				Use truth tables to prove that the statements below are tautologies.
+				<ol>
+					<li>
+						<statement>
+							<p>
+								<m>\left [ (p \implies q) \land p \right ] \implies q</m>
+							</p>
+						</statement>
+					</li>
+
+					<li>
+						<statement>
+							<p>
+								<m>\left [ (p  \land (\lnot p) \right ] \implies q</m>
+							</p>
+						</statement>
+					</li>
+				</ol>
 			</p>
-			<ol>
-				<li>
-					<statement>
-						<p>
-							<m>\left [ (p \implies q) \land p \right ] \implies q</m>
-						</p>
-					</statement>
-				</li>
-				<li>
-					<statement>
-						<p>
-							<m>\left [ (p  \land (\lnot p) \right ] \implies q</m>
-						</p>
-					</statement>
-				</li>
-			</ol>
 		</exercise>
 
 		<exercise>
 			<statement>
 				<p>
-					Let <m>T</m> be a tautology (a statement that always has truth value <m>T</m>). 
+					Let <m>T</m> be a tautology (a statement that always has truth value <m>T</m>).
 					Show that for any proposition <m>p</m>, <m>T \lor p \equiv T</m> and <m>T \land p \equiv p</m>.
 				</p>
 			</statement>
@@ -251,8 +295,7 @@
 		<exercise>
 			<statement>
 				<p>
-					If <m>F</m> represents a contradiction (a statement that always has truth value <m>F</m>) and <m>p</m> is any proposition, 
-					what can be said about <m>F \land p</m> and <m>F\lor p</m>?
+					If <m>F</m> represents a contradiction (a statement that always has truth value <m>F</m>) and <m>p</m> is any proposition, what can be said about <m>F \land p</m> and <m>F\lor p</m>?
 				</p>
 			</statement>
 		</exercise>
@@ -262,10 +305,9 @@
 				<p>
 					Prove that for all statements <m>p</m>, <m>q</m>  and  <m>r</m>,
 					<me>
-					\left[p \implies (q \lor r) \right ] \equiv  \left [ (p \land (\lnot q) ) \implies r \right ]
+						\left[p \implies (q \lor r) \right ] \equiv  \left [ (p \land (\lnot q) ) \implies r \right ]
 					</me>
-					by (a) using a truth table and (b) stringing together previously established logical equivalences 
-					(be sure to cite each equivalence law you use).
+					by (a) using a truth table and (b) stringing together previously established logical equivalences (be sure to cite each equivalence law you use).
 				</p>
 			</statement>
 		</exercise>
@@ -273,84 +315,10 @@
 		<exercise>
 			<statement>
 				<p>
-					The previous problem shows also that 
-					<m>[\left [ (p \land (\lnot q) ) \implies r \right ] \equiv \left [ (p \land (\lnot r) ) \implies q \right ]</m>.
+					The previous problem shows also that <m>[\left [ (p \land (\lnot q) ) \implies r \right ] \equiv \left [ (p \land (\lnot r) ) \implies q \right ]</m>.
 					Explain why this means you only need to prove one of those statements (not both!) to prove the original implication.
 				</p>
 			</statement>
 		</exercise>
-		
 	</section>
 </chapter>
-
-
-<!--
-
-
-
-
-
-\vfill
-\pagebreak
-
-\appendix
-\chapter{Set Theory}
-
-Every set $A$ is made up of its members.  If $a$ is a member of $A$, we write $a \in A$, and we use the symbol ``$\in$'' as the mathematical equivalent of the phrase ``is a member of.'' and a set A. 
-
-We think of sets as their own objects.  If $B$ is another set, and if for every $a \in A$ it follows that $a \in B$, then we say that $A$ is a \textbf{\textit{subset}} of $B$, and we write $A \subseteq B$.  
-
-For example, $\{1,2\}$ is a subset of $\{1,2,3\}$ (i.e., $\{1,2\} \subseteq \{1,2,3\}$), but $\{1,4\}$ is not (i.e., $\{1,4\} \not \subseteq \{1,2,3\}$). From this definition, it is clear that a set is a subset of itself.  We say that the sets $A$ and $B$ are \defi{equal} (and we write $A = B$), if and only if $A \subseteq B$ and $B \subseteq A$.
-
-Just as arithmetic features operations on numbers, set theory features operations on sets:
-
-\begin{itemize}
-\item The \textbf{\textit{union}} of the sets $A$ and $B$, denoted $A \cup B$, is the set of all objects that are a member of $A$, or $B$, or both. Example:
-\[\{1, 2, 3\} \cup \{2, 3, 4\}=\{1, 2, 3, 4\}\]
-\item The \textbf{\textit{intersection}} of the sets $A$ and $B$, denoted $A \cap B$, is the set of all objects that are members of both 
-$A$ and $B$. Example:
-\[\{1, 2, 3\}\cap \{2, 3, 4\}= \{2, 3\}\]
-\end{itemize}
-
-\def\firstcircle{(0,0) circle (1.5cm)}
-\def\secondcircle{(0:2cm) circle (1.5cm)}
-
-\colorlet{circle edge}{blue!50}
-\colorlet{circle area}{blue!20}
-
-\tikzset{filled/.style={fill=circle area, draw=circle edge, thick},
-outline/.style={draw=circle edge, thick}}
-
-\setlength{\parskip}{5mm}
-\begin{figure}[!h]
-\centering
-% A or B
-\begin{tikzpicture}
-\draw[filled] \firstcircle node {$A$}
-                             \secondcircle node{$B$};
-\node[anchor=south] at (current bounding box.north) {${A \cup B}$};
-\end{tikzpicture}\qquad\qquad
-% A and B
-\begin{tikzpicture}
-\begin{scope}
-    \clip \firstcircle;
-    \fill[filled] \secondcircle;
-\end{scope}
-\draw[outline] \firstcircle node {$A$};
-\draw[outline] \secondcircle node {$B$};
-\node[anchor=south] at (current bounding box.north) {$A \cap B$};
-\end{tikzpicture}
-\end{figure}
-
-There are lots of other operations on sets (\textit{set difference}, \textit{symmetric difference}, \textit{Cartesian product}, \textit{power set}, \textit{disjoint union}, \textit{complement}, and more!), but usually we only need to worry about unions and intersections.
-
-Some basic sets of central importance to us in linear algebra are:
-\begin{itemize}
-\item the empty set (the unique set containing no elements), which we denote by $\{ \, \}$ or $\varnothing$; 
-\item the set of natural numbers, which we denote by $\mathbb{N}$; 
-\item the set of integers, which we denote by $\mathbb{Z}$; 
-\item the set of rational numbers, which we denote by $\mathbb{Q}$;
-\item the set of real numbers, which we denote by $\mathbb{R}$; and
-\item the set of complex numbers, which we denote by $\mathbb{C}$.
-\end{itemize} 
--->
