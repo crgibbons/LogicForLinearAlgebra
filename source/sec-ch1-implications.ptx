@@ -407,7 +407,7 @@
         We refer to the tautology <m>p \lor (\lnot p)</m> as the <term>Law of the Excluded Middle</term>.
     </p>
 
-    <definition xml:id="modus-ponens">
+    <!-- <definition xml:id="modus-ponens">
         <title>Logical Rules of Inference</title>
 
         <statement>
@@ -430,5 +430,5 @@
                 These logical rules of inference allow us to construct arguments called proofs.
             </p>
         </statement>
-    </definition>
+    </definition> -->
 </section>
