@@ -1,4 +1,4 @@
-<chapter xml:id="style-conventions-formal-mathematical-writing">
+<appendix xml:id="style-conventions-formal-mathematical-writing">
     <title>Style Conventions for Formal Mathematical Writing</title>
     <introduction>
       <p>If you've taken proofs classes from different professors, you know that we share some basic beliefs about writing, but we also have our own quirks and preferences. (If you haven't yet taken proofs classes from different professors... get ready! We share some basic beliefs, but we also have our own quirks and preferences). What you'll see below are the guidelines that I consider the standards for submitting to the Gibbons Journal of Mathematics (by which I mean, sending in a writing assignment to be assessed in a proofs class that you're taking with me).</p>
@@ -88,4 +88,4 @@
         </paragraphs>
 
     </section>
-  </chapter>
+  </appendix>

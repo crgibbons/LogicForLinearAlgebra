@@ -1,75 +1,234 @@
-<worksheet xml:id="basics-sample-worksheet">
-    <title>A Skeletal Worksheet</title>
-    <objectives>
+<section xml:id="sec-ch1-exercises">
+  <title>Exercises</title>
+
+  <exercise>
+    <p>
+      Given the statements below, write the following symbolic compound statements in sentences.
       <ul>
-        <li>Something really cool</li>
-        <li>A less important thing you'll learn</li>
+        <li>
+          <p>
+				Statement <m>p</m>: The car will not start.
+          </p>
+        </li>
+		<li>
+			<p>
+				Statement <m>q</m>: It is freezing outside.
+			</p>
+		</li>
+		<li>
+			<p>
+				Statement <m>r</m>: The food is ready.
+			</p>
+		</li>
       </ul>
-    </objectives>
-    <introduction>
-      <p>It can be helpful to say what the point of the worksheet is.</p>
-    </introduction>
+    </p>
+	<ol>
+		<li>
+			<p>
+				
+					<p>
+						<m>p \land q</m>
+					</p>
+				
+			</p>
+		</li>
+		<li>
+			
+				<p>
+					<m>q \lor (\lnot r)</m>
+				</p>
+			
+		</li>
+		<li>
+			
+				<p>
+					<m>p \land (\lnot )</m>
+				</p>
+			
+		</li>
+		<li>
+			
+				<p>
+					<m>p \land q \land r</m>
+				</p>
+			
+		</li>
+	</ol>
+  </exercise>
+  <exercise>
+	<p>
+			Given the statements above, write the following sentences in logical notation:
+	</p>
+	<ol>
+		<li>
+			
+				<p>
+					The car will start and it is freezing outside.
+				</p>
+			
+		</li>
+		<li>
+			
+				<p>
+					Either the food is ready or it is freezing outside.
+				</p>
+			
+		</li>
+		<li>
+			
+				<p>
+					The food isn't ready and the car won't start.
+				</p>
+			
+		</li>
+	</ol>
+  </exercise>
+  <exercise>
+		<p>
+			Construct a truth table for each of the following statements.
+		</p>
+	<ol>
+		<li>
+				<p>
+					<m>p \land (\lnot q)</m>;
+				</p>
+		</li>
+		<li>
+			 
+				<p>
+					<m>p \lor (q \land (\lnot p))</m>;
+				</p>
+			
+		</li>
+		<li>
+			
+				<p>
+					<m>p \land (q \lor (\lnot p))</m>;
+				</p>
+			
+		</li>
+		<li>
+			
+				<p>
+					<m>p \land (\lnot q)</m>.
+				</p>
+			
+		</li>
+	</ol>
+  </exercise>
+  <exercise>
+	
+		<p>
+			Identify the hypothesis <m>p</m> and the conclusion <m>q</m> in each of the following conditional statements:
+		</p>
+	
+	<ol>
+		<li>
+		<p>
+			I will go to the movies if it rains.
+		</p>
+		</li>
+		<li>
+			<p>
+				If the diagonals of a rectangle are not perpendicular, it is not a square.
+			</p>
+		</li>
+		<li>
+			<p>
+				If <m>x &gt; 0</m> and <m>y &gt; 0</m>, then <m>x+y &gt; 0</m>.
+			</p>
+		</li>
+		<li>
+			<p>
+				<m>f(x)</m> is a function on <m>[a,b]</m> implies that <m>f(x)</m> is continuous on <m>[a,b]</m>.
+			</p>
+		</li>
+		<li>
+			<p>
+				I will pay 5 dollars for a cup of coffee only if elephants fly.
+			</p>
+		</li>
+		<li>
+			<p>
+				All sides are equal provided that <m>T</m> is an equilateral triangle.
+			</p>
+		</li>
+		<li>
+			<p>
+				Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.
+			</p>
+		</li>
+	</ol>
+  </exercise>
   
-    <page>
-      <exercise workspace="4in">
-        <statement>
-          <p>Here's a first exercise in this worksheet.
-      Notice how we set the workspace in inches.</p>
-        </statement>
-      </exercise>
-  
-      <exercise workspace="1cm">
-        <introduction>
-      <p>A second exercise, this time structured with tasks. The
-      workspace specification is assigned to each task. </p>
-        </introduction>
-        <task>
-      <statement>
-        <p>Here's the first task.</p>
-      </statement>
-      <hint>
-        <p>Why not give a hint here, we're nice authors, right?</p>
-      </hint>
-        </task>
-        <task>
-      <statement>
-        <p>The second task. No hint this time!</p>
-      </statement>
-        </task>
-      </exercise>
-    </page>
-  
-    <page>
-      <p>OK, we're now onto a second page, one of the few times you can
-      force this.</p>
-      <figure>
-        <caption>Just a little figure</caption>
-        <image src="image-4.svg" width="50%" />
-      </figure>
-      <sidebyside margins="0%" widths="30% 60%" valign="top">
-        <exercise workspace="4.5in">
-          <statement>
-        Only inside a worksheet can you put an exercise in a
-        sidebyside! 
-          </statement>
-      <answer>
-        <p>Sure, you can have an answer here.</p>
-      </answer>
-        </exercise>
-        <exercise workspace="2in">
-          <statement>
-            <p>Here's the second column. We also could have just put a
-        figure here if we needed for layout.</p>
-          </statement>
-        </exercise>
-      </sidebyside>
-      <exercise workspace="2.54cm">
-        <p>One more exercise to do.</p>
-      </exercise>
-    </page>
-  
-    <conclusion>
-      <title>Final thoughts</title>
-      <p>Put something here because you might run out of time.</p>
-    </conclusion>
-  </worksheet>
+  <exercise>
+	
+		<p>
+			Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other.  
+			That is, for all statements  <m>p</m>, <m>q</m>  and  <m>r</m>, prove the following.
+		</p>
+	
+	<ol>
+		<li>
+			<p>
+				<m>(p \land q) \land r \equiv p \land (q \land r)</m>
+			</p>
+		</li>
+		<li>
+			<p>
+				<m>(p \lor q) \lor r \equiv p \lor (q \lor r)</m>
+			</p>
+		</li>
+		<li>
+			<p>
+				<m>p \land( q \lor r) \equiv (p \land q)  \lor ( p \land r)</m>
+			</p>
+		</li>
+		<li>
+			<p>
+				<m>p \lor( q \land r) \equiv (p \lor q)  \land ( p \lor r)</m>
+			</p>
+		</li>
+	</ol>
+</exercise>
+
+<exercise>
+	
+		<p>
+			Is implication associative? That is, are the compound statements
+			<m>\left [(p \implies q) \implies r \right ]</m> and <m>\left [ p \implies(q \implies r)\right ]</m>
+			logically equivalent? Justify your answer!
+		</p>
+	
+</exercise>
+<exercise>
+	
+		<p>
+			Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation).
+		</p>
+	
+	<ol>
+		<li>
+			<p>
+				If two lines are perpendicular, then they intersect at a right angle.
+			</p>
+		</li>
+		<li>
+			<p>
+				Function <m>f(x)</m> is differentiable provided that <m>f(x)</m> is a polynomial.
+			</p>
+		</li>
+		<li>
+			<p>
+				(Divergence Test) If <m>\sum_{n=1}^\infty a_n</m> converges, then <m>\lim_{n\to \infty} a_n = 0</m>.
+			</p>
+		</li>
+		<li>
+			<p>
+				For all <m>n\times n</m> matrices <m>A</m> and <m>B</m>, if <m>A</m> and <m>B</m> are both nonsingular, then <m>AB</m> is nonsingular.
+			</p>
+		</li>
+	</ol>
+</exercise>
+</section>
+	

@@ -35,65 +35,6 @@
 
   <xi:include href="sec-ch1-implications.ptx" />
 
+  <xi:include href="hw-chapter-1.ptx" />
 
 </chapter>
-
-<!-- section{Exercises}
-
-\begin{enumerate}[series=exercises]
-		\item Given the statements below, write (in sentences!) the compound statements.
-		\begin{enumerate}[label=(\alph*)]
-			\item $p \land q$;
-			\item $q \lor (\lnot r)$; 
-			\item $p \land (\lnot q)$;  
-			\item $p \land q \land r$.
-		\end{enumerate}
-		\begin{itemize}
-			\item[$p$:] The car will not start.
-			\item[$q$:] It is freezing outside.
-			\item[$r$:] The food is ready.
-		\end{itemize} 
-		\item Given the statements above, write the following sentences in logical notation:
-		\begin{enumerate}
-			\item The car will start and it is freezing outside.
-			\item Either the food is ready or it is freezing outside.
-			\item The food isn't ready and the car won't start.
-		\end{enumerate}
-		\item Construct a truth table for each of the following statements:
-		\begin{enumerate}[label=(\alph*)]
-			\item $p \land (\lnot q)$;
-			\item $p \lor (q \land (\lnot p))$;
-			\item $p \land (q \lor (\lnot p))$;
-			\item $p \land (\lnot q)$.
-		\end{enumerate}
-		\item Identify the hypothesis $p$ and the conclusion $q$ in each of the following conditional statements:
-		\begin{enumerate}
-			\item I will go to the movies if it rains.
-			\item If the diagonals of a rectangle are not perpendicular, it is not a square.
-			\item If $x > 0$ and $y > 0$, then $x+y > 0$.
-			\item $f(x)$ is a function on $[a,b]$ implies that $f(x)$ is continuous on $[a,b]$.
-			\item I will pay \$5 for a cup of coffee only if elephants fly.
-			\item All sides are equal provided that $T$ is an equilateral triangle.
-			\item Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.
-		\end{enumerate}
-		\item {\it Use truth tables} to prove that disjunction and conjunction are associative and that each one distributes over the other.  That is, for all statements  $p$, $q$  and  $r$, prove that:
-			\begin{enumerate}[label=(\alph*)]
-				\item $(p \land q) \land r \equiv p \land (q \land r)$
-				\item $(p \lor q) \lor r \equiv p \lor (q \lor r)$
-				\item $p \land( q \lor r) \equiv (p \land q)  \lor ( p \land r)$ 
-				\item $p \lor( q \land r) \equiv (p \lor q)  \land ( p \lor r)$
-			\end{enumerate}
-
-		\item Is implication associative?  That is, is it true that 
-		\[
-		\left [(p \implies q) \implies r \right ]  \equiv \left [ p \implies(q \implies r)\right ]?
-		\]
-		Justify your answer!\\
-		\item For the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation):
-			\begin{enumerate}[label=(\alph*)]
-				\item If two lines are perpendicular, then they intersect at a right angle.
-				\item Function $f(x)$ is differentiable provided that $f(x)$ is a polynomial.
-				\item \underline{Divergence Test:} If $\sum_{n=1}^\infty a_n$ converges, then $\lim_{n\to \infty} a_n = 0$.
-				\item \underline{Theorem 1.6} (abbreviated version) For all $A, B \in M_{m,n}$, if $A$ and $B$ are both nonsingular, then $AB$ is nonsingular.
-			\end{enumerate}
-	\end{enumerate} -->

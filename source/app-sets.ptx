@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appendix xml:id="app-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title> Set Theory Basics</title>
+
+<p>
+	Every set <m>A</m> is made up of its members.  
+  If <m>a</m> is a member of <m>A</m>, we write <m>a \in A</m>, 
+  and we use the symbol <q><m>\in</m></q> as the mathematical equivalent of the phrase <q>is a member of</q>.
+</p>
+<p>
+	We think of sets as their own objects.  
+  If <m>B</m> is another set, and if for every <m>a \in A</m> it follows that <m>a \in B</m>, 
+  then we say that <m>A</m> is a <term><em>subset</em></term> of <m>B</m>, and we write <m>A \subseteq B</m>.
+</p>
+<p>
+	For example, <m>\{1,2\}</m> is a subset of <m>\{1,2,3\}</m> 
+  (i.e., <m>\{1,2\} \subseteq \{1,2,3\}</m>), but <m>\{1,4\}</m> is not 
+  (i.e., <m>\{1,4\} \not \subseteq \{1,2,3\}</m>). 
+  From this definition, it is clear that a set is a subset of itself. 
+   We say that the sets <m>A</m> and <m>B</m> are equal (and we write <m>A = B</m>) if and only if <m>A \subseteq B</m> and <m>B \subseteq A</m>.
+</p>
+<p>
+	Just as arithmetic features operations on numbers, set theory features operations on sets:
+</p>
+<ul>
+	<li>
+	<p>
+		 The <term><em>union</em></term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cup B</m>, is the set of all objects that are a member of <m>A</m>, or <m>B</m>, or both. Example: <me>\{1, 2, 3\} \cup \{2, 3, 4\}=\{1, 2, 3, 4\}</me>
+  </p>
+  </li>
+  <li>
+    <p>
+      The <term><em>intersection</em></term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cap B</m>, 
+      is the set of all objects that are members of both
+      <m>A</m> and <m>B</m>. Example: <me>\{1, 2, 3\}\cap \{2, 3, 4\}= \{2, 3\}. </me>
+  </p>
+</li>
+</ul>
+
+<p>
+	There are lots of other operations on sets 
+  (<em>set difference</em>, <em>symmetric difference</em>, <em>Cartesian product</em>, <em>power set</em>, 
+  <em>disjoint union</em>, <em>complement</em>, and more!), 
+  but to start, we only need to worry about unions and intersections.
+</p>
+<p>
+	Some basic sets of central importance to us in linear algebra are:
+</p>
+  <ul>
+    <li>
+    <p>
+      the empty set (the unique set containing no elements), which we denote by <m>\{ \, \}</m> or <m>\varnothing</m>;
+  </p>
+  </li>
+  <li>
+    <p>
+      the set of natural numbers, which we denote by <m>\mathbb{N}</m>;
+  </p>
+  </li>
+  <li>
+    <p>
+      the set of integers, which we denote by <m>\mathbb{Z}</m>;
+  </p>
+  </li>
+  <li>
+    <p>
+      the set of rational numbers, which we denote by <m>\mathbb{Q}</m>;
+  </p>
+  </li>
+  <li>
+    <p>
+      the set of real numbers, which we denote by <m>\mathbb{R}</m>; and
+  </p>
+  </li>
+  <li>
+    <p>
+      the set of complex numbers, which we denote by <m>\mathbb{C}</m>.
+  </p>
+  </li>
+</ul>
+</appendix>
