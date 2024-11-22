@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "First Connectives: Not, And, and Or",
-  "body": " First Connectives: Not, And, and Or  In this section we define three logical connectives.     logical negation    The negation of a statement , denoted , is the statement: \"It is not the case that .\"  In casual conversation, we refer to the negation of a proposition as \"not \".  If we know the truth value of , then has exactly the opposite truth value. We denote this relationship with a truth table . In fact, we can take the truth table to be the defintion of the negation connective.   Truth Table for Negation    T F  F T       Negating statements  The negation of the statement, \"Hamilton College is located in Clinton, NY\" is the statement, \"It is not the case that Hamilton College is located in Clinton, NY,\" or, \"Hamilton College is not located in Clinton, NY.\"   Some logical connectives take two statements. The first of these is the logical \"and\" which we call conjunction.     logical cojunction    The conjunction of two statements and , denoted , is the statement, \" and .\"  In casual conversation, we refer to the conjunction as \" and \".  Conjunction is defined by the truth table below.   Truth Table for Conjunction    T T T  T F F  F T F  F F F       Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is false no matter what statement follows the \"and.\" In order for a conjunction of two statements to be true, both original statements must be true.   The next connective is the logical \"or\" which we call disjunction.     logical disjunction    The disjunction of two statements and , denoted , is the statement, \" or .\"  In casual conversation, we refer to the disjunction as \" or \".  Disjunction is defined by the truth table below.   Truth Table for Disjunction    T T T  T F T  F T T  F F F       Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is only false if the statement is false.   "
+  "body": " First Connectives: Not, And, and Or  In this section we define three logical connectives.     logical negation    The negation of a statement , denoted , is the statement: \"It is not the case that .\"  In casual conversation, we refer to the negation of a proposition as \"not \".  If we know the truth value of , then has exactly the opposite truth value. We denote this relationship with a truth table . In fact, we can take the truth table to be the defintion of the negation connective.   Truth Table for Negation        T  F    F  T        Negating statements  The negation of the statement, \"Hamilton College is located in Clinton, NY\" is the statement, \"It is not the case that Hamilton College is located in Clinton, NY,\" or, \"Hamilton College is not located in Clinton, NY.\"   Some logical connectives take two statements. The first of these is the logical \"and\" which we call conjunction.     logical cojunction    The conjunction of two statements and , denoted , is the statement, \" and .\"  In casual conversation, we refer to the conjunction as \" and \".  Conjunction is defined by the truth table below.   Truth Table for Conjunction         T  T  T    T  F  F    F  T  F    F  F  F        Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is false no matter what statement follows the \"and.\" In order for a conjunction of two statements to be true, both original statements must be true.   The next connective is the logical \"or\" which we call disjunction.     logical disjunction    The disjunction of two statements and , denoted , is the statement, \" or .\"  In casual conversation, we refer to the disjunction as \" or \".  Disjunction is defined by the truth table below.   Truth Table for Disjunction         T  T  T    T  F  T    F  T  T    F  F  F        Consider the unambiguously false statement, \"A banana is a natural number.\" Then the statement, \"A banana is a natural number and \" is only false if the statement is false.   "
 },
 {
   "id": "sec-ch1-not-and-or-3",
@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.1.1",
   "title": "",
-  "body": "   logical negation    The negation of a statement , denoted , is the statement: \"It is not the case that .\"  In casual conversation, we refer to the negation of a proposition as \"not \".  If we know the truth value of , then has exactly the opposite truth value. We denote this relationship with a truth table . In fact, we can take the truth table to be the defintion of the negation connective.   Truth Table for Negation    T F  F T     "
+  "body": "   logical negation    The negation of a statement , denoted , is the statement: \"It is not the case that .\"  In casual conversation, we refer to the negation of a proposition as \"not \".  If we know the truth value of , then has exactly the opposite truth value. We denote this relationship with a truth table . In fact, we can take the truth table to be the defintion of the negation connective.   Truth Table for Negation        T  F    F  T      "
 },
 {
   "id": "sec-ch1-not-and-or-4",
@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.1.4",
   "title": "",
-  "body": "   logical cojunction    The conjunction of two statements and , denoted , is the statement, \" and .\"  In casual conversation, we refer to the conjunction as \" and \".  Conjunction is defined by the truth table below.   Truth Table for Conjunction    T T T  T F F  F T F  F F F     "
+  "body": "   logical cojunction    The conjunction of two statements and , denoted , is the statement, \" and .\"  In casual conversation, we refer to the conjunction as \" and \".  Conjunction is defined by the truth table below.   Truth Table for Conjunction         T  T  T    T  F  F    F  T  F    F  F  F      "
 },
 {
   "id": "sec-ch1-not-and-or-7",
@@ -70,7 +70,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.1.7",
   "title": "",
-  "body": "   logical disjunction    The disjunction of two statements and , denoted , is the statement, \" or .\"  In casual conversation, we refer to the disjunction as \" or \".  Disjunction is defined by the truth table below.   Truth Table for Disjunction    T T T  T F T  F T T  F F F     "
+  "body": "   logical disjunction    The disjunction of two statements and , denoted , is the statement, \" or .\"  In casual conversation, we refer to the disjunction as \" or \".  Disjunction is defined by the truth table below.   Truth Table for Disjunction         T  T  T    T  F  T    F  T  T    F  F  F      "
 },
 {
   "id": "sec-ch1-not-and-or-10",
@@ -88,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Compound Statements",
-  "body": " Compound Statements  Negation is a function of one binary variable (that is, we \"plug in\" one statement). Conjunctions and disjunctions are functions of two binary variables (that is, we \"plug in\" two statements). We can compose logical connectives just as we can compose functions to create compound statements .  Consider the statement : \"It is not the case that ( and ).\"   Truth Table for    T T T F  T F F T  F T F T  F F F T    For the statement to be true, we see that we need one of or to be false (not necessarily both). That is, the truth value should match the truth value of the compound statement . To verify this, we look at the truth table for the statement : \"(Not ) or (not ).\"   Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T    We can see from the final column of these truth tables that the statements and correspond to the same function of and .     logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .    Logical equivalence allows us to manipulate compound statements without changing their truth tables. This helps us determine how to negate compound statements.   De Morgan's Laws   For any statements and ,    , and     .        The Law of the Double Negative   For any statement ,     "
+  "body": " Compound Statements  Negation is a function of one binary variable (that is, we \"plug in\" one statement). Conjunctions and disjunctions are functions of two binary variables (that is, we \"plug in\" two statements). We can compose logical connectives just as we can compose functions to create compound statements .  Consider the statement : \"It is not the case that ( and ).\"   Truth Table for          T  T  T  F    T  F  F  T    F  T  F  T    F  F  F  T     For the statement to be true, we see that we need one of or to be false (not necessarily both). That is, the truth value should match the truth value of the compound statement . To verify this, we look at the truth table for the statement : \"(Not ) or (not ).\"   Truth Table for           T  T  F  F  F    T  F  F  T  T    F  T  T  F  T    F  F  T  T  T     We can see from the final column of these truth tables that the statements and correspond to the same function of and .     logical equivalence    In general, a compound statement is a complex statement built from simple statements , , and so on. We typically reserve the capital letters , , (and so on) to denote compound statements. Two compound statements and (made up of the same constituent statements) are logically equivalent provided their truth tables have the same final column. We denote this equivalence .    Logical equivalence allows us to manipulate compound statements without changing their truth tables. This helps us determine how to negate compound statements.   De Morgan's Laws   For any statements and ,    , and     .        The Law of the Double Negative   For any statement ,     "
 },
 {
   "id": "ch-chapter-1-connectives-4-2",
@@ -106,7 +106,7 @@ var ptx_lunr_docs = [
   "type": "Table",
   "number": "1.2.1",
   "title": "Truth Table for <span class=\"process-math\">\\(\\lnot(p\\land q)\\)<\/span>",
-  "body": " Truth Table for    T T T F  T F F T  F T F T  F F F T   "
+  "body": " Truth Table for          T  T  T  F    T  F  F  T    F  T  F  T    F  F  F  T    "
 },
 {
   "id": "ch-chapter-1-connectives-4-6",
@@ -115,7 +115,7 @@ var ptx_lunr_docs = [
   "type": "Table",
   "number": "1.2.2",
   "title": "Truth Table for <span class=\"process-math\">\\((\\lnot p) \\lor (\\lnot q)\\)<\/span>",
-  "body": " Truth Table for    T T F F F  T F F T T  F T T F T  F F T T T   "
+  "body": " Truth Table for           T  T  F  F  F    T  F  F  T  T    F  T  T  F  T    F  F  T  T  T    "
 },
 {
   "id": "def-equivalence",
@@ -151,7 +151,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Conditional and Biconditional Statements",
-  "body": " Conditional and Biconditional Statements  The last two logical connectives deal with implication.     Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.   Truth Table for Implication    T T T  T F F  F T T  F F T    An implication in which the premise is false is called vacuously true .    You may be looking at the last two rows of the truth table and wondering what's going on. For lay people, the statement is meaningless when is false. But then wouldn't be a statement. Statements must have a truth value!   Consider the statement, \"If two is odd, then one is even.\" The constituent statements \"two is odd\" and \"one is even\" are both false, and the compound statement is defined to true. Any implication with the premise \"two is odd\" is vacuously true.   In formal mathematical logic, no causation in implied by an if-then statement. That is, the statement, \"If it's raining, then it's wet outside\" doesn't the same thing as, \"It's wet outside because it is raining.\" For all we know, it could be wet outside because someone sprayed everything down with a fire hose. And so, even though the statement, \"If , then Mars is a planet,\" is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise (\"Mars is a planet\" is true regardless of arithmetic!).   Negating Implications   For any statements and ,    , and     .        We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification for     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have    There are three implications that are related to the statement , and they are defined as follows.    Let and be statements and consider the implication . The converse of is the statement . The inverse of is the statement . The contrapositive of is the statement .    Observe that the implication is logically equivalent to its contrapositive . The converse is logically equivalent to the inverse .   Let be the statement, \"It's raining,\" and be the statement, \"It's wet outside.\" Match the sentences to the correct compound statements.    Implication  If it's raining, then it's wet outside.    Converse of  If it's wet ouside, then it's raining.    Inverse of  If it's not raining, then it's not wet outside.    Contrapositive of  If it's not wet outside, then it's not raining.     Complete the truth table to verify the observations above.     Implication Converse Inverse Contrapositive    T T T   T F F   F T T   F F T                                                                              In addition to the conditional statement , there's another compound statement that we know well from mathematics.   >  biconditional    The biconditional of statements and is the compound statement \" if and only if ,\" denoted . It is defined by the truth table below.   Truth Table for Implication    T T T  T F F  F T F  F F T       Verify the logical equivalence .   Another way to express is, \" is necessary and sufficient for .\" In particular, \" is necessary for \" describes the implication , and \" is sufficient for \" describes the implication .   Mathematical Definitions are Biconditional Statements   A matrix is symmetric if and only if it equals its transpose.     The Contrapositive of the Biconditional   From the logical equivalences we've established, we see: This means that the biconditional is logically equivalent to its contrapositive.      A tautology is a compound statement that is true for all truth values of its constituent statements. A contradiction is a compound statement that is fall for all truth values of its constituent statements.     Verify that is a tautology and is a contradiction.   We refer to the tautology as the Law of the Excluded Middle .   Logical Rules of Inference   We can use implication to build logical rules of inference out of simpler statements. Here are two of the most common rules of inference.    Modus Ponens refers to the tautology .     Modus Tollens refers to the tautology .   These logical rules of inference allow us to construct arguments called proofs.    "
+  "body": " Conditional and Biconditional Statements  The last two logical connectives deal with implication.     Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.   Truth Table for Implication         T  T  T    T  F  F    F  T  T    F  F  T     An implication in which the premise is false is called vacuously true .    You may be looking at the last two rows of the truth table and wondering what's going on. For lay people, the statement is meaningless when is false. But then wouldn't be a statement. Statements must have a truth value!   Consider the statement, \"If two is odd, then one is even.\" The constituent statements \"two is odd\" and \"one is even\" are both false, and the compound statement is defined to true. Any implication with the premise \"two is odd\" is vacuously true.   In formal mathematical logic, no causation in implied by an if-then statement. That is, the statement, \"If it's raining, then it's wet outside\" doesn't the same thing as, \"It's wet outside because it is raining.\" For all we know, it could be wet outside because someone sprayed everything down with a fire hose. And so, even though the statement, \"If , then Mars is a planet,\" is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise (\"Mars is a planet\" is true regardless of arithmetic!).   Negating Implications   For any statements and ,    , and     .        We see from the truth tables for and that these statements are logically equivalent. Indeed, we have   Truth Table Verification for              T  T  T  F  F  F    T  F  F  T  T  T    F  T  T  F  F  F    F  F  T  F  T  F    as desired.  For the remaining equivalence, we have    There are three implications that are related to the statement , and they are defined as follows.    Let and be statements and consider the implication . The converse of is the statement . The inverse of is the statement . The contrapositive of is the statement .    Observe that the implication is logically equivalent to its contrapositive . The converse is logically equivalent to the inverse .   Let be the statement, \"It's raining,\" and be the statement, \"It's wet outside.\" Match the sentences to the correct compound statements.    Implication  If it's raining, then it's wet outside.    Converse of  If it's wet ouside, then it's raining.    Inverse of  If it's not raining, then it's not wet outside.    Contrapositive of  If it's not wet outside, then it's not raining.     Complete the truth table to verify the observations above.       Implication  Converse  Inverse  Contrapositive            T  T  T          T  F  F          F  T  T          F  F  T                                                                                    In addition to the conditional statement , there's another compound statement that we know well from mathematics.   >  biconditional    The biconditional of statements and is the compound statement \" if and only if ,\" denoted . It is defined by the truth table below.   Truth Table for Implication         T  T  T    T  F  F    F  T  F    F  F  T        Verify the logical equivalence .   Another way to express is, \" is necessary and sufficient for .\" In particular, \" is necessary for \" describes the implication , and \" is sufficient for \" describes the implication .   Mathematical Definitions are Biconditional Statements   A matrix is symmetric if and only if it equals its transpose.     The Contrapositive of the Biconditional   From the logical equivalences we've established, we see: This means that the biconditional is logically equivalent to its contrapositive.      A tautology is a compound statement that is true for all truth values of its constituent statements. A contradiction is a compound statement that is fall for all truth values of its constituent statements.     Verify that is a tautology and is a contradiction.   We refer to the tautology as the Law of the Excluded Middle .   Logical Rules of Inference   We can use implication to build logical rules of inference out of simpler statements. Here are two of the most common rules of inference.    Modus Ponens refers to the tautology .     Modus Tollens refers to the tautology .   These logical rules of inference allow us to construct arguments called proofs.    "
 },
 {
   "id": "def-implication",
@@ -160,7 +160,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.3.1",
   "title": "",
-  "body": "   Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.   Truth Table for Implication    T T T  T F F  F T T  F F T    An implication in which the premise is false is called vacuously true .   "
+  "body": "   Logical implication    The compound statement \"if , then \" or \" implies \" is called an implication or a conditional statement , denoted , where is referred to as the hypothesis or premise and is referred to as the conclusion . The implication is defined by the truth table below.   Truth Table for Implication         T  T  T    T  F  F    F  T  T    F  F  T     An implication in which the premise is false is called vacuously true .   "
 },
 {
   "id": "ch-chapter-1-connectives-5-5",
@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Proof",
   "number": "1.3.1",
   "title": "",
-  "body": " We see from the truth tables for and that these statements are logically equivalent. Indeed, we have  Truth Table Verification for     T T T F F F  T F F T T T  F T T F F F  F F T F T F   as desired.  For the remaining equivalence, we have   "
+  "body": " We see from the truth tables for and that these statements are logically equivalent. Indeed, we have   Truth Table Verification for              T  T  T  F  F  F    T  F  F  T  T  T    F  T  T  F  F  F    F  F  T  F  T  F    as desired.  For the remaining equivalence, we have   "
 },
 {
   "id": "def-implications-related",
@@ -214,7 +214,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.3.8",
   "title": "",
-  "body": " Complete the truth table to verify the observations above.     Implication Converse Inverse Contrapositive    T T T   T F F   F T T   F F T                                                                              "
+  "body": " Complete the truth table to verify the observations above.       Implication  Converse  Inverse  Contrapositive            T  T  T          T  F  F          F  T  T          F  F  T                                                                                    "
 },
 {
   "id": "def-biconditional",
@@ -223,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.3.10",
   "title": "",
-  "body": "  >  biconditional    The biconditional of statements and is the compound statement \" if and only if ,\" denoted . It is defined by the truth table below.   Truth Table for Implication    T T T  T F F  F T F  F F T     "
+  "body": "  >  biconditional    The biconditional of statements and is the compound statement \" if and only if ,\" denoted . It is defined by the truth table below.   Truth Table for Implication         T  T  T    T  F  F    F  T  F    F  F  T      "
 },
 {
   "id": "ch-chapter-1-connectives-5-16",
@@ -295,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Exercises",
-  "body": " Exercises  Given the statements below, write the following symbolic compound statements in sentences.   Statement : The car will not start.    Statement : It is freezing outside.    Statement : The food is ready.                            Given the statements above, write the following sentences in logical notation:   The car will start and it is freezing outside.    Either the food is ready or it is freezing outside.    The food isn't ready and the car won't start.    Construct a truth table for each of the following statements.    ;     ;     ;     .    Identify the hypothesis and the conclusion in each of the following conditional statements:   I will go to the movies if it rains.    If the diagonals of a rectangle are not perpendicular, it is not a square.    If and , then .     is a function on implies that is continuous on .    I will pay 5 dollars for a cup of coffee only if elephants fly.    All sides are equal provided that is an equilateral triangle.    Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.    Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other. That is, for all statements , and , prove the following.                       Is implication associative? That is, are the compound statements and logically equivalent? Justify your answer!  Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation).   If two lines are perpendicular, then they intersect at a right angle.    Function is differentiable provided that is a polynomial.    (Divergence Test) If converges, then .    For all matrices and , if and are both nonsingular, then is nonsingular.    "
+  "body": " Exercises   Given the statements below, write the following symbolic compound statements in sentences.   Statement : The car will not start.    Statement : It is freezing outside.    Statement : The food is ready.                               Given the statements above, write the following sentences in logical notation:   The car will start and it is freezing outside.    Either the food is ready or it is freezing outside.    The food isn't ready and the car won't start.       Construct a truth table for each of the following statements.    ;     ;     ;     .       Identify the hypothesis and the conclusion in each of the following conditional statements.   I will go to the movies if it rains.    If the diagonals of a rectangle are not perpendicular, it is not a square.    If and , then .     is a function on implies that is continuous on .    I will pay 5 dollars for a cup of coffee only if elephants fly.    All sides are equal provided that is an equilateral triangle.    Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.       Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other. That is, for all statements , and , prove the following.                          Is implication associative? That is, are the compound statements and logically equivalent? Justify your answer!    Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation)   If two lines are perpendicular, then they intersect at a right angle.    Function is differentiable provided that is a polynomial.    (Divergence Test) If converges, then .    For all matrices and , if and are both nonsingular, then is nonsingular.      "
 },
 {
   "id": "sec-ch1-exercises-2",
@@ -304,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.1",
   "title": "",
-  "body": "Given the statements below, write the following symbolic compound statements in sentences.   Statement : The car will not start.    Statement : It is freezing outside.    Statement : The food is ready.                           "
+  "body": " Given the statements below, write the following symbolic compound statements in sentences.   Statement : The car will not start.    Statement : It is freezing outside.    Statement : The food is ready.                             "
 },
 {
   "id": "sec-ch1-exercises-3",
@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.2",
   "title": "",
-  "body": "Given the statements above, write the following sentences in logical notation:   The car will start and it is freezing outside.    Either the food is ready or it is freezing outside.    The food isn't ready and the car won't start.   "
+  "body": " Given the statements above, write the following sentences in logical notation:   The car will start and it is freezing outside.    Either the food is ready or it is freezing outside.    The food isn't ready and the car won't start.     "
 },
 {
   "id": "sec-ch1-exercises-4",
@@ -322,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.3",
   "title": "",
-  "body": "Construct a truth table for each of the following statements.    ;     ;     ;     .   "
+  "body": " Construct a truth table for each of the following statements.    ;     ;     ;     .     "
 },
 {
   "id": "sec-ch1-exercises-5",
@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.4",
   "title": "",
-  "body": "Identify the hypothesis and the conclusion in each of the following conditional statements:   I will go to the movies if it rains.    If the diagonals of a rectangle are not perpendicular, it is not a square.    If and , then .     is a function on implies that is continuous on .    I will pay 5 dollars for a cup of coffee only if elephants fly.    All sides are equal provided that is an equilateral triangle.    Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.   "
+  "body": " Identify the hypothesis and the conclusion in each of the following conditional statements.   I will go to the movies if it rains.    If the diagonals of a rectangle are not perpendicular, it is not a square.    If and , then .     is a function on implies that is continuous on .    I will pay 5 dollars for a cup of coffee only if elephants fly.    All sides are equal provided that is an equilateral triangle.    Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.     "
 },
 {
   "id": "sec-ch1-exercises-6",
@@ -340,7 +340,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.5",
   "title": "",
-  "body": "Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other. That is, for all statements , and , prove the following.                      "
+  "body": " Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other. That is, for all statements , and , prove the following.                        "
 },
 {
   "id": "sec-ch1-exercises-7",
@@ -349,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.6",
   "title": "",
-  "body": "Is implication associative? That is, are the compound statements and logically equivalent? Justify your answer! "
+  "body": " Is implication associative? That is, are the compound statements and logically equivalent? Justify your answer!  "
 },
 {
   "id": "sec-ch1-exercises-8",
@@ -358,7 +358,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.7",
   "title": "",
-  "body": "Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation).   If two lines are perpendicular, then they intersect at a right angle.    Function is differentiable provided that is a polynomial.    (Divergence Test) If converges, then .    For all matrices and , if and are both nonsingular, then is nonsingular.   "
+  "body": " Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation)   If two lines are perpendicular, then they intersect at a right angle.    Function is differentiable provided that is a polynomial.    (Divergence Test) If converges, then .    For all matrices and , if and are both nonsingular, then is nonsingular.     "
 },
 {
   "id": "sec-propositional-functions",
@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Propositional Functions",
-  "body": " Propositional Functions     simple propositional function     compound propositional function    A propositional function is a sentence that becomes a statement when ambiguity is removed. We denote a propositional function as if it results in a simple statement or if it results in a compound statement.      >  universal quantifier    Given a domain of discourse , a universal quantifier is the specification, for all in , or, for each in . It is denoted . The logical shorthand for a universally quantified statement is .      The statement, For all real numbers , is a universally quantified statement with a truth value of true. The statement, For all real numbers , is a real number is a universally quantified statement with a truth value of false.       existential quantifier     such that    Given a domain of discourse , an existential quantifier is the specification, there exists in , or, for some in . It is denoted . An existentially quantified statement takes the form, there exists in such that or for some in . The logical shorthand for an existentially quantified statement is .      The statement, There exists a real number such that is an existentially quantified statement with a truth value of true. The statement, There exists a real number such that is an existentially quantified statement with a truth value of false.    Are the following quantified statements true or false? Justify your answers.     For all real numbers and , .     This statement is false because there are pairs of real numbers like and .       There exist real numbers and such that .     This is true. The real numbers and satisfy the statement.       For all real numbers , there exists a real number such that .     This is true. Given any real number , taking any satstifies the statement.       There exists a real number such that for all real numbers , .      This is false. Given any candidate for , we can take to build a counterexample.      "
+  "body": " Propositional Functions     simple propositional function     compound propositional function    A propositional function is a sentence that becomes a statement when ambiguity is removed. We denote a propositional function as if it results in a simple statement or if it results in a compound statement.      >  universal quantifier    Given a domain of discourse , a universal quantifier is the specification, for all in , or, for each in . It is denoted . The logical shorthand for a universally quantified statement is .      The statement, For all real numbers , is a universally quantified statement with a truth value of true. The statement, For all real numbers , is a real number is a universally quantified statement with a truth value of false.       existential quantifier     such that    Given a domain of discourse , an existential quantifier is the specification, there exists in , or, for some in . It is denoted . An existentially quantified statement takes the form, there exists in such that or for some in . The logical shorthand for an existentially quantified statement is .      The statement, There exists a real number such that is an existentially quantified statement with a truth value of true. The statement, There exists a real number such that is an existentially quantified statement with a truth value of false.    Are the following quantified statements true or false? Justify your answers.     For all real numbers and , .         There exist real numbers and such that .         For all real numbers , there exists a real number such that .         There exists a real number such that for all real numbers , .        "
 },
 {
   "id": "def-propfunc",
@@ -421,7 +421,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "2.1.6",
   "title": "",
-  "body": "Are the following quantified statements true or false? Justify your answers.     For all real numbers and , .     This statement is false because there are pairs of real numbers like and .       There exist real numbers and such that .     This is true. The real numbers and satisfy the statement.       For all real numbers , there exists a real number such that .     This is true. Given any real number , taking any satstifies the statement.       There exists a real number such that for all real numbers , .      This is false. Given any candidate for , we can take to build a counterexample.     "
+  "body": "Are the following quantified statements true or false? Justify your answers.     For all real numbers and , .         There exist real numbers and such that .         For all real numbers , there exists a real number such that .         There exists a real number such that for all real numbers , .       "
 },
 {
   "id": "sec-exercises",
@@ -430,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Exercises",
-  "body": " Exercises  Let denote . Determine whether the following statement are true or false; justify your answer.            such that        such that ,        such that      Write down the negation of the following statements, moving the negation symbol as far to the right as possible. Use symbolic logic notation.         such that           Rewrite the following sentence using symbolic logic notation for the logical connectives and quantifiers ( denotes the set of all functions ).   For any function that is continuous on , there is some such that for all , .    "
+  "body": " Exercises  Let denote . Determine whether the following statement are true or false; justify your answer.            such that        such that ,        such that        Write down the negation of the following statements, moving the negation symbol as far to the right as possible. Use symbolic logic notation.         such that             Rewrite the following sentence using symbolic logic notation for the logical connectives and quantifiers ( denotes the set of all functions ).   For any function that is continuous on , there is some such that for all , .    "
 },
 {
   "id": "sec-exercises-2",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "2.2.1",
   "title": "",
-  "body": "Let denote . Determine whether the following statement are true or false; justify your answer.            such that        such that ,        such that     "
+  "body": "Let denote . Determine whether the following statement are true or false; justify your answer.            such that        such that ,        such that      "
 },
 {
   "id": "sec-exercises-3",
@@ -448,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "2.2.2",
   "title": "",
-  "body": "Write down the negation of the following statements, moving the negation symbol as far to the right as possible. Use symbolic logic notation.         such that         "
+  "body": " Write down the negation of the following statements, moving the negation symbol as far to the right as possible. Use symbolic logic notation.         such that           "
 },
 {
   "id": "sec-exercises-4",
@@ -466,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Direct Proofs",
-  "body": " Direct Proofs  Let's recall the truth table for an implication.   Truth Table for Implication    T T T  T F F  F T T  F F T    Note that an implication is guaranteed to be true whenever the hypothesis is false. So, for a direct proof, we only need to worry about showing the implication is true when the hypothesis is true. Thus, our strategy becomes   Assume is true.    Use this assumption (and definitions, theorems, or previous results) to show that must be true, too.   Then, it follows that the truth value of the implication is true.   Claim. For all , if is even, then is even. (Recall that an integer is defined to be even provided there exists an integer for which . Otherwise, is odd, and there exists an integer for whic .)   Let . Assume is even. This means that there exists an integer for which . It follows that . Since , we see that is even.    "
+  "body": " Direct Proofs  Let's recall the truth table for an implication.   Truth Table for Implication         T  T  T    T  F  F    F  T  T    F  F  T     Note that an implication is guaranteed to be true whenever the hypothesis is false. So, for a direct proof, we only need to worry about showing the implication is true when the hypothesis is true. Thus, our strategy becomes   Assume is true.    Use this assumption (and definitions, theorems, or previous results) to show that must be true, too.   Then, it follows that the truth value of the implication is true.   Claim. For all , if is even, then is even. (Recall that an integer is defined to be even provided there exists an integer for which . Otherwise, is odd, and there exists an integer for whic .)   Let . Assume is even. This means that there exists an integer for which . It follows that . Since , we see that is even.    "
 },
 {
   "id": "sec-directproof-3",
@@ -475,7 +475,7 @@ var ptx_lunr_docs = [
   "type": "Table",
   "number": "3.1.1",
   "title": "Truth Table for Implication",
-  "body": " Truth Table for Implication    T T T  T F F  F T T  F F T   "
+  "body": " Truth Table for Implication         T  T  T    T  F  F    F  T  T    F  F  T    "
 },
 {
   "id": "sec-directproof-5",
@@ -529,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Counterexamples",
-  "body": " Counterexamples  If you are asked to disprove a universally quantified statement, it's enough to exhibit a single counterexample. Indeed, remember that the negation of the statement is the statement .   Disprove: For all matrices with real entries, if is not the zero matrix, then is nonsingular.  It is not the case that every nonzero matrix with real entries is nonsingular. Indeed, the matrix  has the property that for any matrix    "
+  "body": " Counterexamples  If you are asked to disprove a universally quantified statement, it's enough to exhibit a single counterexample. Indeed, remember that the negation of the statement is the statement .   Disprove: For all matrices with real entries, if is not the zero matrix, then is nonsingular.  It is not the case that every nonzero matrix with real entries is nonsingular. Indeed, the matrix has the property that for any matrix with entries , . Therefore, there is no matrix for which , so is singular.   "
 },
 {
   "id": "sec-counterexamples-3",
@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.3.1",
   "title": "",
-  "body": " Disprove: For all matrices with real entries, if is not the zero matrix, then is nonsingular.  It is not the case that every nonzero matrix with real entries is nonsingular. Indeed, the matrix  has the property that for any matrix   "
+  "body": " Disprove: For all matrices with real entries, if is not the zero matrix, then is nonsingular.  It is not the case that every nonzero matrix with real entries is nonsingular. Indeed, the matrix has the property that for any matrix with entries , . Therefore, there is no matrix for which , so is singular.  "
 },
 {
   "id": "sec-exercises-ch3",
@@ -547,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Exercises",
-  "body": " Exercises  Use truth tables to prove that the statements below are tautologies.                  Let be a tautology (a statement that always has truth value ). Show that for any proposition , and .    If represents a contradiction (a statement that always has truth value ) and is any proposition, what can be said about and ?    Prove that for all statements , and , by (a) using a truth table and (b) stringing together previously established logical equivalences (be sure to cite each equivalence law you use).    The previous problem shows also that . Explain why this means you only need to prove one of those statements (not both!) to prove the original implication.   "
+  "body": " Exercises  Use truth tables to prove that the statements below are tautologies.                   Let be a tautology (a statement that always has truth value ). Show that for any proposition , and .    If represents a contradiction (a statement that always has truth value ) and is any proposition, what can be said about and ?    Prove that for all statements , and , by (a) using a truth table and (b) stringing together previously established logical equivalences (be sure to cite each equivalence law you use).    The previous problem shows also that . Explain why this means you only need to prove one of those statements (not both!) to prove the original implication.   "
 },
 {
   "id": "sec-exercises-ch3-2",
@@ -556,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "3.4.1",
   "title": "",
-  "body": "Use truth tables to prove that the statements below are tautologies.                "
+  "body": "Use truth tables to prove that the statements below are tautologies.                 "
 },
 {
   "id": "sec-exercises-ch3-3",
@@ -601,7 +601,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "4",
   "title": "Challenging Exercises",
-  "body": " Challenging Exercises These problems require creative thinking or build on results you have proved in other problems.  Statements (1) and (2) below are implicitly of the form . In this exercise, you will rewrite them to be explicitly of this form.   Using logical notation, rewrite each of statements (1) and (2) in this form, with appropriate domain of discourse , and appropriate propositional functions and (you may not want to use as the variable). You answer will look like with the blanks filled in appropriately.    Use part (a) to rewrite the statement, with moved as far to the right as possible. (Your answer should still use formal logic notation.)    Express the statement in (b) in as simple an English sentence as possible; i.e., it should not sound like it was produced by a logical negation machine. In this answer, you should have no formal logic notation.     Statement (1). Being nonzero is not a sufficient condition for an matrix to be nonsingular.  Statement (2). A consistent linear system doesn't necessarily have a unique solution. (Use to denote the set of all linear systems.)   Are the following pairs of statements logically equivalent? If yes, simply state Yes. If no, give an example in which one statement is true and the other is false, where the domain of discourse is the set of all Hamilton students. (You will have to decide what properties of students and represent. Be imaginative!)                         The logical connective exclusive-or is defined by Prove that , by showing that both are logically equivalent to . Do not use truth tables! Cite any equivalence laws you use by name!   "
+  "body": " Challenging Exercises These problems require creative thinking or build on results you have proved in other problems.  Statements (1) and (2) below are implicitly of the form . In this exercise, you will rewrite them to be explicitly of this form.   Using logical notation, rewrite each of statements (1) and (2) in this form, with appropriate domain of discourse , and appropriate propositional functions and (you may not want to use as the variable). You answer will look like with the blanks filled in appropriately.    Use part (a) to rewrite the statement, with moved as far to the right as possible. (Your answer should still use formal logic notation.)    Express the statement in (b) in as simple an English sentence as possible; i.e., it should not sound like it was produced by a logical negation machine. In this answer, you should have no formal logic notation.     Statement (1). Being nonzero is not a sufficient condition for an matrix to be nonsingular.  Statement (2). A consistent linear system doesn't necessarily have a unique solution. (Use to denote the set of all linear systems.)   Are the following pairs of statements logically equivalent? If yes, simply state Yes. If no, give an example in which one statement is true and the other is false, where the domain of discourse is the set of all Hamilton students. (You will have to decide what properties of students and represent. Be imaginative!)                          The logical connective exclusive-or is defined by Prove that , by showing that both are logically equivalent to . Do not use truth tables! Cite any equivalence laws you use by name!   "
 },
 {
   "id": "ch-chapter-4-more-exercises-2",
@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.0.2",
   "title": "",
-  "body": "Are the following pairs of statements logically equivalent? If yes, simply state Yes. If no, give an example in which one statement is true and the other is false, where the domain of discourse is the set of all Hamilton students. (You will have to decide what properties of students and represent. Be imaginative!)                       "
+  "body": "Are the following pairs of statements logically equivalent? If yes, simply state Yes. If no, give an example in which one statement is true and the other is false, where the domain of discourse is the set of all Hamilton students. (You will have to decide what properties of students and represent. Be imaginative!)                        "
 },
 {
   "id": "ch-chapter-4-more-exercises-4",
