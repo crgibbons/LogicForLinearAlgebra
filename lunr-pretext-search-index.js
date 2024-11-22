@@ -289,6 +289,78 @@ var ptx_lunr_docs = [
   "body": " Logical Rules of Inference   We can use implication to build logical rules of inference out of simpler statements. Here are two of the most common rules of inference.    Modus Ponens refers to the tautology .     Modus Tollens refers to the tautology .   These logical rules of inference allow us to construct arguments called proofs.   "
 },
 {
+  "id": "sec-ch1-exercises",
+  "level": "1",
+  "url": "sec-ch1-exercises.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "Exercises",
+  "body": " Exercises  Given the statements below, write the following symbolic compound statements in sentences.   Statement : The car will not start.    Statement : It is freezing outside.    Statement : The food is ready.                            Given the statements above, write the following sentences in logical notation:   The car will start and it is freezing outside.    Either the food is ready or it is freezing outside.    The food isn't ready and the car won't start.    Construct a truth table for each of the following statements.    ;     ;     ;     .    Identify the hypothesis and the conclusion in each of the following conditional statements:   I will go to the movies if it rains.    If the diagonals of a rectangle are not perpendicular, it is not a square.    If and , then .     is a function on implies that is continuous on .    I will pay 5 dollars for a cup of coffee only if elephants fly.    All sides are equal provided that is an equilateral triangle.    Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.    Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other. That is, for all statements , and , prove the following.                       Is implication associative? That is, are the compound statements and logically equivalent? Justify your answer!  Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation).   If two lines are perpendicular, then they intersect at a right angle.    Function is differentiable provided that is a polynomial.    (Divergence Test) If converges, then .    For all matrices and , if and are both nonsingular, then is nonsingular.    "
+},
+{
+  "id": "sec-ch1-exercises-2",
+  "level": "2",
+  "url": "sec-ch1-exercises.html#sec-ch1-exercises-2",
+  "type": "Checkpoint",
+  "number": "1.4.1",
+  "title": "",
+  "body": "Given the statements below, write the following symbolic compound statements in sentences.   Statement : The car will not start.    Statement : It is freezing outside.    Statement : The food is ready.                           "
+},
+{
+  "id": "sec-ch1-exercises-3",
+  "level": "2",
+  "url": "sec-ch1-exercises.html#sec-ch1-exercises-3",
+  "type": "Checkpoint",
+  "number": "1.4.2",
+  "title": "",
+  "body": "Given the statements above, write the following sentences in logical notation:   The car will start and it is freezing outside.    Either the food is ready or it is freezing outside.    The food isn't ready and the car won't start.   "
+},
+{
+  "id": "sec-ch1-exercises-4",
+  "level": "2",
+  "url": "sec-ch1-exercises.html#sec-ch1-exercises-4",
+  "type": "Checkpoint",
+  "number": "1.4.3",
+  "title": "",
+  "body": "Construct a truth table for each of the following statements.    ;     ;     ;     .   "
+},
+{
+  "id": "sec-ch1-exercises-5",
+  "level": "2",
+  "url": "sec-ch1-exercises.html#sec-ch1-exercises-5",
+  "type": "Checkpoint",
+  "number": "1.4.4",
+  "title": "",
+  "body": "Identify the hypothesis and the conclusion in each of the following conditional statements:   I will go to the movies if it rains.    If the diagonals of a rectangle are not perpendicular, it is not a square.    If and , then .     is a function on implies that is continuous on .    I will pay 5 dollars for a cup of coffee only if elephants fly.    All sides are equal provided that is an equilateral triangle.    Parellel opposite sides is sufficient for a quadrilateral to be a parallelogram.   "
+},
+{
+  "id": "sec-ch1-exercises-6",
+  "level": "2",
+  "url": "sec-ch1-exercises.html#sec-ch1-exercises-6",
+  "type": "Checkpoint",
+  "number": "1.4.5",
+  "title": "",
+  "body": "Use truth tables to prove that disjunction and conjunction are associative and that each one distributes over the other. That is, for all statements , and , prove the following.                      "
+},
+{
+  "id": "sec-ch1-exercises-7",
+  "level": "2",
+  "url": "sec-ch1-exercises.html#sec-ch1-exercises-7",
+  "type": "Checkpoint",
+  "number": "1.4.6",
+  "title": "",
+  "body": "Is implication associative? That is, are the compound statements and logically equivalent? Justify your answer! "
+},
+{
+  "id": "sec-ch1-exercises-8",
+  "level": "2",
+  "url": "sec-ch1-exercises.html#sec-ch1-exercises-8",
+  "type": "Checkpoint",
+  "number": "1.4.7",
+  "title": "",
+  "body": "Form the contrapositive, converse, and inverse of each of the following statements in the form of an English sentence (no symbolic logic notation).   If two lines are perpendicular, then they intersect at a right angle.    Function is differentiable provided that is a polynomial.    (Divergence Test) If converges, then .    For all matrices and , if and are both nonsingular, then is nonsingular.   "
+},
+{
   "id": "sec-propositional-functions",
   "level": "1",
   "url": "sec-propositional-functions.html",
@@ -563,7 +635,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "logic.html",
   "type": "Section",
-  "number": "5.1",
+  "number": "A.1",
   "title": "Logic",
   "body": " Logic  Authors should adhere to the rules of logic in such a way that their readers understand what logical techniques they are employing.  In other words, the authors...   state claims (propositions, theorems, lemmas, etc.) as logical statements;  state claims appropriate to the assigned problem;  write proofs with first and last sentences that indicate the proof technique they are using;*  define notation and symbols before using them;  employ a valid proof technique for the statement as written;  employ a valid proof technique for the statement appropriate to the problem;  include all necessary cases in the proof;  write examples with a clear topic sentence;  write prose using evidence to support claims;  employ sound logic even in mathematical prose.   *this criterion relaxes a bit after the first proofs course; if you're proving a theorem directly, you can just get to the proof without repeating the hypotheses at the beginning of the proof. But if you're in your first proofs course, please include the first and last sentences that lay out your hypotheses and conclusions!  "
 },
@@ -572,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "mathematics.html",
   "type": "Section",
-  "number": "5.2",
+  "number": "A.2",
   "title": "Mathematics",
   "body": " Mathematics  The authors...   use definitions, theorems, and other results from the appropriate source(s) or chapter(s);  cite definitions, theorems, and other results from the appropriate source(s) or chapter(s);  cite named definitions, theorems, and results;  employ correct calculations;  address all cases and subcases;  do not re-prove prior results.   "
 },
@@ -581,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "style.html",
   "type": "Section",
-  "number": "5.3",
+  "number": "A.3",
   "title": "Style",
   "body": " Style  The authors...   use the appropriate LaTeX template for the course;  adhere to mathematical style conventions, such as:   using math mode for math symbols,  writing sentences that do not start in math mode,  not writing two-column proofs reminiscent of a high school geometry class,  using aligned equations when a string of equations is too long for a page,  using inline equations for minor mathematical manipulations,  using appropriate LaTeX environments (proof, prop*, example*, etc);    discern when to write an example instead of a proposition and proof;  adhere to the conventions of grammar;  write clearly and concisely in a way that does not obscure the logic or mathematics.   "
 },
@@ -590,9 +662,45 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "examples.html",
   "type": "Section",
-  "number": "5.4",
+  "number": "A.4",
   "title": "Examples (and how to write them)",
   "body": " Examples (and how to write them)  Here's a note about the difference between a proposition in math (versus formal logic). In math, we understand propositions (and theorems, lemmas, corollaries, etc.) to be statements that are true (and proved\/provable) so that we can cite them when we need to use them. You can see the confusion that would ensue if a paper contained Proposition 1: All even integers are prime under that assumption, even if followed immediately by a counterexample! So, if you are showing that a statement is not true as part of a writing assignment, here's what that might look like:   Example  It is not the case that every even integer is prime. Notice that the integer is even. Although divides , it divides neither nor . Therefore, by (definition of prime\/proposition about prime numbers\/whatever it is), is not prime.   To break that down into more of a template:   Example   [Topic sentence: what's the point of this example?]  [Supporting mathematical evidence, less formal than a proof, but still following the stylistic conventions of good mathematical writing!]  [Concluding sentence.]    "
+},
+{
+  "id": "app-sets",
+  "level": "1",
+  "url": "app-sets.html",
+  "type": "Appendix",
+  "number": "B",
+  "title": "Set Theory Basics",
+  "body": " Set Theory Basics  Every set is made up of its members. If is a member of , we write , and we use the symbol as the mathematical equivalent of the phrase is a member of .  We think of sets as their own objects. If is another set, and if for every it follows that , then we say that is a subset of , and we write .  For example, is a subset of (i.e., ), but is not (i.e., ). From this definition, it is clear that a set is a subset of itself. We say that the sets and are equal (and we write ) if and only if and .  Just as arithmetic features operations on numbers, set theory features operations on sets:    The union of the sets and , denoted , is the set of all objects that are a member of , or , or both. Example:     The intersection of the sets and , denoted , is the set of all objects that are members of both and . Example:     There are lots of other operations on sets ( set difference , symmetric difference , Cartesian product , power set , disjoint union , complement , and more!), but to start, we only need to worry about unions and intersections.  Some basic sets of central importance to us in linear algebra are:    the empty set (the unique set containing no elements), which we denote by or ;    the set of natural numbers, which we denote by ;    the set of integers, which we denote by ;    the set of rational numbers, which we denote by ;    the set of real numbers, which we denote by ; and    the set of complex numbers, which we denote by .    "
+},
+{
+  "id": "app-sets-3",
+  "level": "2",
+  "url": "app-sets.html#app-sets-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "subset "
+},
+{
+  "id": "app-sets-6-1-1",
+  "level": "2",
+  "url": "app-sets.html#app-sets-6-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "union "
+},
+{
+  "id": "app-sets-6-2-1",
+  "level": "2",
+  "url": "app-sets.html#app-sets-6-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "intersection "
 },
 {
   "id": "backmatter-2",
