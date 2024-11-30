@@ -4,6 +4,15 @@ var ptx_lunr_docs = [
   "id": "frontmatter-2",
   "level": "1",
   "url": "frontmatter-2.html",
+  "type": "Acknowledgements",
+  "number": "",
+  "title": "Acknowledgements",
+  "body": " Many thanks to Professors Debra Boutin and Sally Cockburn for contributing problems to these notes (and for being wonderful mentors to their colleagues at Hamilton College).  "
+},
+{
+  "id": "frontmatter-3",
+  "level": "1",
+  "url": "frontmatter-3.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
@@ -694,9 +703,9 @@ var ptx_lunr_docs = [
   "body": "intersection "
 },
 {
-  "id": "backmatter-2",
+  "id": "backmatter-4",
   "level": "1",
-  "url": "backmatter-2.html",
+  "url": "backmatter-4.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
