@@ -1,82 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <appendix xml:id="app-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title> Set Theory Basics</title>
+  <title> Set Theory Basics</title>
 
-<p>
-	Every set <m>A</m> is made up of its members.  
-  If <m>a</m> is a member of <m>A</m>, we write <m>a \in A</m>, 
-  and we use the symbol <q><m>\in</m></q> as the mathematical equivalent of the phrase <q>is a member of</q>.
-</p>
-<p>
-	We think of sets as their own objects.  
-  If <m>B</m> is another set, and if for every <m>a \in A</m> it follows that <m>a \in B</m>, 
-  then we say that <m>A</m> is a <term><em>subset</em></term> of <m>B</m>, and we write <m>A \subseteq B</m>.
-</p>
-<p>
-	For example, <m>\{1,2\}</m> is a subset of <m>\{1,2,3\}</m> 
-  (i.e., <m>\{1,2\} \subseteq \{1,2,3\}</m>), but <m>\{1,4\}</m> is not 
-  (i.e., <m>\{1,4\} \not \subseteq \{1,2,3\}</m>). 
-  From this definition, it is clear that a set is a subset of itself. 
-   We say that the sets <m>A</m> and <m>B</m> are equal (and we write <m>A = B</m>) if and only if <m>A \subseteq B</m> and <m>B \subseteq A</m>.
-</p>
-<p>
-	Just as arithmetic features operations on numbers, set theory features operations on sets:
-</p>
-<ul>
-	<li>
-	<p>
-		 The <term><em>union</em></term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cup B</m>, is the set of all objects that are a member of <m>A</m>, or <m>B</m>, or both. Example: <me>\{1, 2, 3\} \cup \{2, 3, 4\}=\{1, 2, 3, 4\}</me>
+  <p>
+    Every set <m>A</m> is made up of its members.
+    If <m>a</m> is a member of <m>A</m>, we write <m>a \in A</m>, and we use the symbol <q><m>\in</m></q> as the mathematical equivalent of the phrase <q>is a member of</q>.
+    A set with no elements is called <term>empty</term>, and we denote the empty set by <m>\{ \, \}</m> or <m>\varnothing</m>.
   </p>
-  </li>
-  <li>
-    <p>
-      The <term><em>intersection</em></term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cap B</m>, 
-      is the set of all objects that are members of both
-      <m>A</m> and <m>B</m>. Example: <me>\{1, 2, 3\}\cap \{2, 3, 4\}= \{2, 3\}. </me>
-  </p>
-</li>
-</ul>
 
-<p>
-	There are lots of other operations on sets 
-  (<em>set difference</em>, <em>symmetric difference</em>, <em>Cartesian product</em>, <em>power set</em>, 
-  <em>disjoint union</em>, <em>complement</em>, and more!), 
-  but to start, we only need to worry about unions and intersections.
-</p>
-<p>
-	Some basic sets of central importance to us in linear algebra are:
-</p>
+  <p>
+    If membership in a set is governed by a rule, we can use <term>set-builder notation</term> to describe the set. Set-builder notation is formatted
+    <me>
+      \{ \text{ elements of } U \, | \, \text{ subject to this rule }\}.
+    </me>
+    For example, the set of even integers can be described by 
+    <me>
+      \{ n \text{ in the integers} \, | \, n = 2k \text{ for some integer } k \}.
+    </me>
+    
+  </p>
+
+  <p>
+    We think of sets as their own abstract objects, and typically we situate them within a larger universal set <m>U</m> in order to perform operations on sets.
+    If <m>B</m> is another set, and if for every <m>a \in A</m> it follows that <m>a \in B</m>, then we say that <m>A</m> is a <term><em>subset</em></term> of <m>B</m>, and we write <m>A \subseteq B</m>.
+    We also say <m>A</m> is a <term>superset</term> <m>B</m> in this scenario, and we can write <m>A \supseteq B</m>.
+  </p>
+
+  <figure xml:id="fig-tikz-B1">
+    <caption> Two sets <m>A</m> and <m>B</m> in a universal set <m>U</m>. </caption>
+    <image width="75%" xml:id="sets">
+      <latex-image >
+          \begin{tikzpicture}
+          % Draw the universal set (rectangle)
+          \draw[thick] (-4, -3) rectangle (4, 3);
+          % Label for the universal set
+          \node[above right] at (-4, 3) {$U$};
+          % Draw the first set (circle)
+          \draw[thick] (-1, 0) circle (2);
+          \node[below left] at (-1, -2) {$A$};
+          % Draw the second set (circle)
+          \draw[thick] (1, 0) circle (2);
+          \node[below right] at (1, -2) {$B$};
+          \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <p>
+    For example, <m>\{1,2\}</m> is a subset of <m>\{1,2,3\}</m> (i.e., <m>\{1,2\} \subseteq \{1,2,3\}</m>), but <m>\{1,4\}</m> is not (i.e., <m>\{1,4\} \not \subseteq \{1,2,3\}</m>).
+    From this definition, it is clear that a set is a subset of itself.
+    We say that the sets <m>A</m> and <m>B</m> are equal (and we write <m>A = B</m>) if and only if <m>A \subseteq B</m> and <m>B \subseteq A</m>.
+  </p>
+
+  <p>
+    Just as arithmetic features operations on numbers, set theory features operations on sets:
+  </p>
+
   <ul>
     <li>
-    <p>
-      the empty set (the unique set containing no elements), which we denote by <m>\{ \, \}</m> or <m>\varnothing</m>;
+      <p>
+        The <term>complement</term> of a set <m>A</m> is formed by the elements <m>u \in U</m> that are not members of <m>A</m>.
+        For example, in the set of natural numbers,
+        <me>
+          \{1, 2, 3 \}^c = \{4, 5, 6, \dots\}.
+        </me>
+      </p>
+
+      <figure xml:id="fig-tikz-B2">
+        <caption> The complement of <m>A</m>. </caption>
+        <image width="75%" xml:id="complement-set">
+          <latex-image >
+      \begin{tikzpicture}
+          % Universal set (rectangle)
+          \draw[thick] (-4, -3) rectangle (4, 3);
+          \node[above right] at (-4, 3) {$U$};
+          % Shading A complement
+          \begin{scope}
+              \clip (-4, -3) rectangle (4, 3);
+              \fill[gray!40] (-4, -3) rectangle (4, 3);
+              \fill[white] (-1, 0) circle (2);
+          \end{scope}
+          % Set A
+          \draw[thick] (-1, 0) circle (2);
+          \node[below left] at (-1, -2) {$A$};
+          % Set B
+          \draw[thick] (1, 0) circle (2);
+          \node[below right] at (1, -2) {$B$};
+          \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </li>
+
+    <li>
+      <p>
+        The <term>union</term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cup B</m>, is the set of all elements in <m>U</m> that are a member of <m>A</m>, or <m>B</m>, or both.
+        For example, in the set of natural numbers,
+        <me>
+          \{1, 2, 3\} \cup \{2, 3, 4\}=\{1, 2, 3, 4\}
+        </me>
+      </p>
+            <figure xml:id="fig-tikz-B3">
+        <caption> The union of <m>A</m> and <m>B</m>. </caption>
+        <image width="75%" xml:id="union-set">
+          <latex-image >
+      \begin{tikzpicture}
+          % Universal set (rectangle)
+          \draw[thick] (-4, -3) rectangle (4, 3);
+          \node[above right] at (-4, 3) {$U$};
+          % Shading A union B
+          \begin{scope}
+              \clip (-1, 0) circle (2);
+              \fill[gray!40] (-1, 0) circle (2);
+          \end{scope}
+          \begin{scope}
+              \clip (1, 0) circle (2);
+              \fill[gray!40] (1, 0) circle (2);
+          \end{scope}
+          % Set A
+          \draw[thick] (-1, 0) circle (2);
+          \node[below left] at (-1, -2) {$A$};
+          % Set B
+          \draw[thick] (1, 0) circle (2);
+          \node[below right] at (1, -2) {$B$};
+          \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </li>
+
+    <li>
+      <p>
+        The <term><em>intersection</em></term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cap B</m>, is the set of all elements that are members of both <m>A</m> and <m>B</m>.
+        For example, in the natural numbers,
+        <me>
+          \{1, 2, 3\}\cap \{2, 3, 4\}= \{2, 3\}.
+        </me>
+      </p>
+            <figure xml:id="fig-tikz-B4">
+        <caption> The intersection of <m>A</m> and <m>B</m>. </caption>
+        <image width="75%" xml:id="intersect-set">
+          <latex-image >
+      \begin{tikzpicture}
+          % Universal set (rectangle)
+          \draw[thick] (-4, -3) rectangle (4, 3);
+          \node[above right] at (-4, 3) {$U$};
+
+          % Shading A intersect B
+          \begin{scope}
+              \clip (-1, 0) circle (2);
+              \fill[gray!40] (1, 0) circle (2);
+          \end{scope}
+
+          % Set A
+          \draw[thick] (-1, 0) circle (2);
+          \node[below left] at (-1, -2) {$A$};
+          % Set B
+          \draw[thick] (1, 0) circle (2);
+          \node[below right] at (1, -2) {$B$};
+          \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </li>
+  </ul>
+
+  <p>
+    There are lots of other operations on sets (<em>set difference</em>, <em>symmetric difference</em>, <em>Cartesian product</em>, <em>power set</em>, <em>disjoint union</em>, <em>complement</em>, and more!), but to start, we only need to worry about complements, unions, and intersections.
   </p>
-  </li>
-  <li>
-    <p>
-      the set of natural numbers, which we denote by <m>\mathbb{N}</m>;
+
+  <theorem xml:id="thm-complements-of-sets">
+    <statement>
+      <p>
+        The laws for negations of conjunctions and disjunctions have natural counterparts for sets. Indeed, 
+      <me>
+        (A \cap B)^c = A^c \cup B^c
+      </me>
+      and
+      <me>
+        (A \cup B)^c = A^c \cap B^c.
+      </me>
+      Furthermore, <me>A \cap A^c = \varnothing</me> and <me>A \cup A^c = U</me>.
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    Some basic sets of central importance to us in linear algebra are:
   </p>
-  </li>
-  <li>
-    <p>
-      the set of integers, which we denote by <m>\mathbb{Z}</m>;
-  </p>
-  </li>
-  <li>
-    <p>
-      the set of rational numbers, which we denote by <m>\mathbb{Q}</m>;
-  </p>
-  </li>
-  <li>
-    <p>
-      the set of real numbers, which we denote by <m>\mathbb{R}</m>; and
-  </p>
-  </li>
-  <li>
-    <p>
-      the set of complex numbers, which we denote by <m>\mathbb{C}</m>.
-  </p>
-  </li>
-</ul>
+
+  <ul>
+
+    <li>
+      <p>
+        the set of natural numbers, which we denote by <m>\mathbb{N}</m>;
+      </p>
+    </li>
+
+    <li>
+      <p>
+        the set of integers, which we denote by <m>\mathbb{Z}</m>;
+      </p>
+    </li>
+
+    <li>
+      <p>
+        the set of rational numbers, which we denote by <m>\mathbb{Q}</m>;
+      </p>
+    </li>
+
+    <li>
+      <p>
+        the set of real numbers, which we denote by <m>\mathbb{R}</m>;
+      </p>
+    </li>
+
+    <li>
+      <p>
+        the set of complex numbers, which we denote by <m>\mathbb{C}</m>;
+      </p>
+    </li>
+
+    <li>
+      <p>
+        the set of column vectors with <m>d</m> entries, which we denote <m>\mathbb{R}^d</m>; and
+      </p>
+    </li>
+
+    <li>
+      <p>
+        the set of <m>m \times n </m> matrices with real entries, which we denote by <m>M_{m\times n}</m>.
+        When <m>m = n</m>, we write <m>M_n</m>.
+      </p>
+    </li>
+  </ul>
 </appendix>
