@@ -14,7 +14,13 @@
       <today />
     </date>
   </titlepage>
-
+  
+  <acknowledgement>
+    <p>
+      Many thanks to Professors Debra Boutin and Sally Cockburn for contributing problems to these notes 
+      (and for being wonderful mentors to their colleagues at Hamilton College).
+    </p>
+  </acknowledgement>
   <colophon>
 
     <website>

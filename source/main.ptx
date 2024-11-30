@@ -19,8 +19,7 @@
     <xi:include href="./ch-chapter-4-more-exercises.ptx" />
 
     <!-- Include appendices -->
-    <xi:include href="./app-style-conventions.ptx" />
-    <xi:include href="./app-sets.ptx" />
+
     <!-- set theory appendix -->
 
     <!-- Include backmatter -->
