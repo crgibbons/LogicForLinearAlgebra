@@ -263,43 +263,109 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="appendix" id="app-sets"><h2 class="heading">
 <span class="type">Appendix</span><span class="space"> </span><span class="codenumber">B</span><span class="space"> </span><span class="title">Set Theory Basics</span>
 </h2>
-<div class="para" id="app-sets-2">Every set <span class="process-math">\(A\)</span> is made up of its members. If <span class="process-math">\(a\)</span> is a member of <span class="process-math">\(A\text{,}\)</span> we write <span class="process-math">\(a \in A\text{,}\)</span> and we use the symbol “<span class="process-math">\(\in\)</span>” as the mathematical equivalent of the phrase “is a member of”.</div>
-<div class="para" id="app-sets-3">We think of sets as their own objects. If <span class="process-math">\(B\)</span> is another set, and if for every <span class="process-math">\(a \in A\)</span> it follows that <span class="process-math">\(a \in B\text{,}\)</span> then we say that <span class="process-math">\(A\)</span> is a <dfn class="terminology"><em class="emphasis">subset</em></dfn> of <span class="process-math">\(B\text{,}\)</span> and we write <span class="process-math">\(A \subseteq B\text{.}\)</span>
+<div class="para" id="app-sets-2">Every set <span class="process-math">\(A\)</span> is made up of its members. If <span class="process-math">\(a\)</span> is a member of <span class="process-math">\(A\text{,}\)</span> we write <span class="process-math">\(a \in A\text{,}\)</span> and we use the symbol “<span class="process-math">\(\in\)</span>” as the mathematical equivalent of the phrase “is a member of”. A set with no elements is called <dfn class="terminology">empty</dfn>, and we denote the empty set by <span class="process-math">\(\{ \, \}\)</span> or <span class="process-math">\(\varnothing\text{.}\)</span>
 </div>
-<div class="para" id="app-sets-4">For example, <span class="process-math">\(\{1,2\}\)</span> is a subset of <span class="process-math">\(\{1,2,3\}\)</span> (i.e., <span class="process-math">\(\{1,2\} \subseteq \{1,2,3\}\)</span>), but <span class="process-math">\(\{1,4\}\)</span> is not (i.e., <span class="process-math">\(\{1,4\} \not \subseteq \{1,2,3\}\)</span>). From this definition, it is clear that a set is a subset of itself. We say that the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are equal (and we write <span class="process-math">\(A = B\)</span>) if and only if <span class="process-math">\(A \subseteq B\)</span> and <span class="process-math">\(B \subseteq A\text{.}\)</span>
+<div class="para logical" id="app-sets-3">
+<div class="para">If membership in a set is governed by a rule, we can use <dfn class="terminology">set-builder notation</dfn> to describe the set. Set-builder notation is formatted</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{ \text{ elements of } U \, | \, \text{ subject to this rule }\}.
+\end{equation*}
 </div>
-<div class="para" id="app-sets-5">Just as arithmetic features operations on numbers, set theory features operations on sets:</div>
-<ul class="disc" id="app-sets-6">
-<li id="app-sets-6-1"><div class="para logical" id="app-sets-6-1-1">
-<div class="para">The <dfn class="terminology"><em class="emphasis">union</em></dfn> of the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> denoted <span class="process-math">\(A \cup B\text{,}\)</span> is the set of all objects that are a member of <span class="process-math">\(A\text{,}\)</span> or <span class="process-math">\(B\text{,}\)</span> or both. Example:</div>
+<div class="para">For example, the set of even integers can be described by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{ n \text{ in the integers} \, | \, n = 2k \text{ for some integer } k \}.
+\end{equation*}
+</div>
+</div>
+<div class="para" id="app-sets-4">We think of sets as their own abstract objects, and typically we situate them within a larger universal set <span class="process-math">\(U\)</span> in order to perform operations on sets. If <span class="process-math">\(B\)</span> is another set, and if for every <span class="process-math">\(a \in A\)</span> it follows that <span class="process-math">\(a \in B\text{,}\)</span> then we say that <span class="process-math">\(A\)</span> is a <dfn class="terminology"><em class="emphasis">subset</em></dfn> of <span class="process-math">\(B\text{,}\)</span> and we write <span class="process-math">\(A \subseteq B\text{.}\)</span> We also say <span class="process-math">\(A\)</span> is a <dfn class="terminology">superset</dfn> <span class="process-math">\(B\)</span> in this scenario, and we can write <span class="process-math">\(A \supseteq B\text{.}\)</span>
+</div>
+<figure class="figure figure-like" id="fig-tikz-B1"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/sets.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">B.0.1<span class="period">.</span></span><span class="space"> </span>Two sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> in a universal set <span class="process-math">\(U\text{.}\)</span></figcaption></figure><div class="para" id="app-sets-6">For example, <span class="process-math">\(\{1,2\}\)</span> is a subset of <span class="process-math">\(\{1,2,3\}\)</span> (i.e., <span class="process-math">\(\{1,2\} \subseteq \{1,2,3\}\)</span>), but <span class="process-math">\(\{1,4\}\)</span> is not (i.e., <span class="process-math">\(\{1,4\} \not \subseteq \{1,2,3\}\)</span>). From this definition, it is clear that a set is a subset of itself. We say that the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are equal (and we write <span class="process-math">\(A = B\)</span>) if and only if <span class="process-math">\(A \subseteq B\)</span> and <span class="process-math">\(B \subseteq A\text{.}\)</span>
+</div>
+<div class="para" id="app-sets-7">Just as arithmetic features operations on numbers, set theory features operations on sets:</div>
+<ul class="disc" id="app-sets-8">
+<li id="app-sets-8-1">
+<div class="para logical" id="app-sets-8-1-1">
+<div class="para">The <dfn class="terminology">complement</dfn> of a set <span class="process-math">\(A\)</span> is formed by the elements <span class="process-math">\(u \in U\)</span> that are not members of <span class="process-math">\(A\text{.}\)</span> For example, in the set of natural numbers,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{1, 2, 3 \}^c = \{4, 5, 6, \dots\}.
+\end{equation*}
+</div>
+</div>
+<figure class="figure figure-like" id="fig-tikz-B2"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/complement-set.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">B.0.2<span class="period">.</span></span><span class="space"> </span>The complement of <span class="process-math">\(A\text{.}\)</span></figcaption></figure>
+</li>
+<li id="app-sets-8-2">
+<div class="para logical" id="app-sets-8-2-1">
+<div class="para">The <dfn class="terminology">union</dfn> of the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> denoted <span class="process-math">\(A \cup B\text{,}\)</span> is the set of all elements in <span class="process-math">\(U\)</span> that are a member of <span class="process-math">\(A\text{,}\)</span> or <span class="process-math">\(B\text{,}\)</span> or both. For example, in the set of natural numbers,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \{1, 2, 3\} \cup \{2, 3, 4\}=\{1, 2, 3, 4\}
 \end{equation*}
 </div>
-</div></li>
-<li id="app-sets-6-2"><div class="para logical" id="app-sets-6-2-1">
-<div class="para">The <dfn class="terminology"><em class="emphasis">intersection</em></dfn> of the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> denoted <span class="process-math">\(A \cap B\text{,}\)</span> is the set of all objects that are members of both <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span> Example:</div>
+</div>
+<figure class="figure figure-like" id="fig-tikz-B3"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/union-set.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">B.0.3<span class="period">.</span></span><span class="space"> </span>The union of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span></figcaption></figure>
+</li>
+<li id="app-sets-8-3">
+<div class="para logical" id="app-sets-8-3-1">
+<div class="para">The <dfn class="terminology"><em class="emphasis">intersection</em></dfn> of the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> denoted <span class="process-math">\(A \cap B\text{,}\)</span> is the set of all elements that are members of both <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span> For example, in the natural numbers,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\{1, 2, 3\}\cap \{2, 3, 4\}= \{2, 3\}. 
+\{1, 2, 3\}\cap \{2, 3, 4\}= \{2, 3\}.
 \end{equation*}
 </div>
-</div></li>
+</div>
+<figure class="figure figure-like" id="fig-tikz-B4"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/intersect-set.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">B.0.4<span class="period">.</span></span><span class="space"> </span>The intersection of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span></figcaption></figure>
+</li>
 </ul>
-<div class="para" id="app-sets-7">There are lots of other operations on sets (<em class="emphasis">set difference</em>, <em class="emphasis">symmetric difference</em>, <em class="emphasis">Cartesian product</em>, <em class="emphasis">power set</em>, <em class="emphasis">disjoint union</em>, <em class="emphasis">complement</em>, and more!), but to start, we only need to worry about unions and intersections.</div>
-<div class="para" id="app-sets-8">Some basic sets of central importance to us in linear algebra are:</div>
-<ul class="disc" id="app-sets-9">
-<li id="app-sets-9-1"><div class="para" id="app-sets-9-1-1">the empty set (the unique set containing no elements), which we denote by <span class="process-math">\(\{ \, \}\)</span> or <span class="process-math">\(\varnothing\text{;}\)</span>
+<div class="para" id="app-sets-9">There are lots of other operations on sets (<em class="emphasis">set difference</em>, <em class="emphasis">symmetric difference</em>, <em class="emphasis">Cartesian product</em>, <em class="emphasis">power set</em>, <em class="emphasis">disjoint union</em>, <em class="emphasis">complement</em>, and more!), but to start, we only need to worry about complements, unions, and intersections.</div>
+<article class="theorem theorem-like" id="thm-complements-of-sets"><h2 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">B.0.5</span><span class="period">.</span>
+</h2>
+<div class="para logical" id="thm-complements-of-sets-1-1">
+<div class="para">The laws for negations of conjunctions and disjunctions have natural counterparts for sets. Indeed,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(A \cap B)^c = A^c \cup B^c
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(A \cup B)^c = A^c \cap B^c.
+\end{equation*}
+</div>
+<div class="para">Furthermore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A \cap A^c = \varnothing
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A \cup A^c = U\text{.}
+\end{equation*}
+</div>
+</div></article><div class="para" id="app-sets-11">Some basic sets of central importance to us in linear algebra are:</div>
+<ul class="disc" id="app-sets-12">
+<li id="app-sets-12-1"><div class="para" id="app-sets-12-1-1">the set of natural numbers, which we denote by <span class="process-math">\(\mathbb{N}\text{;}\)</span>
 </div></li>
-<li id="app-sets-9-2"><div class="para" id="app-sets-9-2-1">the set of natural numbers, which we denote by <span class="process-math">\(\mathbb{N}\text{;}\)</span>
+<li id="app-sets-12-2"><div class="para" id="app-sets-12-2-1">the set of integers, which we denote by <span class="process-math">\(\mathbb{Z}\text{;}\)</span>
 </div></li>
-<li id="app-sets-9-3"><div class="para" id="app-sets-9-3-1">the set of integers, which we denote by <span class="process-math">\(\mathbb{Z}\text{;}\)</span>
+<li id="app-sets-12-3"><div class="para" id="app-sets-12-3-1">the set of rational numbers, which we denote by <span class="process-math">\(\mathbb{Q}\text{;}\)</span>
 </div></li>
-<li id="app-sets-9-4"><div class="para" id="app-sets-9-4-1">the set of rational numbers, which we denote by <span class="process-math">\(\mathbb{Q}\text{;}\)</span>
+<li id="app-sets-12-4"><div class="para" id="app-sets-12-4-1">the set of real numbers, which we denote by <span class="process-math">\(\mathbb{R}\text{;}\)</span>
 </div></li>
-<li id="app-sets-9-5"><div class="para" id="app-sets-9-5-1">the set of real numbers, which we denote by <span class="process-math">\(\mathbb{R}\text{;}\)</span> and</div></li>
-<li id="app-sets-9-6"><div class="para" id="app-sets-9-6-1">the set of complex numbers, which we denote by <span class="process-math">\(\mathbb{C}\text{.}\)</span>
+<li id="app-sets-12-5"><div class="para" id="app-sets-12-5-1">the set of complex numbers, which we denote by <span class="process-math">\(\mathbb{C}\text{;}\)</span>
+</div></li>
+<li id="app-sets-12-6"><div class="para" id="app-sets-12-6-1">the set of column vectors with <span class="process-math">\(d\)</span> entries, which we denote <span class="process-math">\(\mathbb{R}^d\text{;}\)</span> and</div></li>
+<li id="app-sets-12-7"><div class="para" id="app-sets-12-7-1">the set of <span class="process-math">\(m \times n \)</span> matrices with real entries, which we denote by <span class="process-math">\(M_{m\times n}\text{.}\)</span> When <span class="process-math">\(m = n\text{,}\)</span> we write <span class="process-math">\(M_n\text{.}\)</span>
 </div></li>
 </ul></section></div>
 <div class="ptx-content-footer">

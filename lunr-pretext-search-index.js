@@ -673,7 +673,16 @@ var ptx_lunr_docs = [
   "type": "Appendix",
   "number": "B",
   "title": "Set Theory Basics",
-  "body": " Set Theory Basics  Every set is made up of its members. If is a member of , we write , and we use the symbol as the mathematical equivalent of the phrase is a member of .  We think of sets as their own objects. If is another set, and if for every it follows that , then we say that is a subset of , and we write .  For example, is a subset of (i.e., ), but is not (i.e., ). From this definition, it is clear that a set is a subset of itself. We say that the sets and are equal (and we write ) if and only if and .  Just as arithmetic features operations on numbers, set theory features operations on sets:    The union of the sets and , denoted , is the set of all objects that are a member of , or , or both. Example:     The intersection of the sets and , denoted , is the set of all objects that are members of both and . Example:     There are lots of other operations on sets ( set difference , symmetric difference , Cartesian product , power set , disjoint union , complement , and more!), but to start, we only need to worry about unions and intersections.  Some basic sets of central importance to us in linear algebra are:    the empty set (the unique set containing no elements), which we denote by or ;    the set of natural numbers, which we denote by ;    the set of integers, which we denote by ;    the set of rational numbers, which we denote by ;    the set of real numbers, which we denote by ; and    the set of complex numbers, which we denote by .    "
+  "body": " Set Theory Basics  Every set is made up of its members. If is a member of , we write , and we use the symbol as the mathematical equivalent of the phrase is a member of . A set with no elements is called empty , and we denote the empty set by or .  If membership in a set is governed by a rule, we can use set-builder notation to describe the set. Set-builder notation is formatted For example, the set of even integers can be described by   We think of sets as their own abstract objects, and typically we situate them within a larger universal set in order to perform operations on sets. If is another set, and if for every it follows that , then we say that is a subset of , and we write . We also say is a superset  in this scenario, and we can write .   Two sets and in a universal set .      For example, is a subset of (i.e., ), but is not (i.e., ). From this definition, it is clear that a set is a subset of itself. We say that the sets and are equal (and we write ) if and only if and .  Just as arithmetic features operations on numbers, set theory features operations on sets:    The complement of a set is formed by the elements that are not members of . For example, in the set of natural numbers,    The complement of .        The union of the sets and , denoted , is the set of all elements in that are a member of , or , or both. For example, in the set of natural numbers,    The union of and .        The intersection of the sets and , denoted , is the set of all elements that are members of both and . For example, in the natural numbers,    The intersection of and .        There are lots of other operations on sets ( set difference , symmetric difference , Cartesian product , power set , disjoint union , complement , and more!), but to start, we only need to worry about complements, unions, and intersections.    The laws for negations of conjunctions and disjunctions have natural counterparts for sets. Indeed, and Furthermore, and .    Some basic sets of central importance to us in linear algebra are:    the set of natural numbers, which we denote by ;    the set of integers, which we denote by ;    the set of rational numbers, which we denote by ;    the set of real numbers, which we denote by ;    the set of complex numbers, which we denote by ;    the set of column vectors with entries, which we denote ; and    the set of matrices with real entries, which we denote by . When , we write .    "
+},
+{
+  "id": "app-sets-2",
+  "level": "2",
+  "url": "app-sets.html#app-sets-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "empty "
 },
 {
   "id": "app-sets-3",
@@ -682,25 +691,88 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "subset "
+  "body": "set-builder notation "
 },
 {
-  "id": "app-sets-6-1-1",
+  "id": "app-sets-4",
   "level": "2",
-  "url": "app-sets.html#app-sets-6-1-1",
+  "url": "app-sets.html#app-sets-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "subset superset "
+},
+{
+  "id": "fig-tikz-B1",
+  "level": "2",
+  "url": "app-sets.html#fig-tikz-B1",
+  "type": "Figure",
+  "number": "B.0.1",
+  "title": "",
+  "body": " Two sets and in a universal set .     "
+},
+{
+  "id": "app-sets-8-1-1",
+  "level": "2",
+  "url": "app-sets.html#app-sets-8-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "complement "
+},
+{
+  "id": "fig-tikz-B2",
+  "level": "2",
+  "url": "app-sets.html#fig-tikz-B2",
+  "type": "Figure",
+  "number": "B.0.2",
+  "title": "",
+  "body": " The complement of .     "
+},
+{
+  "id": "app-sets-8-2-1",
+  "level": "2",
+  "url": "app-sets.html#app-sets-8-2-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "union "
 },
 {
-  "id": "app-sets-6-2-1",
+  "id": "fig-tikz-B3",
   "level": "2",
-  "url": "app-sets.html#app-sets-6-2-1",
+  "url": "app-sets.html#fig-tikz-B3",
+  "type": "Figure",
+  "number": "B.0.3",
+  "title": "",
+  "body": " The union of and .     "
+},
+{
+  "id": "app-sets-8-3-1",
+  "level": "2",
+  "url": "app-sets.html#app-sets-8-3-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "intersection "
+},
+{
+  "id": "fig-tikz-B4",
+  "level": "2",
+  "url": "app-sets.html#fig-tikz-B4",
+  "type": "Figure",
+  "number": "B.0.4",
+  "title": "",
+  "body": " The intersection of and .     "
+},
+{
+  "id": "thm-complements-of-sets",
+  "level": "2",
+  "url": "app-sets.html#thm-complements-of-sets",
+  "type": "Theorem",
+  "number": "B.0.5",
+  "title": "",
+  "body": "  The laws for negations of conjunctions and disjunctions have natural counterparts for sets. Indeed, and Furthermore, and .   "
 },
 {
   "id": "backmatter-4",
