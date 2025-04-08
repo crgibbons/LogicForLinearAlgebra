@@ -35,7 +35,9 @@ function scrollTocToActive() {
     //  Don't use scrollIntoView because it changes users tab position in Chrome
     //  and messes up keyboard navigation
     tocEntry.closest("li").classList.add("active");
-    document.querySelector("#ptx-toc").scrollTop = tocEntry.offsetTop;
+    // Scroll only if the tocEntry is below the bottom half of the window,
+    // scrolling to that position.
+    document.querySelector("#ptx-toc").scrollTop = tocEntry.offsetTop - 0.4 * self.innerHeight;
 }
 
 function toggletoc() {
@@ -51,13 +53,9 @@ function toggletoc() {
    scrollTocToActive();
 }
 
-window.addEventListener("load",function(event) {
+window.addEventListener("DOMContentLoaded",function(event) {
        thetocbutton = document.getElementsByClassName("toc-toggle")[0];
        thetocbutton.addEventListener('click', () => toggletoc() );
-});
-
-window.addEventListener("load",function(event) {
-       scrollTocToActive();
 });
 
 /* jump to next page if reader tries to scroll past the bottom */
@@ -81,7 +79,7 @@ window.addEventListener("load",function(event) {
 
 
 //-----------------------------------------------------------------------------
-// Dynamic TOC logic 
+// Dynamic TOC logic
 //-----------------------------------------------------------------------------
 
 //item is assumed to be expander in toc-item
@@ -89,7 +87,7 @@ function toggleTOCItem(expander) {
     let listItem = expander.closest(".toc-item");
     listItem.classList.toggle("expanded");
     let expanded = listItem.classList.contains("expanded");
-    
+
     let itemType = getTOCItemType(listItem);
     if(expanded) {
         expander.title = "Close" + (itemType !== "" ? " " + itemType : "");
@@ -173,4 +171,9 @@ window.addEventListener("DOMContentLoaded", function(event) {
             }
         }
       }
+});
+
+// This needs to be after the TOC's geometry is settled
+window.addEventListener("DOMContentLoaded",function(event) {
+    scrollTocToActive();
 });
