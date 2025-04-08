@@ -212,7 +212,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">B.1.1</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="def-function-1-1">
-<div class="para">A <dfn class="terminology">function</dfn> <span class="process-math">\(f:S \to T\)</span> is an assignment between sets <span class="process-math">\(S\)</span> and <span class="process-math">\(T\)</span> that satisfies <span class="process-math">\(\forall a, b \in S\text{,}\)</span> if <span class="process-math">\(a = b\)</span> in <span class="process-math">\(S\text{,}\)</span> then <span class="process-math">\(f(a) = f(b)\)</span> in <span class="process-math">\(T\)</span> i.e., <span class="process-math">\(f\)</span> is well-defined. The set <span class="process-math">\(S\)</span> is called the <dfn class="terminology">domain</dfn> of <span class="process-math">\(f\)</span> and the set <span class="process-math">\(T\)</span> is called the <dfn class="terminology">codomain of <span class="process-math">\(f\)</span></dfn>. The subset of the codomain that can be obtained as <span class="process-math">\(f(x)\)</span> for some <span class="process-math">\(x\)</span> in the domain is called the <dfn class="terminology">range of <span class="process-math">\(f\)</span></dfn>, denoted</div>
+<div class="para">A <dfn class="terminology">function</dfn> <span class="process-math">\(f:S \to T\)</span> is an assignment between sets <span class="process-math">\(S\)</span> and <span class="process-math">\(T\)</span> satisfying the condition that for all <span class="process-math">\(a, b \in S\text{,}\)</span> if <span class="process-math">\(a = b\)</span> in <span class="process-math">\(S\text{,}\)</span> then <span class="process-math">\(f(a) = f(b)\)</span> in <span class="process-math">\(T\)</span> i.e., <span class="process-math">\(f\)</span> is well-defined. The set <span class="process-math">\(S\)</span> is called the <dfn class="terminology">domain</dfn> of <span class="process-math">\(f\)</span> and the set <span class="process-math">\(T\)</span> is called the <dfn class="terminology">codomain of <span class="process-math">\(f\)</span></dfn>. The subset of the codomain that can be obtained as <span class="process-math">\(f(x)\)</span> for some <span class="process-math">\(x\)</span> in the domain is called the <dfn class="terminology">range of <span class="process-math">\(f\)</span></dfn>, denoted</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \mathrm{range}(f) = \{ z \in T \, | \, z = f(a) \text{ for some } a \in S \}.
@@ -245,7 +245,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-(a + b \, i) + c + d\, i = (a + c) + (b + d) \, i \text{ and } (a + b \,i)(c + d \, i) = (ac-bd) + (ad+bc)\, i.
+(a + b \, i) + c + d\, i = (a + c) + (b + d) \, i
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a + b \,i)(c + d \, i) = (ac-bd) + (ad+bc)\, i.
 \end{equation*}
 </div>
 <div class="para">Two complex numbers <span class="process-math">\(a + b\, i\)</span> and <span class="process-math">\(c+d\, i\)</span> are equal provided <span class="process-math">\(a = c\)</span> and <span class="process-math">\(b = d\text{.}\)</span> When we write <span class="process-math">\(a - b\, i\text{,}\)</span> we understand it as a shorthand for <span class="process-math">\(a + (-b)\, i\text{.}\)</span>
