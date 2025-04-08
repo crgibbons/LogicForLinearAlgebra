@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-app-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Functions</title>
+
+  <definition xml:id="def-function">
+    <statement>
+        <p>
+            A <term>function</term> <m>f:S \to T</m> is an assignment between sets <m>S</m> and <m>T</m> that satisfies <m>\forall a, b \in S</m>, 
+            if <m>a = b</m> in <m>S</m>, then <m>f(a) = f(b)</m> in <m>T</m> i.e., <m>f</m> is well-defined.
+            The set <m>S</m> is called the <term>domain</term> of <m>f</m> and the set <m>T</m> is called the <term>codomain of <m>f</m></term>.
+            The subset of the codomain that can be obtained as <m>f(x)</m> for some <m>x</m> in the domain is called the <term>range of <m>f</m></term>, denoted
+            <me>
+                \mathrm{range}(f) = \{ z \in T \, | \, z = f(a) \text{ for some } a \in S \}.
+            </me>
+            
+        </p>
+
+        <p>
+            Given a function <m>f:S \to T</m>, we say that <m>f</m> is <term>injective</term> (equivalently, <term>one-to-one</term>) provided for all <m>a, b \in S</m>, if <m>f(a) = f(b)</m>, then <m>x = y</m>.
+        </p>
+
+        <p>
+            Given a function <m>f:S \to T</m>, we say that <m>f</m> is <term>surjective</term> (equivalently, <term>onto</term>) provided for every <m>y \in T</m>, there exists <m>a \in S</m> satisfying <m>f(a) = y</m>.
+        </p>
+
+        <p>
+            A function that is both injective and surjective is called <term>bijective</term> (equivalently, a <term>bijection</term>).
+        </p>
+    </statement>
+  </definition>
+
+  <example>
+    <statement>
+        <p>
+            Recall that 
+            <me>
+                [0,\infty) = \{ x \in \mathbb{R} \, \colon \, 0 \le x \}.
+            </me>
+            
+        </p>
+        <p>
+            The assignment <m>g:\mathbb{R} \to \mathbb{R}</m> given by <m>g(x) = y</m> satisfying <m>y^2 = x</m> is not a function. 
+            Indeed, <m>g(x)</m> is undefined for <m>x \lt 0</m>; in this sense, the domain is too big. 
+            Even restricting the domain to nonnegative inputs, we find that <m>g(4)</m> is ambiguous, because both <m>y = 2</m> and <m>y = -2</m>
+            satisfy <m>y^2 = 4</m>.
+        </p>
+
+        <p>
+            The assignment <m>h:[0,\infty) \to [0,\infty)</m> given by <m>h(x) = \sqrt{x}</m> is a function.
+            Restricting the domain to <m>[0,\infty)</m> ensures each input has at least one output, and restricting the codomain to <m>[0,\infty)</m> ensures that output is unique.
+        </p>
+    </statement>
+  </example>
+
+  <example>
+    <title>Complex Conjugation</title>
+    <statement>
+        <p>
+            The complex numbers are defined to be the set
+            <me>
+                \mathbb{C}= \{ a + b\, i \, | \, a, b \in \mathbb{R}, i^{2} = -1\}
+            </me>
+            with addition defined by collecting like terms and multiplication defined using the distributive property and the rule <m>i^2 = -1</m>:
+            <me>
+                (a + b \, i) + c + d\, i = (a + c) + (b + d) \, i \text{ and } (a + b \,i)(c + d \, i) = (ac-bd) + (ad+bc)\, i.
+            </me>
+            Two complex numbers <m>a + b\, i</m> and <m>c+d\, i</m> are equal provided <m>a = c</m> and <m>b = d</m>.
+            When we write <m>a - b\, i</m>, we understand it as a shorthand for <m>a + (-b)\, i</m>.
+        </p>
+
+        <p>
+            We will verify that the assignment <m>C: \mathbb{C}\to \mathbb{C}</m> given by <m>C(a+b \, i) = a - b\, i</m> is a bijective function. 
+        </p>
+
+        <p> 
+            (Function.) 
+            Recall, our goal is to show that the same input to <m>C</m> yields the same output, even if we can write the input in cosmetically different ways.
+            So, we'll start with an input element written in two ways:
+            suppose <m>a + b\, i = c + d\, i</m> in the domain of <m>C</m>. 
+            This equality implies that <m>a = c</m> and <m>b = d</m>. 
+            This means <m>-b = -d</m>, too, which ensures that <m>C(a+b\, i) = a - b\, i = c - d\, i = C(c + d\, i)</m> in the codomain of <m>C</m>, as desired..
+        </p>
+
+        <p> 
+            (Injective.) 
+            In this case, our goal is to show that if input elements yield the same outputs, the inputs were the same to begin with.
+            So, we'll start with two elements that give the same output:
+            suppose <m>C(a + b\, i) = C(c + d\, i)</m> in the codomain. 
+            This implies that <m>a - b\, i = c - d\, i</m>, which means <m>a = c</m>, <m>-b = -d</m>, and hence <m>b = d</m>. 
+            Thus <m>a + b\, i = c + d\, i</m> in the domain, as desired.
+        </p>
+
+        <p>
+            (Surjective.) Now our goal is to show that given an arbitrary element of the codomain, we can find an element of the domain that maps to it.
+            So, we'll start with a complex number in the codomain: suppose <m>a + b\, i \in \mathbb{C}</m>.
+            It follows that <m>a - b\, i \in \mathbb{C}</m> is an element of the domain for which 
+            <m>C(a - b\, i) = C(a + (-b)\, i) = a - (-b)\, i = a + (-(-b))\, i = a + b\, i</m> as desired.
+       </p>
+    </statement>
+  </example>
+
+  <definition xml:id="def-composition">
+    <statement>
+        <p>
+            Given functions <m>f: S \to T</m> and <m>g : T \to U</m>, their <term>composition</term> is defined to be the assignment
+            <me>
+                g \circ f : S \to U
+            </me>
+            given by the rule <m>g \circ f (a) = g(f(a))</m>.
+        </p>
+    </statement>
+  </definition>
+
+  <theorem xml:id="thm-composition">
+    <statement>
+        <p>
+            The composition of functions with compatible domains and codomains is a function. 
+            That is, if <m>f: S \to T</m> and <m>g : T \to U</m> are functions, then <m>g \circ f : S \to U</m> is a function as well.
+        </p>
+        <p>
+            Furthermore, if both <m>f</m> and <m>g</m> are injective, then <m>g \circ f</m> is injective.
+        <p>
+        </p>
+            Similarly, if both <m>f</m> and <m>g</m> are surjective, then <m> g \circ f</m> is surjective.            
+        </p>
+    </statement>
+  </theorem>
+
+  <proof>
+    <p>
+        Suppose <m>f: S \to T</m> and <m>g : T \to U</m> are functions. 
+        Let <m>a, b \in S</m>, <m>t = f(a), s = f(b) \in T</m>.
+    </p>
+
+    <p>
+        If <m>a = b</m>, then <m>t = f(a) = f(b) = s</m> because <m>f</m> is a function.
+        Similarly, <m>t = s</m> implies <m>g(t) = g(s)</m> because <m>g</m> is a function.
+        It follows that <m>a = b</m> implies <me>g\circ f (a) = g(f(a)) = g(t) = g(s) = g(f(b)) = g \circ f (b),</me> and therefore <m>g \circ f</m> is a function.
+    </p>
+
+    <p>
+        Suppose now that <m>f:S \to T</m> is injective.
+        This means that if <m>g \circ f (a) = g \circ f (b)</m>, we have that <m>g(t) = g(f(a)) = g(f(b)) = g(s)</m>. 
+        Since <m>g</m> is injective, <m>f(a) = f(b)</m>, and since <m>f</m> is injective, <m>a = b</m>.
+        Now we have that <m>g \circ f(a) = g \circ f(b)</m> implies <m>a = b</m>, so <m>g \circ f</m> is injective.
+    </p>
+
+    <p>
+        The rest of the proof is left as an exercise to the reader.
+    </p>
+  </proof>
+  
+
+    <exercises xml:id="exercises-functions">
+        <exercisegroup>
+            <title>Logical Relationships</title>
+            
+            <introduction>
+                <p>
+                    Consider the statements, Statement A: <q>if <m>x = y</m> in <m>S</m>, then <m>f(x) = f(y)</m> in <m>T</m></q> 
+                    and Statement B: <q>if <m>f(x) = f(y)</m> in <m>T</m>, then <m>x = y</m> in <m>S</m>.</q>
+                </p>
+            </introduction>
+        
+            <exercise>
+                <statement>
+                    <p>
+                        What is the logical relationship between Statements A and B?
+                    </p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>
+                        What is the contrapositive of Statement B?
+                    </p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>
+                        Rewrite the definition <q>injective</q> using the contrapositive of Statement B.
+                    </p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>
+                        Write the negation of the definition of <q>injective</q>.
+                    </p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>
+                        Write the negation of the definition of <q>surjective</q>.
+                    </p>
+                </statement>
+            </exercise>
+        </exercisegroup>
+
+        <exercisegroup>
+            <title>A Little Trigonometry Review</title>
+        
+            <introduction>
+                <p>
+                    Consider the function <m>f: \mathbb{R} \to [-2,2]</m> given by <m>f(x) = \sin(x)</m>. 
+                    Recall that <m>(-2,2)</m> refers to the open interval of real numbers with values between <m>-2</m> and <m>2</m>. 
+                    That is, <m>[-2,2] = \{x \in \mathbb{R} \, \colon \, -2 \le x \le \}.</m>
+                </p>
+            </introduction>
+        
+            <exercise>
+                <statement>
+                    <p>
+                        Identify the domain and codomain of <m>f</m>.
+                    </p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>
+                        Is <m>f</m> injective? Justify your answer.
+                    </p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>
+                        Is <m>f</m> injective? Justify your answer.
+                    </p>
+                </statement>
+            </exercise>
+
+            <exercise>
+                <statement>
+                    <p>
+                        Determine a domain <m>S \subseteq \mathbb{R}</m> and codomain <m>[-1,1] \subseteq T \subseteq \mathbb{R}</m> for which
+                        the function <m>g: S \to T</m> defined by <m>g(x) = \sin(x)</m> is a bijection.
+                    </p>
+                </statement>
+            </exercise>
+        </exercisegroup>
+
+        <exercise>
+            <statement>
+                <p>
+                    Complete the unfinished proof of the theorem.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+
+</section>

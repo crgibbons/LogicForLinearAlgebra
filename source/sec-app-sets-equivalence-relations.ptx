@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-app-sets-equivalence-relations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Equivalence relations on sets</title>
+  <p>Equivalence relations are meant to answer the question, 
+  <q>When are two elements of this set the same relative to some special property?</q>
+  The most common equivalence relation is numerical equality: two numbers are equal if they have the same value.</p>
+
+  <definition>
+      <statement>
+        <p>
+          Let <m>S</m> be a set. An <term>equivalence relation</term> on <m>S</m> is a relation <m>\sim</m> on ordered pairs satisfying the following properties:
+          <ol>
+            <li>
+                <p>
+                    Reflexivity: for all <m>a \in S</m>, <m>a \sim a</m>;
+                </p>
+            </li>
+            <li>
+                <p>
+                    Symmetry: for all <m>a, b \in S</m>, <m>a \sim b</m> implies <m>b \sim a</m>; and
+                </p>
+            </li>
+            <li>
+                <p>
+                    Trransitivity: for all <m>a,b,c \in S</m>, <m>a \sim b</m> and <m>b \sim c</m> implies <m>a \sim c</m>.
+                </p>
+            </li>
+          </ol>
+        </p>
+
+        We define the <term>equivalence class of <m>a \in S</m></term> to be <m>[a]_\sim = \{s \in S \, \colon \, s \sim a\}</m>,
+        and we define the set of <term>equivalence classes modulo <m>\sim</m></term> to be <m>S/\sim = \{[a]_\sim \, \colon \, a \in S\}</m>.
+      </statement>
+    </definition>
+
+    <example>
+      <statement> 
+        <p>
+          Given integers <m>a,b,c,d</m> where <m>b,d</m> are nonzero, we say <m>(a,b) \sim (c,d)</m> provided <m>ad - bc = 0</m>.
+        </p>
+
+        <p>
+          To verify that <m>\sim</m> is an equivalence relation, we'll check the three properties. 
+          To start, suppose <m>a,b,c,d,e,f</m> are integers where <m>b,d,f</m> are nonzero.
+          For reflexivity, observe
+        <m>(a,b) \sim (a,b)</m> because <m>ab - ab = 0</m>.
+        </p>
+      
+        <p>
+          For symmetry, observe that <m>(a,b) \sim (c,d)</m> implies <m>(c,d) \sim (a,b)</m> 
+          because <m>ca - db = ac - bd = 0</m> by the commutativity of integer multiplication our starting assumption.
+        </p>
+
+        <p>
+          For transitivity, observe that <m>(a,b) \sim (c,d)</m> and <m>(c,d) \sim (e,f)</m> implies <m>(a,b) \sim (e,f)</m>
+          because <m>ad - bc = 0</m> and <m>cf - de = 0</m> imply <m>0 = adf - bde = (af-be)d </m>,
+          which implies <m>af-be = 0</m> (recall, <m>d \not = 0</m> by assumption).
+        </p>
+
+        <p>
+          This equivalence relation is important!
+          When we talk about the rational numbers, we are really talking about equivalence classes of ordered pairs of 
+          integers modulo <m>\sim</m>, where the first element of the ordered pair is the what we usually call the numerator
+          of the rational number, and the second (nonzero) element of the ordered pair is what we usually call the denominator.
+        </p>
+      </statement>
+    </example>
+</section>

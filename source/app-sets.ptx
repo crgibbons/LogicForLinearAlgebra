@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <appendix xml:id="app-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Sets</title>
+
+<introduction>
   <title> Set Theory Basics</title>
 
   <p>
@@ -235,4 +238,9 @@
       </p>
     </li>
   </ul>
+</introduction>
+
+  <xi:include href="sec-app-functions.ptx" />
+  <xi:include href="sec-app-sets-equivalence-relations.ptx" />
+
 </appendix>
