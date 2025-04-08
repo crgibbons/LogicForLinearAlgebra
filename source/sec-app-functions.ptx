@@ -6,7 +6,7 @@
   <definition xml:id="def-function">
     <statement>
         <p>
-            A <term>function</term> <m>f:S \to T</m> is an assignment between sets <m>S</m> and <m>T</m> that satisfies <m>\forall a, b \in S</m>, 
+            A <term>function</term> <m>f:S \to T</m> is an assignment between sets <m>S</m> and <m>T</m> satisfying the condition that for all <m>a, b \in S</m>, 
             if <m>a = b</m> in <m>S</m>, then <m>f(a) = f(b)</m> in <m>T</m> i.e., <m>f</m> is well-defined.
             The set <m>S</m> is called the <term>domain</term> of <m>f</m> and the set <m>T</m> is called the <term>codomain of <m>f</m></term>.
             The subset of the codomain that can be obtained as <m>f(x)</m> for some <m>x</m> in the domain is called the <term>range of <m>f</m></term>, denoted
@@ -63,7 +63,11 @@
             </me>
             with addition defined by collecting like terms and multiplication defined using the distributive property and the rule <m>i^2 = -1</m>:
             <me>
-                (a + b \, i) + c + d\, i = (a + c) + (b + d) \, i \text{ and } (a + b \,i)(c + d \, i) = (ac-bd) + (ad+bc)\, i.
+                (a + b \, i) + c + d\, i = (a + c) + (b + d) \, i
+            </me>
+            and
+            <me>
+                (a + b \,i)(c + d \, i) = (ac-bd) + (ad+bc)\, i.
             </me>
             Two complex numbers <m>a + b\, i</m> and <m>c+d\, i</m> are equal provided <m>a = c</m> and <m>b = d</m>.
             When we write <m>a - b\, i</m>, we understand it as a shorthand for <m>a + (-b)\, i</m>.
