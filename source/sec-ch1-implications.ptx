@@ -17,7 +17,7 @@
 
         <statement>
             <p>
-                The compound statement "if <m>p</m>, then <m>q</m>" or "<m>p</m> implies <m>q</m>" is called an <term>implication</term> or a 
+                The compound statement <q>if <m>p</m>, then <m>q</m></q> or <q><m>p</m> implies <m>q</m></q> is called an <term>implication</term> or a 
                 <term>conditional statement</term>, denoted <m>p \implies q</m>, where <m>p</m> is referred to as the <term>hypothesis</term> or 
                 <term>premise</term> and <m>q</m> is referred to as the <term>conclusion</term>.
                 The implication is defined by the truth table below.
@@ -74,15 +74,15 @@
 
     <example>
         <p>
-            Consider the statement, "If two is odd, then one is even." The constituent statements "two is odd" and "one is even" are both false, and the compound statement is defined to true.
-            Any implication with the premise "two is odd" is vacuously true.
+            Consider the statement, <q>If two is odd, then one is even.</q> The constituent statements <q>two is odd</q> and <q>one is even</q> are both false, and the compound statement is defined to true.
+            Any implication with the premise <q>two is odd</q> is vacuously true.
         </p>
     </example>
 
     <p>
         In formal mathematical logic, no causation in implied by an if-then statement.
-        That is, the statement, "If it's raining, then it's wet outside" doesn't the same thing as, "It's wet outside <em>because</em> it is raining." For all we know, it could be wet outside because someone sprayed everything down with a fire hose.
-        And so, even though the statement, "If <m>2+2=5</m>, then Mars is a planet," is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise ("Mars is a planet" is true regardless of arithmetic!).
+        That is, the statement, <q>If it's raining, then it's wet outside</q> doesn't the same thing as, <q>It's wet outside <em>because</em> it is raining.</q> For all we know, it could be wet outside because someone sprayed everything down with a fire hose.
+        And so, even though the statement, <q>If <m>2+2=5</m>, then Mars is a planet,</q> is a true statement, we don't infer that the truth of the conclusion is dependent on its causal relationship to the premise (<q>Mars is a planet</q> is true regardless of arithmetic!).
     </p>
 
     <theorem xml:id="thm-neg-imp">
@@ -203,7 +203,7 @@
     <exercise>
         <statement>
             <p>
-                Let <m>p</m> be the statement, "It's raining," and <m>q</m> be the statement, "It's wet outside." Match the sentences to the correct compound statements.
+                Let <m>p</m> be the statement, <q>It's raining,</q> and <m>q</m> be the statement, <q>It's wet outside.</q> Match the sentences to the correct compound statements.
             </p>
         </statement>
         <matches> <match order="2">
@@ -357,7 +357,7 @@
     </exercise>
 
     <p>
-        Another way to express <m>p \iff q</m> is, "<m>p</m> is necessary and sufficient for <m>q</m>." In particular, "<m>p</m> is necessary for <m>q</m>" describes the implication <m>q \implies p</m>, and "<m>p</m> is sufficient for <m>q</m>" describes the implication <m>p \implies q</m>.
+        Another way to express <m>p \iff q</m> is, <q><m>p</m> is necessary and sufficient for <m>q</m>.</q> In particular, <q><m>p</m> is necessary for <m>q</m></q> describes the implication <m>q \implies p</m>, and <q><m>p</m> is sufficient for <m>q</m></q> describes the implication <m>p \implies q</m>.
     </p>
 
     <example>

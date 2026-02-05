@@ -4,13 +4,13 @@
     <title>Compound Statements</title>
 
     <p>
-        Negation is a function of one binary variable (that is, we "plug in" one statement).
-        Conjunctions and disjunctions are functions of two binary variables (that is, we "plug in" two statements).
+        Negation is a function of one binary variable (that is, we <q>plug in</q> one statement).
+        Conjunctions and disjunctions are functions of two binary variables (that is, we <q>plug in</q> two statements).
         We can compose logical connectives just as we can compose functions to create <term>compound statements</term>.
     </p>
 
     <p>
-        Consider the statement <m>\lnot(p\land q)</m>: "It is not the case that (<m>p</m> and <m>q</m>)."
+        Consider the statement <m>\lnot(p\land q)</m>: <q>It is not the case that (<m>p</m> and <m>q</m>).</q>
     </p>
 
     <table>
@@ -57,7 +57,7 @@
     <p>
         For the statement <m>\lnot(p\land q)</m> to be true, we see that we need one of <m>p</m> or <m>q</m> to be false (not necessarily both).
         That is, the truth value should match the truth value of the compound statement <m>(\lnot p) \lor (\lnot q)</m>.
-        To verify this, we look at the truth table for the statement <m>(\lnot p) \lor (\lnot q)</m>: "(Not <m>p</m>) or (not <m>q</m>)."
+        To verify this, we look at the truth table for the statement <m>(\lnot p) \lor (\lnot q)</m>: <q>(Not <m>p</m>) or (not <m>q</m>).</q>
     </p>
 
     <table>

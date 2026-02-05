@@ -17,11 +17,11 @@
 
         <statement>
             <p>
-                The <term>negation</term> of a statement <m>p</m>, denoted <m>\lnot p</m>, is the statement: "It is not the case that <m>p</m>."
+                The <term>negation</term> of a statement <m>p</m>, denoted <m>\lnot p</m>, is the statement: <q>It is not the case that <m>p</m>.</q>
             </p>
 
             <p>
-                In casual conversation, we refer to the negation of a proposition <m>p</m> as "not <m>p</m>".
+                In casual conversation, we refer to the negation of a proposition <m>p</m> as <q>not <m>p</m></q>.
             </p>
 
             <p>
@@ -57,7 +57,7 @@
         <title>Negating statements</title>
 
         <p>
-            The negation of the statement, "Hamilton College is located in Clinton, NY" is the statement, "It is not the case that Hamilton College is located in Clinton, NY," or, "Hamilton College is not located in Clinton, NY."
+            The negation of the statement, <q>Hamilton College is located in Clinton, NY</q> is the statement, <q>It is not the case that Hamilton College is located in Clinton, NY,</q> or, <q>Hamilton College is not located in Clinton, NY.</q>
         </p>
     </example>
 
@@ -76,11 +76,11 @@
 
         <statement>
             <p>
-                The <term>conjunction</term> of two statements <m>p</m> and <m>q</m>, denoted <m>p \land q</m>, is the statement, "<m>p</m> and <m>q</m>."
+                The <term>conjunction</term> of two statements <m>p</m> and <m>q</m>, denoted <m>p \land q</m>, is the statement, <q><m>p</m> and <m>q</m></q>.
             </p>
 
             <p>
-                In casual conversation, we refer to the conjunction as "<m>p</m> and <m>q</m>".
+                In casual conversation, we refer to the conjunction as <q><m>p</m> and <m>q</m></q>.
             </p>
 
             <p>
