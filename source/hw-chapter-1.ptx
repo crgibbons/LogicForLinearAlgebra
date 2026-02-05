@@ -44,7 +44,7 @@
 
 					<li>
 						<p>
-							<m>p \land (\lnot )</m>
+							<m>p \land (\lnot q)</m>
 						</p>
 					</li>
 
